@@ -1,0 +1,127 @@
+# //  Questa Sim-64
+# //  Version 2024.2 linux_x86_64 May 20 2024
+# //
+# // Unpublished work. Copyright 2024 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+vcom -reportprogress 300 -work work /home/blevake/cpre381/Lab2/MyFirstMIPSDatapath/Adder.vhd /home/blevake/cpre381/Lab2/MyFirstMIPSDatapath/addersubtractor.vhd /home/blevake/cpre381/Lab2/MyFirstMIPSDatapath/andg2.vhd /home/blevake/cpre381/Lab2/MyFirstMIPSDatapath/datapathv1.vhd /home/blevake/cpre381/Lab2/MyFirstMIPSDatapath/datapathv2.vhd /home/blevake/cpre381/Lab2/MyFirstMIPSDatapath/decoder5t32.vhd /home/blevake/cpre381/Lab2/MyFirstMIPSDatapath/dffg.vhd /home/blevake/cpre381/Lab2/MyFirstMIPSDatapath/dfmux.vhd /home/blevake/cpre381/Lab2/MyFirstMIPSDatapath/extender.vhd /home/blevake/cpre381/Lab2/MyFirstMIPSDatapath/fullAdder.vhd /home/blevake/cpre381/Lab2/MyFirstMIPSDatapath/fullAdder_n.vhd /home/blevake/cpre381/Lab2/MyFirstMIPSDatapath/invg.vhd /home/blevake/cpre381/Lab2/MyFirstMIPSDatapath/mem.vhd /home/blevake/cpre381/Lab2/MyFirstMIPSDatapath/Multiplier.vhd /home/blevake/cpre381/Lab2/MyFirstMIPSDatapath/mux2t_1.vhd /home/blevake/cpre381/Lab2/MyFirstMIPSDatapath/mux32t1.vhd /home/blevake/cpre381/Lab2/MyFirstMIPSDatapath/onesComp.vhd /home/blevake/cpre381/Lab2/MyFirstMIPSDatapath/org2.vhd /home/blevake/cpre381/Lab2/MyFirstMIPSDatapath/Reg.vhd /home/blevake/cpre381/Lab2/MyFirstMIPSDatapath/regfile.vhd /home/blevake/cpre381/Lab2/MyFirstMIPSDatapath/RegLd.vhd /home/blevake/cpre381/Lab2/MyFirstMIPSDatapath/tb_datapathv1.vhd /home/blevake/cpre381/Lab2/MyFirstMIPSDatapath/tb_datapathv2.vhd /home/blevake/cpre381/Lab2/MyFirstMIPSDatapath/tb_decoder5t32.vhd /home/blevake/cpre381/Lab2/MyFirstMIPSDatapath/tb_dffg.vhd /home/blevake/cpre381/Lab2/MyFirstMIPSDatapath/tb_dffg_n.vhd /home/blevake/cpre381/Lab2/MyFirstMIPSDatapath/tb_dmem.vhd /home/blevake/cpre381/Lab2/MyFirstMIPSDatapath/tb_extender.vhd /home/blevake/cpre381/Lab2/MyFirstMIPSDatapath/dffg_n.vhd /home/blevake/cpre381/Lab2/MyFirstMIPSDatapath/mux2t1_N.vhd /home/blevake/cpre381/Lab2/MyFirstMIPSDatapath/tb_addersubtractor.vhd /home/blevake/cpre381/Lab2/MyFirstMIPSDatapath/tb_mux2t1_N.vhd /home/blevake/cpre381/Lab2/MyFirstMIPSDatapath/tb_mux32t1.vhd /home/blevake/cpre381/Lab2/MyFirstMIPSDatapath/tb_regfile.vhd /home/blevake/cpre381/Lab2/MyFirstMIPSDatapath/xorg2.vhd
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:23:40 on Sep 27,2024
+# vcom -reportprogress 300 -work work /home/blevake/cpre381/Lab2/MyFirstMIPSDatapath/Adder.vhd /home/blevake/cpre381/Lab2/MyFirstMIPSDatapath/addersubtractor.vhd /home/blevake/cpre381/Lab2/MyFirstMIPSDatapath/andg2.vhd /home/blevake/cpre381/Lab2/MyFirstMIPSDatapath/datapathv1.vhd /home/blevake/cpre381/Lab2/MyFirstMIPSDatapath/datapathv2.vhd /home/blevake/cpre381/Lab2/MyFirstMIPSDatapath/decoder5t32.vhd /home/blevake/cpre381/Lab2/MyFirstMIPSDatapath/dffg.vhd /home/blevake/cpre381/Lab2/MyFirstMIPSDatapath/dfmux.vhd /home/blevake/cpre381/Lab2/MyFirstMIPSDatapath/extender.vhd /home/blevake/cpre381/Lab2/MyFirstMIPSDatapath/fullAdder.vhd /home/blevake/cpre381/Lab2/MyFirstMIPSDatapath/fullAdder_n.vhd /home/blevake/cpre381/Lab2/MyFirstMIPSDatapath/invg.vhd /home/blevake/cpre381/Lab2/MyFirstMIPSDatapath/mem.vhd /home/blevake/cpre381/Lab2/MyFirstMIPSDatapath/Multiplier.vhd /home/blevake/cpre381/Lab2/MyFirstMIPSDatapath/mux2t_1.vhd /home/blevake/cpre381/Lab2/MyFirstMIPSDatapath/mux32t1.vhd /home/blevake/cpre381/Lab2/MyFirstMIPSDatapath/onesComp.vhd /home/blevake/cpre381/Lab2/MyFirstMIPSDatapath/org2.vhd /home/blevake/cpre381/Lab2/MyFirstMIPSDatapath/Reg.vhd /home/blevake/cpre381/Lab2/MyFirstMIPSDatapath/regfile.vhd /home/blevake/cpre381/Lab2/MyFirstMIPSDatapath/RegLd.vhd /home/blevake/cpre381/Lab2/MyFirstMIPSDatapath/tb_datapathv1.vhd /home/blevake/cpre381/Lab2/MyFirstMIPSDatapath/tb_datapathv2.vhd /home/blevake/cpre381/Lab2/MyFirstMIPSDatapath/tb_decoder5t32.vhd /home/blevake/cpre381/Lab2/MyFirstMIPSDatapath/tb_dffg.vhd /home/blevake/cpre381/Lab2/MyFirstMIPSDatapath/tb_dffg_n.vhd /home/blevake/cpre381/Lab2/MyFirstMIPSDatapath/tb_dmem.vhd /home/blevake/cpre381/Lab2/MyFirstMIPSDatapath/tb_extender.vhd /home/blevake/cpre381/Lab2/MyFirstMIPSDatapath/dffg_n.vhd /home/blevake/cpre381/Lab2/MyFirstMIPSDatapath/mux2t1_N.vhd /home/blevake/cpre381/Lab2/MyFirstMIPSDatapath/tb_addersubtractor.vhd /home/blevake/cpre381/Lab2/MyFirstMIPSDatapath/tb_mux2t1_N.vhd /home/blevake/cpre381/Lab2/MyFirstMIPSDatapath/tb_mux32t1.vhd /home/blevake/cpre381/Lab2/MyFirstMIPSDatapath/tb_regfile.vhd /home/blevake/cpre381/Lab2/MyFirstMIPSDatapath/xorg2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Adder
+# -- Compiling architecture behavior of Adder
+# -- Compiling entity addersubtractor
+# -- Compiling architecture structural of addersubtractor
+# -- Compiling entity andg2
+# -- Compiling architecture dataflow of andg2
+# -- Loading package mypack
+# -- Compiling entity datapathv1
+# -- Compiling architecture structural of datapathv1
+# -- Compiling entity datapathv2
+# -- Compiling architecture structural of datapathv2
+# -- Compiling entity decoder5t32
+# -- Compiling architecture behavior of decoder5t32
+# -- Compiling entity dffg
+# -- Compiling architecture mixed of dffg
+# -- Compiling entity dfmux
+# -- Compiling architecture dataflow of dfmux
+# -- Compiling entity extender
+# -- Compiling architecture behavior of extender
+# -- Compiling entity fullAdder
+# -- Compiling architecture structural of fullAdder
+# -- Compiling entity fullAdder_n
+# -- Compiling architecture structural of fullAdder_n
+# -- Compiling entity invg
+# -- Compiling architecture dataflow of invg
+# -- Loading package NUMERIC_STD
+# -- Compiling entity mem
+# -- Compiling architecture rtl of mem
+# -- Compiling entity Multiplier
+# -- Compiling architecture behavior of Multiplier
+# -- Compiling entity mux2t1
+# -- Compiling architecture dataflow of mux2t1
+# -- Compiling package mypack
+# -- Loading package mypack
+# -- Compiling entity mux32t1
+# -- Compiling architecture behavior of mux32t1
+# -- Compiling entity onesComp
+# -- Compiling architecture structural of onesComp
+# -- Compiling entity org2
+# -- Compiling architecture dataflow of org2
+# -- Compiling entity Reg
+# -- Compiling architecture behavior of Reg
+# -- Compiling entity regfile
+# -- Compiling architecture structural of regfile
+# -- Compiling entity RegLd
+# -- Compiling architecture behavior of RegLd
+# -- Compiling entity tb_datapathv1
+# -- Compiling architecture behavior of tb_datapathv1
+# -- Compiling entity tb_datapathv2
+# -- Compiling architecture behavior of tb_datapathv2
+# -- Compiling entity tb_decoder5t32
+# -- Compiling architecture behavior of tb_decoder5t32
+# -- Compiling entity tb_dffg
+# -- Compiling architecture behavior of tb_dffg
+# -- Compiling entity tb_dffg_n
+# -- Compiling architecture behavior of tb_dffg_n
+# -- Compiling entity tb_dmem
+# -- Compiling architecture behavior of tb_dmem
+# -- Compiling entity tb_extender
+# -- Compiling architecture behavior of tb_extender
+# -- Compiling entity dffg_n
+# -- Compiling architecture mixed of dffg_n
+# -- Compiling entity mux2t1_N
+# -- Compiling architecture structural of mux2t1_N
+# -- Loading package std_logic_textio
+# -- Loading package ENV
+# -- Compiling entity tb_addersubtractor
+# -- Compiling architecture mixed of tb_addersubtractor
+# -- Compiling entity tb_mux2t1_N
+# -- Compiling architecture mixed of tb_mux2t1_N
+# -- Compiling entity tb_mux32t1
+# -- Compiling architecture behavior of tb_mux32t1
+# -- Compiling entity tb_regfile
+# -- Compiling architecture behavior of tb_regfile
+# -- Compiling entity xorg2
+# -- Compiling architecture dataflow of xorg2
+# End time: 13:23:41 on Sep 27,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vsim work.tb_datapathv1
+# vsim work.tb_datapathv1 
+# Start time: 13:23:51 on Sep 27,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.mypack
+# Loading work.tb_datapathv1(behavior)#1
+# Loading work.addersubtractor(structural)#1
+# Loading work.regfile(structural)#1
+# Loading work.dffg_n(mixed)#1
+add wave -position insertpoint  \
+sim:/tb_datapathv1/cCLK_PER \
+sim:/tb_datapathv1/gCLK_HPER \
+sim:/tb_datapathv1/s_A \
+sim:/tb_datapathv1/s_addsub \
+sim:/tb_datapathv1/s_alu \
+sim:/tb_datapathv1/s_B \
+sim:/tb_datapathv1/s_C \
+sim:/tb_datapathv1/s_clk \
+sim:/tb_datapathv1/s_imm \
+sim:/tb_datapathv1/s_reset \
+sim:/tb_datapathv1/s_WE
+run 5000
+quit -sim
+# End time: 13:24:48 on Sep 27,2024, Elapsed time: 0:00:57
+# Errors: 0, Warnings: 0
