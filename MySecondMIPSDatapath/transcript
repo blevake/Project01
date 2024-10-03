@@ -1,0 +1,582 @@
+# Modified modelsim.ini
+# //  Questa Sim-64
+# //  Version 2024.2 linux_x86_64 May 20 2024
+# //
+# // Unpublished work. Copyright 2024 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+vcom -reportprogress 300 -work work /home/blevake/cpre381/Lab2/MySecondMIPSDatapath/Adder.vhd /home/blevake/cpre381/Lab2/MySecondMIPSDatapath/addersubtractor.vhd /home/blevake/cpre381/Lab2/MySecondMIPSDatapath/andg2.vhd /home/blevake/cpre381/Lab2/MySecondMIPSDatapath/datapathv2.vhd /home/blevake/cpre381/Lab2/MySecondMIPSDatapath/decoder5t32.vhd /home/blevake/cpre381/Lab2/MySecondMIPSDatapath/dfmux.vhd /home/blevake/cpre381/Lab2/MySecondMIPSDatapath/extender.vhd /home/blevake/cpre381/Lab2/MySecondMIPSDatapath/fullAdder_n.vhd /home/blevake/cpre381/Lab2/MySecondMIPSDatapath/invg.vhd /home/blevake/cpre381/Lab2/MySecondMIPSDatapath/mem.vhd /home/blevake/cpre381/Lab2/MySecondMIPSDatapath/Multiplier.vhd /home/blevake/cpre381/Lab2/MySecondMIPSDatapath/mux2t1_N.vhd /home/blevake/cpre381/Lab2/MySecondMIPSDatapath/mux2t_1.vhd /home/blevake/cpre381/Lab2/MySecondMIPSDatapath/mux32t1.vhd /home/blevake/cpre381/Lab2/MySecondMIPSDatapath/onesComp.vhd /home/blevake/cpre381/Lab2/MySecondMIPSDatapath/org2.vhd /home/blevake/cpre381/Lab2/MySecondMIPSDatapath/Reg.vhd /home/blevake/cpre381/Lab2/MySecondMIPSDatapath/regfile.vhd /home/blevake/cpre381/Lab2/MySecondMIPSDatapath/register.vhd /home/blevake/cpre381/Lab2/MySecondMIPSDatapath/RegLd.vhd /home/blevake/cpre381/Lab2/MySecondMIPSDatapath/tb_datapathv2.vhd /home/blevake/cpre381/Lab2/MySecondMIPSDatapath/fullAdder.vhd /home/blevake/cpre381/Lab2/MySecondMIPSDatapath/N_bitRegister.vhd /home/blevake/cpre381/Lab2/MySecondMIPSDatapath/xorg2.vhd
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 16:21:45 on Sep 27,2024
+# vcom -reportprogress 300 -work work /home/blevake/cpre381/Lab2/MySecondMIPSDatapath/Adder.vhd /home/blevake/cpre381/Lab2/MySecondMIPSDatapath/addersubtractor.vhd /home/blevake/cpre381/Lab2/MySecondMIPSDatapath/andg2.vhd /home/blevake/cpre381/Lab2/MySecondMIPSDatapath/datapathv2.vhd /home/blevake/cpre381/Lab2/MySecondMIPSDatapath/decoder5t32.vhd /home/blevake/cpre381/Lab2/MySecondMIPSDatapath/dfmux.vhd /home/blevake/cpre381/Lab2/MySecondMIPSDatapath/extender.vhd /home/blevake/cpre381/Lab2/MySecondMIPSDatapath/fullAdder_n.vhd /home/blevake/cpre381/Lab2/MySecondMIPSDatapath/invg.vhd /home/blevake/cpre381/Lab2/MySecondMIPSDatapath/mem.vhd /home/blevake/cpre381/Lab2/MySecondMIPSDatapath/Multiplier.vhd /home/blevake/cpre381/Lab2/MySecondMIPSDatapath/mux2t1_N.vhd /home/blevake/cpre381/Lab2/MySecondMIPSDatapath/mux2t_1.vhd /home/blevake/cpre381/Lab2/MySecondMIPSDatapath/mux32t1.vhd /home/blevake/cpre381/Lab2/MySecondMIPSDatapath/onesComp.vhd /home/blevake/cpre381/Lab2/MySecondMIPSDatapath/org2.vhd /home/blevake/cpre381/Lab2/MySecondMIPSDatapath/Reg.vhd /home/blevake/cpre381/Lab2/MySecondMIPSDatapath/regfile.vhd /home/blevake/cpre381/Lab2/MySecondMIPSDatapath/register.vhd /home/blevake/cpre381/Lab2/MySecondMIPSDatapath/RegLd.vhd /home/blevake/cpre381/Lab2/MySecondMIPSDatapath/tb_datapathv2.vhd /home/blevake/cpre381/Lab2/MySecondMIPSDatapath/fullAdder.vhd /home/blevake/cpre381/Lab2/MySecondMIPSDatapath/N_bitRegister.vhd /home/blevake/cpre381/Lab2/MySecondMIPSDatapath/xorg2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Adder
+# -- Compiling architecture behavior of Adder
+# -- Compiling entity addersubtractor
+# -- Compiling architecture structural of addersubtractor
+# -- Compiling entity andg2
+# -- Compiling architecture dataflow of andg2
+# -- Loading package mypack
+# -- Compiling entity datapathv2
+# -- Compiling architecture structural of datapathv2
+# -- Compiling entity decoder5t32
+# -- Compiling architecture behavior of decoder5t32
+# -- Compiling entity dfmux
+# -- Compiling architecture dataflow of dfmux
+# -- Compiling entity extender
+# -- Compiling architecture behavior of extender
+# -- Compiling entity fullAdder_n
+# -- Compiling architecture structural of fullAdder_n
+# -- Compiling entity invg
+# -- Compiling architecture dataflow of invg
+# -- Loading package NUMERIC_STD
+# -- Compiling entity mem
+# -- Compiling architecture rtl of mem
+# -- Compiling entity Multiplier
+# -- Compiling architecture behavior of Multiplier
+# -- Compiling entity mux2t1_N
+# -- Compiling architecture structural of mux2t1_N
+# -- Compiling entity mux2t1
+# -- Compiling architecture dataflow of mux2t1
+# -- Compiling package mypack
+# -- Loading package mypack
+# -- Compiling entity mux32t1
+# -- Compiling architecture behavior of mux32t1
+# -- Compiling entity onesComp
+# -- Compiling architecture structural of onesComp
+# -- Compiling entity org2
+# -- Compiling architecture dataflow of org2
+# -- Compiling entity Reg
+# -- Compiling architecture behavior of Reg
+# -- Compiling entity regfile
+# -- Compiling architecture structural of regfile
+# -- Compiling entity RegLd
+# -- Compiling architecture behavior of RegLd
+# -- Compiling entity tb_datapathv2
+# -- Compiling architecture behavior of tb_datapathv2
+# -- Compiling entity fullAdder
+# -- Compiling architecture structural of fullAdder
+# -- Compiling entity N_bitRegister
+# -- Compiling architecture mixed of N_bitRegister
+# -- Compiling entity xorg2
+# -- Compiling architecture dataflow of xorg2
+# End time: 16:21:45 on Sep 27,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.tb_datapathv2 -voptargs=+acc
+# vsim work.tb_datapathv2 -voptargs="+acc" 
+# Start time: 16:21:56 on Sep 27,2024
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_datapathv2(behavior)#1
+# Loading work.mypack
+# Loading work.datapathv2(structural)#1
+# Loading work.addersubtractor(structural)#1
+# Loading work.onescomp(structural)#1
+# Loading work.invg(dataflow)#1
+# Loading work.mux2t1_n(structural)#1
+# Loading work.mux2t1(dataflow)#1
+# Loading work.fulladder(structural)#1
+# Loading work.xorg2(dataflow)#1
+# Loading work.andg2(dataflow)#1
+# Loading work.org2(dataflow)#1
+# Loading work.regfile(structural)#1
+# Loading work.decoder5t32(behavior)#1
+# Loading work.n_bitregister(mixed)#1
+# Loading work.mux32t1(behavior)#1
+# Loading work.extender(behavior)#1
+# Loading ieee.numeric_std(body)
+# Loading work.mem(rtl)#1
+add wave -position insertpoint  \
+sim:/tb_datapathv2/cCLK_PER \
+sim:/tb_datapathv2/gCLK_HPER \
+sim:/tb_datapathv2/s_A \
+sim:/tb_datapathv2/s_addsub \
+sim:/tb_datapathv2/s_alu \
+sim:/tb_datapathv2/s_B \
+sim:/tb_datapathv2/s_C \
+sim:/tb_datapathv2/s_clk \
+sim:/tb_datapathv2/s_d1 \
+sim:/tb_datapathv2/s_d2 \
+sim:/tb_datapathv2/s_imm \
+sim:/tb_datapathv2/s_ldData \
+sim:/tb_datapathv2/s_memW \
+sim:/tb_datapathv2/s_regW \
+sim:/tb_datapathv2/s_reset
+run 1000
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datapathv2/DUT/dmem
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 9  Instance: /tb_datapathv2/DUT/dmem
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 500 ns  Iteration: 5  Instance: /tb_datapathv2/DUT/dmem
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 650 ns  Iteration: 1  Instance: /tb_datapathv2/DUT/dmem
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 700 ns  Iteration: 6  Instance: /tb_datapathv2/DUT/dmem
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 700 ns  Iteration: 7  Instance: /tb_datapathv2/DUT/dmem
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 800 ns  Iteration: 5  Instance: /tb_datapathv2/DUT/dmem
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 850 ns  Iteration: 1  Instance: /tb_datapathv2/DUT/dmem
+add wave -position insertpoint  \
+sim:/tb_datapathv2/DUT/dmem/addr \
+sim:/tb_datapathv2/DUT/dmem/ADDR_WIDTH \
+sim:/tb_datapathv2/DUT/dmem/clk \
+sim:/tb_datapathv2/DUT/dmem/data \
+sim:/tb_datapathv2/DUT/dmem/DATA_WIDTH \
+sim:/tb_datapathv2/DUT/dmem/q \
+sim:/tb_datapathv2/DUT/dmem/ram \
+sim:/tb_datapathv2/DUT/dmem/we
+quit -sim
+vsim -voptargs=+acc work.tb_datapathv2
+# End time: 16:27:50 on Sep 27,2024, Elapsed time: 0:05:54
+# Errors: 0, Warnings: 8
+# vsim -voptargs="+acc" work.tb_datapathv2 
+# Start time: 16:27:50 on Sep 27,2024
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_datapathv2(behavior)#1
+# Loading work.mypack
+# Loading work.datapathv2(structural)#1
+# Loading work.addersubtractor(structural)#1
+# Loading work.onescomp(structural)#1
+# Loading work.invg(dataflow)#1
+# Loading work.mux2t1_n(structural)#1
+# Loading work.mux2t1(dataflow)#1
+# Loading work.fulladder(structural)#1
+# Loading work.xorg2(dataflow)#1
+# Loading work.andg2(dataflow)#1
+# Loading work.org2(dataflow)#1
+# Loading work.regfile(structural)#1
+# Loading work.decoder5t32(behavior)#1
+# Loading work.n_bitregister(mixed)#1
+# Loading work.mux32t1(behavior)#1
+# Loading work.extender(behavior)#1
+# Loading ieee.numeric_std(body)
+# Loading work.mem(rtl)#1
+add wave -position insertpoint  \
+sim:/tb_datapathv2/DUT/dmem/addr \
+sim:/tb_datapathv2/DUT/dmem/ADDR_WIDTH \
+sim:/tb_datapathv2/DUT/dmem/clk \
+sim:/tb_datapathv2/DUT/dmem/data \
+sim:/tb_datapathv2/DUT/dmem/DATA_WIDTH \
+sim:/tb_datapathv2/DUT/dmem/q \
+sim:/tb_datapathv2/DUT/dmem/ram \
+sim:/tb_datapathv2/DUT/dmem/we
+add wave -position insertpoint  \
+sim:/tb_datapathv2/cCLK_PER \
+sim:/tb_datapathv2/gCLK_HPER \
+sim:/tb_datapathv2/s_A \
+sim:/tb_datapathv2/s_addsub \
+sim:/tb_datapathv2/s_alu \
+sim:/tb_datapathv2/s_B \
+sim:/tb_datapathv2/s_C \
+sim:/tb_datapathv2/s_clk \
+sim:/tb_datapathv2/s_d1 \
+sim:/tb_datapathv2/s_d2 \
+sim:/tb_datapathv2/s_imm \
+sim:/tb_datapathv2/s_ldData \
+sim:/tb_datapathv2/s_memW \
+sim:/tb_datapathv2/s_regW \
+sim:/tb_datapathv2/s_reset
+add wave -position insertpoint  \
+sim:/tb_datapathv2/DUT/addsub/c \
+sim:/tb_datapathv2/DUT/addsub/i_A \
+sim:/tb_datapathv2/DUT/addsub/i_B \
+sim:/tb_datapathv2/DUT/addsub/N \
+sim:/tb_datapathv2/DUT/addsub/nAdd_Sub \
+sim:/tb_datapathv2/DUT/addsub/o_Cout \
+sim:/tb_datapathv2/DUT/addsub/o_Y \
+sim:/tb_datapathv2/DUT/addsub/s1 \
+sim:/tb_datapathv2/DUT/addsub/s2
+run 1000
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datapathv2/DUT/dmem
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 9  Instance: /tb_datapathv2/DUT/dmem
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 500 ns  Iteration: 5  Instance: /tb_datapathv2/DUT/dmem
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 650 ns  Iteration: 1  Instance: /tb_datapathv2/DUT/dmem
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 700 ns  Iteration: 6  Instance: /tb_datapathv2/DUT/dmem
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 700 ns  Iteration: 7  Instance: /tb_datapathv2/DUT/dmem
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 800 ns  Iteration: 5  Instance: /tb_datapathv2/DUT/dmem
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 850 ns  Iteration: 1  Instance: /tb_datapathv2/DUT/dmem
+quit -sim
+# End time: 16:30:27 on Sep 27,2024, Elapsed time: 0:02:37
+# Errors: 0, Warnings: 8
+vsim -voptargs=+acc work.tb_datapathv2
+# vsim -voptargs="+acc" work.tb_datapathv2 
+# Start time: 16:35:14 on Sep 27,2024
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_datapathv2(behavior)#1
+# Loading work.mypack
+# Loading work.datapathv2(structural)#1
+# Loading work.addersubtractor(structural)#1
+# Loading work.onescomp(structural)#1
+# Loading work.invg(dataflow)#1
+# Loading work.mux2t1_n(structural)#1
+# Loading work.mux2t1(dataflow)#1
+# Loading work.fulladder(structural)#1
+# Loading work.xorg2(dataflow)#1
+# Loading work.andg2(dataflow)#1
+# Loading work.org2(dataflow)#1
+# Loading work.regfile(structural)#1
+# Loading work.decoder5t32(behavior)#1
+# Loading work.n_bitregister(mixed)#1
+# Loading work.mux32t1(behavior)#1
+# Loading work.extender(behavior)#1
+# Loading ieee.numeric_std(body)
+# Loading work.mem(rtl)#1
+mem load -infile dmem.hex -format hex /tb_datapathv2/dmem/ram
+# ** UI-Msg (Error) (suppressible): (vsim-4008) Object '/tb_datapathv2/dmem/ram' not found.
+# 
+mem load -infile dmem.hex -format hex/tb_datapathv2/dmem/ram
+# ** UI-Msg (Error): (vsim-3640) Invalid file format specifier: 'hex/tb_datapathv2/dmem/ram'.
+# 
+mem load -infile dmem.hex -format hex /tb_datapathv2/dmem/ram
+# ** UI-Msg (Error) (suppressible): (vsim-4008) Object '/tb_datapathv2/dmem/ram' not found.
+# 
+mem load -infile dmem.hex -format hex /tb_datapath/dmem/ram
+# ** UI-Msg (Error) (suppressible): (vsim-4008) Object '/tb_datapath/dmem/ram' not found.
+# 
+mem load -infile dmem.hex -format hex /tb_datapath/dmem
+# ** UI-Msg (Error) (suppressible): (vsim-4008) Object '/tb_datapath/dmem' not found.
+# 
+mem load -infile dmem.hex -format hex /tb_datapathv2/dmem/ram
+# ** UI-Msg (Error) (suppressible): (vsim-4008) Object '/tb_datapathv2/dmem/ram' not found.
+# 
+mem load -infile dmem.hex -format hex /tb_datapathv2/dmem/ram
+# ** UI-Msg (Error) (suppressible): (vsim-4008) Object '/tb_datapathv2/dmem/ram' not found.
+# 
+mem load -infile dmem.hex -format hex /tb_datapathv2/dmem/ram
+# ** UI-Msg (Error) (suppressible): (vsim-4008) Object '/tb_datapathv2/dmem/ram' not found.
+# 
+pwd
+# /home/blevake/cpre381/Lab2/MySecondMIPSDatapath
+mem load -infile dmem.hex -format hex /tb_datapathv2/DUT/dmem/ram
+add wave -position insertpoint  \
+sim:/tb_datapathv2/DUT/dmem/addr \
+sim:/tb_datapathv2/DUT/dmem/ADDR_WIDTH \
+sim:/tb_datapathv2/DUT/dmem/clk \
+sim:/tb_datapathv2/DUT/dmem/data \
+sim:/tb_datapathv2/DUT/dmem/DATA_WIDTH \
+sim:/tb_datapathv2/DUT/dmem/q \
+sim:/tb_datapathv2/DUT/dmem/ram \
+sim:/tb_datapathv2/DUT/dmem/we
+add wave -position insertpoint  \
+sim:/tb_datapathv2/cCLK_PER \
+sim:/tb_datapathv2/gCLK_HPER \
+sim:/tb_datapathv2/s_A \
+sim:/tb_datapathv2/s_addsub \
+sim:/tb_datapathv2/s_alu \
+sim:/tb_datapathv2/s_B \
+sim:/tb_datapathv2/s_C \
+sim:/tb_datapathv2/s_clk \
+sim:/tb_datapathv2/s_d1 \
+sim:/tb_datapathv2/s_d2 \
+sim:/tb_datapathv2/s_imm \
+sim:/tb_datapathv2/s_ldData \
+sim:/tb_datapathv2/s_memW \
+sim:/tb_datapathv2/s_regW \
+sim:/tb_datapathv2/s_reset
+run 1000
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datapathv2/DUT/dmem
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 9  Instance: /tb_datapathv2/DUT/dmem
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 500 ns  Iteration: 5  Instance: /tb_datapathv2/DUT/dmem
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 650 ns  Iteration: 9  Instance: /tb_datapathv2/DUT/dmem
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 700 ns  Iteration: 6  Instance: /tb_datapathv2/DUT/dmem
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 700 ns  Iteration: 7  Instance: /tb_datapathv2/DUT/dmem
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 800 ns  Iteration: 5  Instance: /tb_datapathv2/DUT/dmem
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 850 ns  Iteration: 1  Instance: /tb_datapathv2/DUT/dmem
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 850 ns  Iteration: 2  Instance: /tb_datapathv2/DUT/dmem
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 850 ns  Iteration: 8  Instance: /tb_datapathv2/DUT/dmem
+quit -sim
+# End time: 16:49:44 on Sep 27,2024, Elapsed time: 0:14:30
+# Errors: 0, Warnings: 10
+vcom -reportprogress 300 -work work /home/blevake/cpre381/Lab2/MySecondMIPSDatapath/Adder.vhd /home/blevake/cpre381/Lab2/MySecondMIPSDatapath/addersubtractor.vhd /home/blevake/cpre381/Lab2/MySecondMIPSDatapath/andg2.vhd /home/blevake/cpre381/Lab2/MySecondMIPSDatapath/datapathv2.vhd /home/blevake/cpre381/Lab2/MySecondMIPSDatapath/decoder5t32.vhd /home/blevake/cpre381/Lab2/MySecondMIPSDatapath/dfmux.vhd /home/blevake/cpre381/Lab2/MySecondMIPSDatapath/extender.vhd /home/blevake/cpre381/Lab2/MySecondMIPSDatapath/fullAdder_n.vhd /home/blevake/cpre381/Lab2/MySecondMIPSDatapath/invg.vhd /home/blevake/cpre381/Lab2/MySecondMIPSDatapath/mem.vhd /home/blevake/cpre381/Lab2/MySecondMIPSDatapath/Multiplier.vhd /home/blevake/cpre381/Lab2/MySecondMIPSDatapath/mux2t1_N.vhd /home/blevake/cpre381/Lab2/MySecondMIPSDatapath/mux2t_1.vhd /home/blevake/cpre381/Lab2/MySecondMIPSDatapath/mux32t1.vhd /home/blevake/cpre381/Lab2/MySecondMIPSDatapath/onesComp.vhd /home/blevake/cpre381/Lab2/MySecondMIPSDatapath/org2.vhd /home/blevake/cpre381/Lab2/MySecondMIPSDatapath/Reg.vhd /home/blevake/cpre381/Lab2/MySecondMIPSDatapath/regfile.vhd /home/blevake/cpre381/Lab2/MySecondMIPSDatapath/register.vhd /home/blevake/cpre381/Lab2/MySecondMIPSDatapath/RegLd.vhd /home/blevake/cpre381/Lab2/MySecondMIPSDatapath/tb_datapathv2.vhd /home/blevake/cpre381/Lab2/MySecondMIPSDatapath/fullAdder.vhd /home/blevake/cpre381/Lab2/MySecondMIPSDatapath/N_bitRegister.vhd /home/blevake/cpre381/Lab2/MySecondMIPSDatapath/xorg2.vhd
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 16:50:07 on Sep 27,2024
+# vcom -reportprogress 300 -work work /home/blevake/cpre381/Lab2/MySecondMIPSDatapath/Adder.vhd /home/blevake/cpre381/Lab2/MySecondMIPSDatapath/addersubtractor.vhd /home/blevake/cpre381/Lab2/MySecondMIPSDatapath/andg2.vhd /home/blevake/cpre381/Lab2/MySecondMIPSDatapath/datapathv2.vhd /home/blevake/cpre381/Lab2/MySecondMIPSDatapath/decoder5t32.vhd /home/blevake/cpre381/Lab2/MySecondMIPSDatapath/dfmux.vhd /home/blevake/cpre381/Lab2/MySecondMIPSDatapath/extender.vhd /home/blevake/cpre381/Lab2/MySecondMIPSDatapath/fullAdder_n.vhd /home/blevake/cpre381/Lab2/MySecondMIPSDatapath/invg.vhd /home/blevake/cpre381/Lab2/MySecondMIPSDatapath/mem.vhd /home/blevake/cpre381/Lab2/MySecondMIPSDatapath/Multiplier.vhd /home/blevake/cpre381/Lab2/MySecondMIPSDatapath/mux2t1_N.vhd /home/blevake/cpre381/Lab2/MySecondMIPSDatapath/mux2t_1.vhd /home/blevake/cpre381/Lab2/MySecondMIPSDatapath/mux32t1.vhd /home/blevake/cpre381/Lab2/MySecondMIPSDatapath/onesComp.vhd /home/blevake/cpre381/Lab2/MySecondMIPSDatapath/org2.vhd /home/blevake/cpre381/Lab2/MySecondMIPSDatapath/Reg.vhd /home/blevake/cpre381/Lab2/MySecondMIPSDatapath/regfile.vhd /home/blevake/cpre381/Lab2/MySecondMIPSDatapath/register.vhd /home/blevake/cpre381/Lab2/MySecondMIPSDatapath/RegLd.vhd /home/blevake/cpre381/Lab2/MySecondMIPSDatapath/tb_datapathv2.vhd /home/blevake/cpre381/Lab2/MySecondMIPSDatapath/fullAdder.vhd /home/blevake/cpre381/Lab2/MySecondMIPSDatapath/N_bitRegister.vhd /home/blevake/cpre381/Lab2/MySecondMIPSDatapath/xorg2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Adder
+# -- Compiling architecture behavior of Adder
+# -- Compiling entity addersubtractor
+# -- Compiling architecture structural of addersubtractor
+# -- Compiling entity andg2
+# -- Compiling architecture dataflow of andg2
+# -- Loading package mypack
+# -- Compiling entity datapathv2
+# -- Compiling architecture structural of datapathv2
+# -- Compiling entity decoder5t32
+# -- Compiling architecture behavior of decoder5t32
+# -- Compiling entity dfmux
+# -- Compiling architecture dataflow of dfmux
+# -- Compiling entity extender
+# -- Compiling architecture behavior of extender
+# -- Compiling entity fullAdder_n
+# -- Compiling architecture structural of fullAdder_n
+# -- Compiling entity invg
+# -- Compiling architecture dataflow of invg
+# -- Loading package NUMERIC_STD
+# -- Compiling entity mem
+# -- Compiling architecture rtl of mem
+# -- Compiling entity Multiplier
+# -- Compiling architecture behavior of Multiplier
+# -- Compiling entity mux2t1_N
+# -- Compiling architecture structural of mux2t1_N
+# -- Compiling entity mux2t1
+# -- Compiling architecture dataflow of mux2t1
+# -- Compiling package mypack
+# -- Loading package mypack
+# -- Compiling entity mux32t1
+# -- Compiling architecture behavior of mux32t1
+# -- Compiling entity onesComp
+# -- Compiling architecture structural of onesComp
+# -- Compiling entity org2
+# -- Compiling architecture dataflow of org2
+# -- Compiling entity Reg
+# -- Compiling architecture behavior of Reg
+# -- Compiling entity regfile
+# -- Compiling architecture structural of regfile
+# -- Compiling entity RegLd
+# -- Compiling architecture behavior of RegLd
+# -- Compiling entity tb_datapathv2
+# -- Compiling architecture behavior of tb_datapathv2
+# -- Compiling entity fullAdder
+# -- Compiling architecture structural of fullAdder
+# -- Compiling entity N_bitRegister
+# -- Compiling architecture mixed of N_bitRegister
+# -- Compiling entity xorg2
+# -- Compiling architecture dataflow of xorg2
+# End time: 16:50:08 on Sep 27,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vsim -voptargs=+acc work.tb_datapathv2
+# vsim -voptargs="+acc" work.tb_datapathv2 
+# Start time: 16:50:17 on Sep 27,2024
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_datapathv2(behavior)#1
+# Loading work.mypack
+# Loading work.datapathv2(structural)#1
+# Loading work.addersubtractor(structural)#1
+# Loading work.onescomp(structural)#1
+# Loading work.invg(dataflow)#1
+# Loading work.mux2t1_n(structural)#1
+# Loading work.mux2t1(dataflow)#1
+# Loading work.fulladder(structural)#1
+# Loading work.xorg2(dataflow)#1
+# Loading work.andg2(dataflow)#1
+# Loading work.org2(dataflow)#1
+# Loading work.regfile(structural)#1
+# Loading work.decoder5t32(behavior)#1
+# Loading work.n_bitregister(mixed)#1
+# Loading work.mux32t1(behavior)#1
+# Loading work.extender(behavior)#1
+# Loading ieee.numeric_std(body)
+# Loading work.mem(rtl)#1
+add wave -position insertpoint  \
+sim:/tb_datapathv2/cCLK_PER \
+sim:/tb_datapathv2/gCLK_HPER \
+sim:/tb_datapathv2/s_A \
+sim:/tb_datapathv2/s_addsub \
+sim:/tb_datapathv2/s_alu \
+sim:/tb_datapathv2/s_B \
+sim:/tb_datapathv2/s_C \
+sim:/tb_datapathv2/s_clk \
+sim:/tb_datapathv2/s_d1 \
+sim:/tb_datapathv2/s_d2 \
+sim:/tb_datapathv2/s_imm \
+sim:/tb_datapathv2/s_ldData \
+sim:/tb_datapathv2/s_memW \
+sim:/tb_datapathv2/s_regW \
+sim:/tb_datapathv2/s_reset
+mem load -infile dmem.hex -format hex /tb_datapathv2/DUT/dmem/ram
+run 1000
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datapathv2/DUT/dmem
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 9  Instance: /tb_datapathv2/DUT/dmem
+quit -sim
+# End time: 16:51:10 on Sep 27,2024, Elapsed time: 0:00:53
+# Errors: 0, Warnings: 3
+vsim -voptargs=+acc work.tb_datapathv2
+# vsim -voptargs="+acc" work.tb_datapathv2 
+# Start time: 16:51:17 on Sep 27,2024
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_datapathv2(behavior)#1
+# Loading work.mypack
+# Loading work.datapathv2(structural)#1
+# Loading work.addersubtractor(structural)#1
+# Loading work.onescomp(structural)#1
+# Loading work.invg(dataflow)#1
+# Loading work.mux2t1_n(structural)#1
+# Loading work.mux2t1(dataflow)#1
+# Loading work.fulladder(structural)#1
+# Loading work.xorg2(dataflow)#1
+# Loading work.andg2(dataflow)#1
+# Loading work.org2(dataflow)#1
+# Loading work.regfile(structural)#1
+# Loading work.decoder5t32(behavior)#1
+# Loading work.n_bitregister(mixed)#1
+# Loading work.mux32t1(behavior)#1
+# Loading work.extender(behavior)#1
+# Loading ieee.numeric_std(body)
+# Loading work.mem(rtl)#1
+add wave -position insertpoint  \
+sim:/tb_datapathv2/cCLK_PER \
+sim:/tb_datapathv2/gCLK_HPER \
+sim:/tb_datapathv2/s_A \
+sim:/tb_datapathv2/s_addsub \
+sim:/tb_datapathv2/s_alu \
+sim:/tb_datapathv2/s_B \
+sim:/tb_datapathv2/s_C \
+sim:/tb_datapathv2/s_clk \
+sim:/tb_datapathv2/s_d1 \
+sim:/tb_datapathv2/s_d2 \
+sim:/tb_datapathv2/s_imm \
+sim:/tb_datapathv2/s_ldData \
+sim:/tb_datapathv2/s_memW \
+sim:/tb_datapathv2/s_regW \
+sim:/tb_datapathv2/s_reset
+add wave -position insertpoint  \
+sim:/tb_datapathv2/DUT/dmem/addr \
+sim:/tb_datapathv2/DUT/dmem/ADDR_WIDTH \
+sim:/tb_datapathv2/DUT/dmem/clk \
+sim:/tb_datapathv2/DUT/dmem/data \
+sim:/tb_datapathv2/DUT/dmem/DATA_WIDTH \
+sim:/tb_datapathv2/DUT/dmem/q \
+sim:/tb_datapathv2/DUT/dmem/ram \
+sim:/tb_datapathv2/DUT/dmem/we
+add wave -position insertpoint  \
+sim:/tb_datapathv2/DUT/addsub/c \
+sim:/tb_datapathv2/DUT/addsub/i_A \
+sim:/tb_datapathv2/DUT/addsub/i_B \
+sim:/tb_datapathv2/DUT/addsub/N \
+sim:/tb_datapathv2/DUT/addsub/nAdd_Sub \
+sim:/tb_datapathv2/DUT/addsub/o_Cout \
+sim:/tb_datapathv2/DUT/addsub/o_Y \
+sim:/tb_datapathv2/DUT/addsub/s1 \
+sim:/tb_datapathv2/DUT/addsub/s2
+mem load -infile dmem.hex -format hex /tb_datapathv2/DUT/dmem/ram
+run 1000
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datapathv2/DUT/dmem
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 9  Instance: /tb_datapathv2/DUT/dmem
+quit -sim
+# End time: 16:53:39 on Sep 27,2024, Elapsed time: 0:02:22
+# Errors: 0, Warnings: 2
+vsim -voptargs=+acc work.tb_datapathv2
+# vsim -voptargs="+acc" work.tb_datapathv2 
+# Start time: 16:53:48 on Sep 27,2024
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_datapathv2(behavior)#1
+# Loading work.mypack
+# Loading work.datapathv2(structural)#1
+# Loading work.addersubtractor(structural)#1
+# Loading work.onescomp(structural)#1
+# Loading work.invg(dataflow)#1
+# Loading work.mux2t1_n(structural)#1
+# Loading work.mux2t1(dataflow)#1
+# Loading work.fulladder(structural)#1
+# Loading work.xorg2(dataflow)#1
+# Loading work.andg2(dataflow)#1
+# Loading work.org2(dataflow)#1
+# Loading work.regfile(structural)#1
+# Loading work.decoder5t32(behavior)#1
+# Loading work.n_bitregister(mixed)#1
+# Loading work.mux32t1(behavior)#1
+# Loading work.extender(behavior)#1
+# Loading ieee.numeric_std(body)
+# Loading work.mem(rtl)#1
+add wave -position insertpoint  \
+sim:/tb_datapathv2/cCLK_PER \
+sim:/tb_datapathv2/gCLK_HPER \
+sim:/tb_datapathv2/s_A \
+sim:/tb_datapathv2/s_addsub \
+sim:/tb_datapathv2/s_alu \
+sim:/tb_datapathv2/s_B \
+sim:/tb_datapathv2/s_C \
+sim:/tb_datapathv2/s_clk \
+sim:/tb_datapathv2/s_d1 \
+sim:/tb_datapathv2/s_d2 \
+sim:/tb_datapathv2/s_imm \
+sim:/tb_datapathv2/s_ldData \
+sim:/tb_datapathv2/s_memW \
+sim:/tb_datapathv2/s_regW \
+sim:/tb_datapathv2/s_reset
+run 1000
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datapathv2/DUT/dmem
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 9  Instance: /tb_datapathv2/DUT/dmem
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 500 ns  Iteration: 5  Instance: /tb_datapathv2/DUT/dmem
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 650 ns  Iteration: 1  Instance: /tb_datapathv2/DUT/dmem
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 700 ns  Iteration: 6  Instance: /tb_datapathv2/DUT/dmem
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 700 ns  Iteration: 7  Instance: /tb_datapathv2/DUT/dmem
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 800 ns  Iteration: 5  Instance: /tb_datapathv2/DUT/dmem
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 850 ns  Iteration: 1  Instance: /tb_datapathv2/DUT/dmem
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 1 us  Iteration: 6  Instance: /tb_datapathv2/DUT/dmem
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 1 us  Iteration: 7  Instance: /tb_datapathv2/DUT/dmem
+add wave -position insertpoint  \
+sim:/tb_datapathv2/DUT/dmem/addr \
+sim:/tb_datapathv2/DUT/dmem/ADDR_WIDTH \
+sim:/tb_datapathv2/DUT/dmem/clk \
+sim:/tb_datapathv2/DUT/dmem/data \
+sim:/tb_datapathv2/DUT/dmem/DATA_WIDTH \
+sim:/tb_datapathv2/DUT/dmem/q \
+sim:/tb_datapathv2/DUT/dmem/ram \
+sim:/tb_datapathv2/DUT/dmem/we

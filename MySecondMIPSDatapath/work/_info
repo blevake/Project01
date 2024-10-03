@@ -1,0 +1,1006 @@
+m255
+K4
+z2
+Z0 !s12c _opt
+Z1 !s99 nomlopt
+R0
+R1
+R0
+R1
+R0
+R1
+!s11e vcom 2024.2 2024.05, May 20 2024
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z2 d/home/blevake/cpre381/Lab2/MySecondMIPSDatapath
+T_opt
+!s110 1727473817
+VR4SS5M1UZIL=HzChkHV`L3
+04 13 8 work tb_datapathv2 behavior 1
+=1-7486e228ab8a-66f72899-830b6-8d71
+R1
+!s12f OEM100
+!s12b OEM100
+!s124 OEM100
+!s135 nogc
+o-quiet -auto_acc_if_foreign -work work +acc
+tCvgOpt 0
+n@_opt
+OL;O;2024.2;79
+Eadder
+Z3 w1727460018
+Z4 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z5 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 12
+R2
+Z6 8/home/blevake/cpre381/Lab2/MySecondMIPSDatapath/Adder.vhd
+Z7 F/home/blevake/cpre381/Lab2/MySecondMIPSDatapath/Adder.vhd
+l0
+L4 1
+Vl`7594K05H^DifHS0J6>?1
+!s100 im=BY@?WEEgBUoE1:X<AH3
+Z8 OL;C;2024.2;79
+33
+Z9 !s110 1727473807
+!i10b 1
+Z10 !s108 1727473807.000000
+Z11 !s90 -reportprogress|300|-work|work|/home/blevake/cpre381/Lab2/MySecondMIPSDatapath/Adder.vhd|/home/blevake/cpre381/Lab2/MySecondMIPSDatapath/addersubtractor.vhd|/home/blevake/cpre381/Lab2/MySecondMIPSDatapath/andg2.vhd|/home/blevake/cpre381/Lab2/MySecondMIPSDatapath/datapathv2.vhd|/home/blevake/cpre381/Lab2/MySecondMIPSDatapath/decoder5t32.vhd|/home/blevake/cpre381/Lab2/MySecondMIPSDatapath/dfmux.vhd|/home/blevake/cpre381/Lab2/MySecondMIPSDatapath/extender.vhd|/home/blevake/cpre381/Lab2/MySecondMIPSDatapath/fullAdder_n.vhd|/home/blevake/cpre381/Lab2/MySecondMIPSDatapath/invg.vhd|/home/blevake/cpre381/Lab2/MySecondMIPSDatapath/mem.vhd|/home/blevake/cpre381/Lab2/MySecondMIPSDatapath/Multiplier.vhd|/home/blevake/cpre381/Lab2/MySecondMIPSDatapath/mux2t1_N.vhd|/home/blevake/cpre381/Lab2/MySecondMIPSDatapath/mux2t_1.vhd|/home/blevake/cpre381/Lab2/MySecondMIPSDatapath/mux32t1.vhd|/home/blevake/cpre381/Lab2/MySecondMIPSDatapath/onesComp.vhd|/home/blevake/cpre381/Lab2/MySecondMIPSDatapath/org2.vhd|/home/blevake/cpre381/Lab2/MySecondMIPSDatapath/Reg.vhd|/home/blevake/cpre381/Lab2/MySecondMIPSDatapath/regfile.vhd|/home/blevake/cpre381/Lab2/MySecondMIPSDatapath/register.vhd|/home/blevake/cpre381/Lab2/MySecondMIPSDatapath/RegLd.vhd|/home/blevake/cpre381/Lab2/MySecondMIPSDatapath/tb_datapathv2.vhd|/home/blevake/cpre381/Lab2/MySecondMIPSDatapath/fullAdder.vhd|/home/blevake/cpre381/Lab2/MySecondMIPSDatapath/N_bitRegister.vhd|/home/blevake/cpre381/Lab2/MySecondMIPSDatapath/xorg2.vhd|
+Z12 !s107 /home/blevake/cpre381/Lab2/MySecondMIPSDatapath/xorg2.vhd|/home/blevake/cpre381/Lab2/MySecondMIPSDatapath/N_bitRegister.vhd|/home/blevake/cpre381/Lab2/MySecondMIPSDatapath/fullAdder.vhd|/home/blevake/cpre381/Lab2/MySecondMIPSDatapath/tb_datapathv2.vhd|/home/blevake/cpre381/Lab2/MySecondMIPSDatapath/RegLd.vhd|/home/blevake/cpre381/Lab2/MySecondMIPSDatapath/register.vhd|/home/blevake/cpre381/Lab2/MySecondMIPSDatapath/regfile.vhd|/home/blevake/cpre381/Lab2/MySecondMIPSDatapath/Reg.vhd|/home/blevake/cpre381/Lab2/MySecondMIPSDatapath/org2.vhd|/home/blevake/cpre381/Lab2/MySecondMIPSDatapath/onesComp.vhd|/home/blevake/cpre381/Lab2/MySecondMIPSDatapath/mux32t1.vhd|/home/blevake/cpre381/Lab2/MySecondMIPSDatapath/mux2t_1.vhd|/home/blevake/cpre381/Lab2/MySecondMIPSDatapath/mux2t1_N.vhd|/home/blevake/cpre381/Lab2/MySecondMIPSDatapath/Multiplier.vhd|/home/blevake/cpre381/Lab2/MySecondMIPSDatapath/mem.vhd|/home/blevake/cpre381/Lab2/MySecondMIPSDatapath/invg.vhd|/home/blevake/cpre381/Lab2/MySecondMIPSDatapath/fullAdder_n.vhd|/home/blevake/cpre381/Lab2/MySecondMIPSDatapath/extender.vhd|/home/blevake/cpre381/Lab2/MySecondMIPSDatapath/dfmux.vhd|/home/blevake/cpre381/Lab2/MySecondMIPSDatapath/decoder5t32.vhd|/home/blevake/cpre381/Lab2/MySecondMIPSDatapath/datapathv2.vhd|/home/blevake/cpre381/Lab2/MySecondMIPSDatapath/andg2.vhd|/home/blevake/cpre381/Lab2/MySecondMIPSDatapath/addersubtractor.vhd|/home/blevake/cpre381/Lab2/MySecondMIPSDatapath/Adder.vhd|
+!i113 0
+Z13 o-work work
+Z14 tExplicit 1 NoCoverage 1 CvgOpt 0
+Abehavior
+R4
+R5
+DEx4 work 5 adder 0 22 l`7594K05H^DifHS0J6>?1
+!i122 12
+l14
+Z15 L13 11
+VLZLcn5iEU`ZT>Cgd<`6XH0
+!s100 ;Z`7=77Oh7aRo40Vn@SoA3
+R8
+33
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 0
+R13
+R14
+Eaddersubtractor
+Z16 w1727460225
+R4
+R5
+!i122 12
+R2
+Z17 8/home/blevake/cpre381/Lab2/MySecondMIPSDatapath/addersubtractor.vhd
+Z18 F/home/blevake/cpre381/Lab2/MySecondMIPSDatapath/addersubtractor.vhd
+l0
+L4 1
+VYh4L48JoWlOJSjZB3g2BF1
+!s100 0g[O_7zYL]jG`3Si?k0NB3
+R8
+33
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 0
+R13
+R14
+Astructural
+R4
+R5
+DEx4 work 15 addersubtractor 0 22 Yh4L48JoWlOJSjZB3g2BF1
+!i122 12
+l54
+L17 73
+V^jfDNeznn9FW>4zakjRRF2
+!s100 9YThgXjV7O385;O@U5O@D3
+R8
+33
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 0
+R13
+R14
+Eandg2
+Z19 w1727460239
+R4
+R5
+!i122 12
+R2
+Z20 8/home/blevake/cpre381/Lab2/MySecondMIPSDatapath/andg2.vhd
+Z21 F/home/blevake/cpre381/Lab2/MySecondMIPSDatapath/andg2.vhd
+l0
+L4 1
+VzBgYURdB55jUakJ[AXD7e0
+!s100 P:KB_nW9X2EY[A?ool>dV1
+R8
+33
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 0
+R13
+R14
+Adataflow
+R4
+R5
+DEx4 work 5 andg2 0 22 zBgYURdB55jUakJ[AXD7e0
+!i122 12
+l13
+Z22 L12 6
+V8[;R138D2O3P5TngN;Zhj2
+!s100 72FZ0OQ_1NEH]?gzi>6ZQ0
+R8
+33
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 0
+R13
+R14
+Edatapathv2
+Z23 w1727470630
+Z24 DPx4 work 6 mypack 0 22 EdJhYTXTPc0>oN4o1TCGm1
+R4
+R5
+!i122 12
+R2
+Z25 8/home/blevake/cpre381/Lab2/MySecondMIPSDatapath/datapathv2.vhd
+Z26 F/home/blevake/cpre381/Lab2/MySecondMIPSDatapath/datapathv2.vhd
+l0
+L5 1
+Va=?Cgdoj3;`E:n@V_H1PH1
+!s100 J[_g9A]MVT`dg?DQkfIV=2
+R8
+33
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 0
+R13
+R14
+Astructural
+R24
+R4
+R5
+DEx4 work 10 datapathv2 0 22 a=?Cgdoj3;`E:n@V_H1PH1
+!i122 12
+l84
+L23 80
+V3BAnY2QZcL[d^]XPLSJ<c0
+!s100 Vl8^@YI_b5m4fI9zVJj@32
+R8
+33
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 0
+R13
+R14
+Edecoder5t32
+Z27 w1727460385
+R4
+R5
+!i122 12
+R2
+Z28 8/home/blevake/cpre381/Lab2/MySecondMIPSDatapath/decoder5t32.vhd
+Z29 F/home/blevake/cpre381/Lab2/MySecondMIPSDatapath/decoder5t32.vhd
+l0
+L4 1
+Vo7JE0@@;m^l=i:3VX]lP[1
+!s100 =[DfJXngio5b9R4NQY]hL2
+R8
+33
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 0
+R13
+R14
+Abehavior
+R4
+R5
+DEx4 work 11 decoder5t32 0 22 o7JE0@@;m^l=i:3VX]lP[1
+!i122 12
+l12
+L10 39
+V^<n`2?nSK0OM:@WJOMCig1
+!s100 ?iRZJREOXKe0<0179H5l82
+R8
+33
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 0
+R13
+R14
+Edfmux
+Z30 w1727460420
+R4
+R5
+!i122 12
+R2
+Z31 8/home/blevake/cpre381/Lab2/MySecondMIPSDatapath/dfmux.vhd
+Z32 F/home/blevake/cpre381/Lab2/MySecondMIPSDatapath/dfmux.vhd
+l0
+L5 1
+Vo`GMI^80>f`jn<fzhQEKk0
+!s100 9h>R<z?e3S3eOg_3;29e23
+R8
+33
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 0
+R13
+R14
+Adataflow
+R4
+R5
+DEx4 work 5 dfmux 0 22 o`GMI^80>f`jn<fzhQEKk0
+!i122 12
+l15
+L14 6
+VDC5bFOdPYU9J8Lh=hEIRk3
+!s100 =Vg@6V24VN5?lZ=o0U_I_2
+R8
+33
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 0
+R13
+R14
+Eextender
+Z33 w1727468364
+R4
+R5
+!i122 12
+R2
+Z34 8/home/blevake/cpre381/Lab2/MySecondMIPSDatapath/extender.vhd
+Z35 F/home/blevake/cpre381/Lab2/MySecondMIPSDatapath/extender.vhd
+l0
+L4 1
+VVm6K4cl6]al2:E:9[Og<]0
+!s100 AA=;gi4ESm_a;iA^H9@5H1
+R8
+33
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 0
+R13
+R14
+Abehavior
+R4
+R5
+DEx4 work 8 extender 0 22 Vm6K4cl6]al2:E:9[Og<]0
+!i122 12
+l13
+L12 12
+V`A@0O8JlJ7g>5@Lf4cVcZ1
+!s100 aP[Q7JECj;f=S`J^Zh;8:3
+R8
+33
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 0
+R13
+R14
+Efulladder
+Z36 w1727460718
+R4
+R5
+!i122 12
+R2
+Z37 8/home/blevake/cpre381/Lab2/MySecondMIPSDatapath/fullAdder.vhd
+Z38 F/home/blevake/cpre381/Lab2/MySecondMIPSDatapath/fullAdder.vhd
+l0
+L4 1
+V26`7i95:>`n2I>on0bDNb2
+!s100 8^TBiM5EzAW59VoVWAn[<1
+R8
+33
+Z39 !s110 1727473808
+!i10b 1
+R10
+R11
+R12
+!i113 0
+R13
+R14
+Astructural
+R4
+R5
+DEx4 work 9 fulladder 0 22 26`7i95:>`n2I>on0bDNb2
+!i122 12
+l29
+L14 22
+VEj;5[e6BVQ4j8M2deonOF1
+!s100 bTPK@]eP;FSo[J8NTa;i50
+R8
+33
+R39
+!i10b 1
+R10
+R11
+R12
+!i113 0
+R13
+R14
+Efulladder_n
+Z40 w1727460734
+R4
+R5
+!i122 12
+R2
+Z41 8/home/blevake/cpre381/Lab2/MySecondMIPSDatapath/fullAdder_n.vhd
+Z42 F/home/blevake/cpre381/Lab2/MySecondMIPSDatapath/fullAdder_n.vhd
+l0
+L4 1
+VoVo0fdURiH?ED9?3GSdih3
+!s100 MYAFC`Wh2:ij@0>CO<K2Q3
+R8
+33
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 0
+R13
+R14
+Astructural
+R4
+R5
+DEx4 work 11 fulladder_n 0 22 oVo0fdURiH?ED9?3GSdih3
+!i122 12
+l28
+L15 24
+VBIgcN:9QM:hXl400EWGUz3
+!s100 <dDUXX9JY?Fnn6kgoM8WQ0
+R8
+33
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 0
+R13
+R14
+Einvg
+Z43 w1727460769
+R4
+R5
+!i122 12
+R2
+Z44 8/home/blevake/cpre381/Lab2/MySecondMIPSDatapath/invg.vhd
+Z45 F/home/blevake/cpre381/Lab2/MySecondMIPSDatapath/invg.vhd
+l0
+L4 1
+VfW?f`?eeF]Oa0cbDY20bh3
+!s100 cL2]DbI4O78O0A0_D3oFO0
+R8
+33
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 0
+R13
+R14
+Adataflow
+R4
+R5
+DEx4 work 4 invg 0 22 fW?f`?eeF]Oa0cbDY20bh3
+!i122 12
+l12
+L11 6
+VM@_gJR^PG8VX3[:A0[6=[1
+!s100 z>TRmS5Vb@I5me`cGFTM33
+R8
+33
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 0
+R13
+R14
+Emem
+Z46 w1727466544
+Z47 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+R4
+R5
+!i122 12
+R2
+Z48 8/home/blevake/cpre381/Lab2/MySecondMIPSDatapath/mem.vhd
+Z49 F/home/blevake/cpre381/Lab2/MySecondMIPSDatapath/mem.vhd
+l0
+L8 1
+VQ_Y953^@mg4h;HoXAPe2d2
+!s100 fRlcaiTJZJ1H;nZh;8=LI3
+R8
+33
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 0
+R13
+R14
+Artl
+R47
+R4
+R5
+DEx4 work 3 mem 0 22 Q_Y953^@mg4h;HoXAPe2d2
+!i122 12
+l37
+L27 24
+VcdMDH_i8fEBbejOT7K`iC2
+!s100 OI8_3><BhDkT3l3n8`OXd3
+R8
+33
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 0
+R13
+R14
+Emultiplier
+Z50 w1727460830
+R4
+R5
+!i122 12
+R2
+Z51 8/home/blevake/cpre381/Lab2/MySecondMIPSDatapath/Multiplier.vhd
+Z52 F/home/blevake/cpre381/Lab2/MySecondMIPSDatapath/Multiplier.vhd
+l0
+L4 1
+VeRhZd<lWeJP04?GWECWAX3
+!s100 O;o:aSJzSLCTUWPA8>Q6c2
+R8
+33
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 0
+R13
+R14
+Abehavior
+R4
+R5
+DEx4 work 10 multiplier 0 22 eRhZd<lWeJP04?GWECWAX3
+!i122 12
+l14
+R15
+Vh?5LLCTl]9zRe=BE]z4[U3
+!s100 b2Ma@RYG8NmWlPQbD@GVi3
+R8
+33
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 0
+R13
+R14
+Emux2t1
+Z53 w1727460854
+R4
+R5
+!i122 12
+R2
+Z54 8/home/blevake/cpre381/Lab2/MySecondMIPSDatapath/mux2t_1.vhd
+Z55 F/home/blevake/cpre381/Lab2/MySecondMIPSDatapath/mux2t_1.vhd
+l0
+L5 1
+VTBG<lLl?_=BDNifN[SJF11
+!s100 9>4IKc;?=:>_4acoY=DA<2
+R8
+33
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 0
+R13
+R14
+Adataflow
+R4
+R5
+DEx4 work 6 mux2t1 0 22 TBG<lLl?_=BDNifN[SJF11
+!i122 12
+l16
+L14 10
+VVe:k[=QeWE<1zMm3Y3MIA1
+!s100 3<oCF^E1?fRoLbaNdSG581
+R8
+33
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 0
+R13
+R14
+Emux2t1_n
+Z56 w1727461105
+R4
+R5
+!i122 12
+R2
+Z57 8/home/blevake/cpre381/Lab2/MySecondMIPSDatapath/mux2t1_N.vhd
+Z58 F/home/blevake/cpre381/Lab2/MySecondMIPSDatapath/mux2t1_N.vhd
+l0
+L4 1
+V5zZHcQMKN?=LFJ0eH;QAC3
+!s100 3f5YnY4:0a9BN4ECa78KD0
+R8
+33
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 0
+R13
+R14
+Astructural
+R4
+R5
+DEx4 work 8 mux2t1_n 0 22 5zZHcQMKN?=LFJ0eH;QAC3
+!i122 12
+l28
+L16 25
+V7mXGZML2cVX[>^`[AKJmM3
+!s100 0nBKM:d4:WLbMgioa@^;32
+R8
+33
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 0
+R13
+R14
+Emux32t1
+Z59 w1727461212
+R24
+R4
+R5
+!i122 12
+R2
+Z60 8/home/blevake/cpre381/Lab2/MySecondMIPSDatapath/mux32t1.vhd
+Z61 F/home/blevake/cpre381/Lab2/MySecondMIPSDatapath/mux32t1.vhd
+l0
+L14 1
+VkmVZYFYo0AhWkKFBG3miZ3
+!s100 S`^MIcbNMnWAOhQeCc6003
+R8
+33
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 0
+R13
+R14
+Abehavior
+R24
+R4
+R5
+DEx4 work 7 mux32t1 0 22 kmVZYFYo0AhWkKFBG3miZ3
+!i122 12
+l23
+L22 40
+Vm_8Jm]]gnikoK<PJ>2Q;Q1
+!s100 [52RoS5o7n:=F<_`Y63f80
+R8
+33
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 0
+R13
+R14
+Pmypack
+R4
+R5
+!i122 12
+R59
+R2
+R60
+R61
+l0
+L4 4
+VEdJhYTXTPc0>oN4o1TCGm1
+!s100 7_7l;09>;fDgQW5Pf6?DN3
+R8
+33
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 0
+R13
+R14
+En_bitregister
+Z62 w1727464565
+R4
+R5
+!i122 12
+R2
+Z63 8/home/blevake/cpre381/Lab2/MySecondMIPSDatapath/N_bitRegister.vhd
+Z64 F/home/blevake/cpre381/Lab2/MySecondMIPSDatapath/N_bitRegister.vhd
+l0
+L4 1
+VS?Me^kTQ_;m3Zg^zCleDa0
+!s100 U;B4]YbcSH1hU8TSQWOU>1
+R8
+33
+R39
+!i10b 1
+R10
+R11
+R12
+!i113 0
+R13
+R14
+Amixed
+R4
+R5
+DEx4 work 13 n_bitregister 0 22 S?Me^kTQ_;m3Zg^zCleDa0
+!i122 12
+l18
+L15 20
+VCK5P_`PDkGIIzJkOZ7^IO2
+!s100 ;eaJAZdDg1a?LG:c]][cA1
+R8
+33
+R39
+!i10b 1
+R10
+R11
+R12
+!i113 0
+R13
+R14
+Eonescomp
+Z65 w1727461245
+R4
+R5
+!i122 12
+R2
+Z66 8/home/blevake/cpre381/Lab2/MySecondMIPSDatapath/onesComp.vhd
+Z67 F/home/blevake/cpre381/Lab2/MySecondMIPSDatapath/onesComp.vhd
+l0
+L4 1
+V10WHh^GX0j;90;b9_=NmL2
+!s100 MSDJ2SKQ:6]a54Yba[M790
+R8
+33
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 0
+R13
+R14
+Astructural
+R4
+R5
+DEx4 work 8 onescomp 0 22 10WHh^GX0j;90;b9_=NmL2
+!i122 12
+l24
+L14 21
+V[9<eVai1JTWn;<K<5^_PT1
+!s100 XF41FMK_1eHMm0SUEbzEB0
+R8
+33
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 0
+R13
+R14
+Eorg2
+Z68 w1727460917
+R4
+R5
+!i122 12
+R2
+Z69 8/home/blevake/cpre381/Lab2/MySecondMIPSDatapath/org2.vhd
+Z70 F/home/blevake/cpre381/Lab2/MySecondMIPSDatapath/org2.vhd
+l0
+L4 1
+V4knANz1;hTKCn0Y0h4j6S1
+!s100 I^ahl^TAOFza3;niB<0Z80
+R8
+33
+R39
+!i10b 1
+R10
+R11
+R12
+!i113 0
+R13
+R14
+Adataflow
+R4
+R5
+DEx4 work 4 org2 0 22 4knANz1;hTKCn0Y0h4j6S1
+!i122 12
+l13
+R22
+V9eR59nMj>dzF:6BbO<oSC0
+!s100 CQaPYCEOgzH=GkWc0QaIg0
+R8
+33
+R39
+!i10b 1
+R10
+R11
+R12
+!i113 0
+R13
+R14
+Ereg
+Z71 w1727460925
+R4
+R5
+!i122 12
+R2
+Z72 8/home/blevake/cpre381/Lab2/MySecondMIPSDatapath/Reg.vhd
+Z73 F/home/blevake/cpre381/Lab2/MySecondMIPSDatapath/Reg.vhd
+l0
+L4 1
+VnXQ=6cFT3jmhiP2616dTN1
+!s100 EMeBo2R_R:`d:;YSK]G9b3
+R8
+33
+R39
+!i10b 1
+R10
+R11
+R12
+!i113 0
+R13
+R14
+Abehavior
+R4
+R5
+DEx4 work 3 reg 0 22 nXQ=6cFT3jmhiP2616dTN1
+!i122 12
+l13
+L12 11
+V]X3JQT`W3T9PH2Y5VdGQ:1
+!s100 <1BbH]d;mE>@VmX;DLRl11
+R8
+33
+R39
+!i10b 1
+R10
+R11
+R12
+!i113 0
+R13
+R14
+Eregfile
+Z74 w1727471035
+R24
+R4
+R5
+!i122 12
+R2
+Z75 8/home/blevake/cpre381/Lab2/MySecondMIPSDatapath/regfile.vhd
+Z76 F/home/blevake/cpre381/Lab2/MySecondMIPSDatapath/regfile.vhd
+l0
+L5 1
+VSg3k`FiO`AzMzMml16m>P1
+!s100 OmZIeT;Ro@3n:59W^mn1`2
+R8
+33
+R39
+!i10b 1
+R10
+R11
+R12
+!i113 0
+R13
+R14
+Astructural
+R24
+R4
+R5
+DEx4 work 7 regfile 0 22 Sg3k`FiO`AzMzMml16m>P1
+!i122 12
+l51
+L19 75
+V0`7<W]O06HQ80eO<Cl3BL3
+!s100 YW=7GTlFmT``U;B5ZaI]a2
+R8
+33
+R39
+!i10b 1
+R10
+R11
+R12
+!i113 0
+R13
+R14
+Eregld
+Z77 w1727460966
+R4
+R5
+!i122 12
+R2
+Z78 8/home/blevake/cpre381/Lab2/MySecondMIPSDatapath/RegLd.vhd
+Z79 F/home/blevake/cpre381/Lab2/MySecondMIPSDatapath/RegLd.vhd
+l0
+L4 1
+VP=D[VVmKgc=MO`C:STR>o1
+!s100 KFZkJangJk3LL]IdnF^[a3
+R8
+33
+R39
+!i10b 1
+R10
+R11
+R12
+!i113 0
+R13
+R14
+Abehavior
+R4
+R5
+DEx4 work 5 regld 0 22 P=D[VVmKgc=MO`C:STR>o1
+!i122 12
+l15
+L13 18
+V]:lfig]Mh1;a1i9gVDl=D2
+!s100 go<hPJ54G2mCC_<7j4c3o2
+R8
+33
+R39
+!i10b 1
+R10
+R11
+R12
+!i113 0
+R13
+R14
+Etb_datapathv2
+Z80 w1727473799
+R4
+R5
+!i122 12
+R2
+Z81 8/home/blevake/cpre381/Lab2/MySecondMIPSDatapath/tb_datapathv2.vhd
+Z82 F/home/blevake/cpre381/Lab2/MySecondMIPSDatapath/tb_datapathv2.vhd
+l0
+L4 1
+V@0WI5zY@Fd?Tf?HQ8M`PN2
+!s100 ;EE4H9KW2d;?NUHT?K0i:3
+R8
+33
+R39
+!i10b 1
+R10
+R11
+R12
+!i113 0
+R13
+R14
+Abehavior
+R4
+R5
+DEx4 work 13 tb_datapathv2 0 22 @0WI5zY@Fd?Tf?HQ8M`PN2
+!i122 12
+l35
+L8 136
+V_FM1LY`Vlz0:LzCf?fhC83
+!s100 1zaBKTlC@;zJ:nEij939e0
+R8
+33
+R39
+!i10b 1
+R10
+R11
+R12
+!i113 0
+R13
+R14
+Exorg2
+Z83 w1727470857
+R4
+R5
+!i122 12
+R2
+Z84 8/home/blevake/cpre381/Lab2/MySecondMIPSDatapath/xorg2.vhd
+Z85 F/home/blevake/cpre381/Lab2/MySecondMIPSDatapath/xorg2.vhd
+l0
+L4 1
+V<]E5<@o43l<5fj=WMG8Tj1
+!s100 g7^@DKij>@6@MbM_ghb2=1
+R8
+33
+R39
+!i10b 1
+R10
+R11
+R12
+!i113 0
+R13
+R14
+Adataflow
+R4
+R5
+DEx4 work 5 xorg2 0 22 <]E5<@o43l<5fj=WMG8Tj1
+!i122 12
+l13
+R22
+VZ2kij>AdllE_aaHW7QiTW3
+!s100 j<Nh<???:AN]W2`GGc<e70
+R8
+33
+R39
+!i10b 1
+R10
+R11
+R12
+!i113 0
+R13
+R14
