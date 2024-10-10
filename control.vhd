@@ -19,10 +19,10 @@ begin
 
 process(iIn)
 begin
-    if ((iIn and x"FC0") = x"000") then
+    if ((iIn and x"FC0") = x"000") then		-- Checks if R
 	sIn <= iIn;
     else 
-	sIn <= iIn and x"03F";
+	sIn <= iIn and x"FC0";
     end if;
     case sIn is
 	when x"200" =>	-- addi
