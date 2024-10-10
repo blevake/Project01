@@ -53,11 +53,11 @@ begin
 				--shift amount of each bit
 					if (s_decsignal(j) = '1') then
 						if (i_shiftdir = '1') then
-							if (i+j < 31) then
+							if (i+j <= 31) then
 								o_d(i) <= i_d(i+j);	--add index for shifting right
 							end if;
 						else
-							if (i-j > 0) then
+							if (i-j >= 0) then
 								o_d(i) <= i_d(i-j);	--sub index for shifting left
 							end if;
 						end if;
