@@ -11,6 +11,8 @@ entity control is
        oDMemWr               : out std_logic;
        oRegWr                : out std_logic;
        oBr		     : out std_logic;
+       oJ                    : out std_logic;
+       oSE                   : out std_logic;	-- sign extension
        oRegDst               : out std_logic);
 
 end control;
@@ -18,13 +20,6 @@ end control;
 architecture behavior of control is
 signal sIn : std_logic_vector(11 downto 0);
 begin
-
---oALUSrc <= '1' when (iIn = x"200" or ) else 
---	   '0' when iIn = x"020" else...
-
---oALUCtl <= x when cond else 
---	   x2 when cond 2 else...
-
 
 process(iOp, iFunc)
 begin
@@ -39,6 +34,8 @@ begin
 					oRegWr    <= '1';
 					oRegDst   <= '1';
                                         oBr       <= '0';
+					oJ        <= '0';
+                                        oSE       <= '1';
 				when "100001" => 	-- addu
 					oALUSrc   <= '0';
 					oALUCtl   <= x"6"; -- add
@@ -47,14 +44,18 @@ begin
 					oRegWr    <= '1';
 					oRegDst   <= '1';
                                         oBr       <= '0';
+					oJ        <= '0';
+                                        oSE       <= '0';
 				when "100100" => 	-- and
 					oALUSrc   <= '0';
-					oALUCtl   <= x"0"; -- add
+					oALUCtl   <= x"0"; -- and
 					oMemtoReg <= '0';
 					oDMemWr   <= '0';
 					oRegWr    <= '1';
 					oRegDst   <= '0';
                                         oBr       <= '0';
+					oJ        <= '0';
+                                        oSE       <= '0';
 				when "100111" => 	-- nor
 					oALUSrc   <= '0';
 					oALUCtl   <= x"3"; -- nor
@@ -63,6 +64,8 @@ begin
 					oRegWr    <= '1';
 					oRegDst   <= '1';
                                         oBr       <= '0';
+					oJ        <= '0';
+                                        oSE       <= '0';
 				when "100110" => 	-- xor
 					oALUSrc   <= '0';
 					oALUCtl   <= x"2"; -- xor
@@ -71,6 +74,8 @@ begin
 					oRegWr    <= '1';
 					oRegDst   <= '1';
                                         oBr       <= '0';
+					oJ        <= '0';
+                                        oSE       <= '0';
 				when "100101" => 	-- or
 					oALUSrc   <= '0';
 					oALUCtl   <= x"1"; -- or
@@ -79,6 +84,8 @@ begin
 					oRegWr    <= '1';
 					oRegDst   <= '1';
                                         oBr       <= '0';
+					oJ        <= '0';
+                                        oSE       <= '0';
 				when "101010" => 	-- slt
 					oALUSrc   <= '0';
 					oALUCtl   <= x"F"; -- set less than
@@ -87,6 +94,8 @@ begin
 					oRegWr    <= '1';
 					oRegDst   <= '1';
                                         oBr       <= '0';
+					oJ        <= '0';
+                                        oSE       <= '0';
 				when "000000" => 	-- sll
 					oALUSrc   <= '0';
 					oALUCtl   <= x"7"; -- sll
@@ -95,6 +104,8 @@ begin
 					oRegWr    <= '1';
 					oRegDst   <= '1';
                                         oBr       <= '0';
+					oJ        <= '0';
+                                        oSE       <= '0';
 				when "000010" => 	-- srl
 					oALUSrc   <= '0';
 					oALUCtl   <= x"8"; -- srl
@@ -103,6 +114,8 @@ begin
 					oRegWr    <= '1';
 					oRegDst   <= '1';
                                         oBr       <= '0';
+					oJ        <= '0';
+                                        oSE       <= '0';
 				when "000011" => 	-- sra
 					oALUSrc   <= '0';
 					oALUCtl   <= x"9"; -- sra
@@ -111,6 +124,8 @@ begin
 					oRegWr    <= '1';
 					oRegDst   <= '1';
                                         oBr       <= '0';
+					oJ        <= '0';
+                                        oSE       <= '0';
 				when "100010" => 	-- sub
 					oALUSrc   <= '0';
 					oALUCtl   <= x"E"; -- sub
@@ -119,6 +134,8 @@ begin
 					oRegWr    <= '1';
 					oRegDst   <= '1';
                                         oBr       <= '0';
+					oJ        <= '0';
+                                        oSE       <= '0';
 				when "100011" => 	-- subu
 					oALUSrc   <= '0';
 					oALUCtl   <= x"E"; -- sub
@@ -127,6 +144,8 @@ begin
 					oRegWr    <= '1';
 					oRegDst   <= '1';
                                         oBr       <= '0';
+					oJ        <= '0';
+                                        oSE       <= '0';
 				when "001000" => 	-- jr
 					oALUSrc   <= '1';
 					oALUCtl   <= x"0"; -- ???? probably nothing because there is another adder for this
@@ -135,6 +154,8 @@ begin
 					oRegWr    <= '0';
 					oRegDst   <= '0';
                                         oBr       <= '0';
+					oJ        <= '1';
+                                        oSE       <= '0';
 				when others =>
 					oALUSrc   <= '0';
 					oALUCtl   <= x"0";
@@ -143,6 +164,8 @@ begin
 					oRegWr    <= '0';
 					oRegDst   <= '0';
                                         oBr       <= '0';
+					oJ        <= '0';
+                                        oSE       <= '0';
 			end case;
 
 	when "001000" => -- addi	
@@ -153,6 +176,8 @@ begin
                 oRegWr    <= '1';  -- Writes to register
                 oRegDst   <= '0';  -- rt is destination register, not rd
                 oBr       <= '0';  -- no branch
+		oJ        <= '0';  -- no jump
+                oSE       <= '1';  -- Sign extension
 	when "001001" =>	-- addiu
 		oALUSrc   <= '1';
 		oALUCtl   <= x"6"; -- add
@@ -161,6 +186,8 @@ begin
                 oRegWr    <= '1';
                 oRegDst   <= '0';
                 oBr       <= '0';
+		oJ        <= '0';
+                oSE       <= '0';
 	when "001100" => 	-- andi
 		oALUSrc   <= '1';
 		oALUCtl   <= x"0"; -- and
@@ -169,6 +196,8 @@ begin
                 oRegWr    <= '1';
                 oRegDst   <= '0';
                 oBr       <= '0';
+		oJ        <= '0';
+                oSE       <= '0';
 	when "001111" => 	-- lui
 		oALUSrc   <= '1';
 		oALUCtl   <= x"C"; -- lui
@@ -177,6 +206,8 @@ begin
                 oRegWr    <= '1';
                 oRegDst   <= '0';
                 oBr       <= '0';
+		oJ        <= '0';
+                oSE       <= '0';
 	when "100011" => 	-- lw
 		oALUSrc   <= '1';
 		oALUCtl   <= x"6"; -- add
@@ -185,6 +216,8 @@ begin
                 oRegWr    <= '1';
                 oRegDst   <= '0';
                 oBr       <= '0';
+		oJ        <= '0';
+                oSE       <= '0';
 	when "001110" => 	-- xori
 		oALUSrc   <= '1';
 		oALUCtl   <= x"2"; -- xor
@@ -193,6 +226,8 @@ begin
                 oRegWr    <= '1';
                 oRegDst   <= '0';
                 oBr       <= '0';
+		oJ        <= '0';
+                oSE       <= '0';
 	when "001101" => 	-- ori
 		oALUSrc   <= '1';
 		oALUCtl   <= x"1"; -- or
@@ -201,6 +236,8 @@ begin
                 oRegWr    <= '1';
                 oRegDst   <= '0';
                 oBr       <= '0';
+		oJ        <= '0';
+                oSE       <= '0';
 	when "001010" => 	-- slti
 		oALUSrc   <= '1';
 		oALUCtl   <= x"F"; -- set less than
@@ -209,6 +246,8 @@ begin
                 oRegWr    <= '1';
                 oRegDst   <= '0';
                 oBr       <= '0';
+		oJ        <= '0';
+                oSE       <= '1';
 	when "101011" => 	-- sw
 		oALUSrc   <= '1';
 		oALUCtl   <= x"6"; -- add
@@ -217,6 +256,8 @@ begin
                 oRegWr    <= '0';
                 oRegDst   <= '0';
                 oBr       <= '0';
+		oJ        <= '0';
+                oSE       <= '0';
 	when "000100" => 	-- beq
 		oALUSrc   <= '1';
 		oALUCtl   <= x"E"; -- sub
@@ -225,6 +266,8 @@ begin
                 oRegWr    <= '0';
                 oRegDst   <= '0';
                 oBr       <= '1';
+		oJ        <= '0';
+                oSE       <= '0';
 	when "000101" => 	-- bne
 		oALUSrc   <= '1';
 		oALUCtl   <= x"E"; -- sub
@@ -233,6 +276,8 @@ begin
                 oRegWr    <= '0';
                 oRegDst   <= '0';
                 oBr       <= '1';
+		oJ        <= '0';
+                oSE       <= '0';
 	when "000010" => 	-- j
 		oALUSrc   <= '0';
 		oALUCtl   <= x"0"; -- ???? probably nothing because there is another adder for this
@@ -241,14 +286,18 @@ begin
                 oRegWr    <= '0';
                 oRegDst   <= '0';
                 oBr       <= '0';
+		oJ        <= '1';
+                oSE       <= '0';
 	when "000011" => 	-- jal
 		oALUSrc   <= '0';
 		oALUCtl   <= x"0"; -- ???? probably nothing because there is another adder for this
 		oMemtoReg <= '0';
                 oDMemWr   <= '0';
-                oRegWr    <= '0';
+                oRegWr    <= '1';
                 oRegDst   <= '0';
                 oBr       <= '0';
+		oJ        <= '1';
+                oSE       <= '0';
 	when others => 	-- OTHER no writing
 		oALUSrc   <= '0';
 		oALUCtl   <= x"0";
@@ -257,6 +306,8 @@ begin
                 oRegWr    <= '0';
                 oRegDst   <= '0';
                 oBr       <= '0';
+		oJ        <= '0';
+                oSE       <= '0';
     end case;
 end process;
 
