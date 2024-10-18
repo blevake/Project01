@@ -1,0 +1,1375 @@
+m255
+K4
+z2
+Z0 !s12c _opt2
+Z1 !s99 nomlopt
+R0
+R1
+R0
+R1
+!s12c _opt1
+R1
+Z2 !s12c _opt
+R1
+R2
+R1
+!s11e vcom 2024.2 2024.05, May 20 2024
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z3 d/home/blevake/cpre381/Lab2/Memory
+T_opt
+!s110 1727466562
+V20DQ[]9AWPgeH;];bj=`^3
+04 7 8 work tb_dmem behavior 1
+=1-7486e228ab8a-66f70c42-9d8af-6d17
+R1
+Z4 !s12f OEM100
+Z5 !s12b OEM100
+Z6 !s124 OEM100
+Z7 !s135 nogc
+Z8 o-quiet -auto_acc_if_foreign -work work +acc
+Z9 tCvgOpt 0
+n@_opt
+Z10 OL;O;2024.2;79
+R3
+T_opt1
+!s110 1729188551
+VdK@GG4MQUW59aWdEEOATn1
+04 7 8 work mux32t1 behavior 1
+=1-7486e228c7aa-671152c7-2979c-13c8
+R1
+R4
+R5
+R6
+R7
+o-quiet -auto_acc_if_foreign -work work
+R9
+n@_opt1
+R10
+R3
+T_opt2
+!s110 1729190754
+V1f]90e6KBk7IFD9ZGQ>1I0
+04 10 8 work tb_control behavior 1
+=1-7486e228c7aa-67115b62-2220b-1c2b
+R1
+R4
+R5
+R6
+R7
+R8
+R9
+n@_opt2
+R10
+R3
+Eadder
+Z11 w1727460018
+Z12 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z13 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 84
+Z14 d/home/blevake/cpre381/Proj1/scr
+Z15 8/home/blevake/cpre381/Proj1/scr/Adder.vhd
+Z16 F/home/blevake/cpre381/Proj1/scr/Adder.vhd
+l0
+L4 1
+Vl`7594K05H^DifHS0J6>?1
+!s100 im=BY@?WEEgBUoE1:X<AH3
+Z17 OL;C;2024.2;79
+33
+Z18 !s110 1729270709
+!i10b 1
+Z19 !s108 1729270709.000000
+Z20 !s90 -reportprogress|300|-work|work|/home/blevake/cpre381/Proj1/scr/Adder.vhd|/home/blevake/cpre381/Proj1/scr/addersubtractor.vhd|/home/blevake/cpre381/Proj1/scr/alu.vhd|/home/blevake/cpre381/Proj1/scr/alu_addersubtractor.vhd|/home/blevake/cpre381/Proj1/scr/andg2.vhd|/home/blevake/cpre381/Proj1/scr/barrelshifter_32.vhd|/home/blevake/cpre381/Proj1/scr/beq_bne.vhd|/home/blevake/cpre381/Proj1/scr/datapathv2.vhd|/home/blevake/cpre381/Proj1/scr/decoder5t32.vhd|/home/blevake/cpre381/Proj1/scr/dfmux.vhd|/home/blevake/cpre381/Proj1/scr/extender.vhd|/home/blevake/cpre381/Proj1/scr/fullAdder.vhd|/home/blevake/cpre381/Proj1/scr/fullAdder_n.vhd|/home/blevake/cpre381/Proj1/scr/invg.vhd|/home/blevake/cpre381/Proj1/scr/Multiplier.vhd|/home/blevake/cpre381/Proj1/scr/mux2t1_N.vhd|/home/blevake/cpre381/Proj1/scr/mux2t_1.vhd|/home/blevake/cpre381/Proj1/scr/mux32t1.vhd|/home/blevake/cpre381/Proj1/scr/N_bitRegister.vhd|/home/blevake/cpre381/Proj1/scr/onesComp.vhd|/home/blevake/cpre381/Proj1/scr/org2.vhd|/home/blevake/cpre381/Proj1/scr/regfile.vhd|/home/blevake/cpre381/Proj1/scr/register.vhd|/home/blevake/cpre381/Proj1/scr/RegLd.vhd|/home/blevake/cpre381/Proj1/scr/tb_control.vhd|/home/blevake/cpre381/Proj1/scr/tb_datapathv2.vhd|/home/blevake/cpre381/Proj1/scr/tb_dmem.vhd|/home/blevake/cpre381/Proj1/scr/tb_extender.vhd|
+Z21 !s107 /home/blevake/cpre381/Proj1/scr/tb_extender.vhd|/home/blevake/cpre381/Proj1/scr/tb_dmem.vhd|/home/blevake/cpre381/Proj1/scr/tb_datapathv2.vhd|/home/blevake/cpre381/Proj1/scr/tb_control.vhd|/home/blevake/cpre381/Proj1/scr/RegLd.vhd|/home/blevake/cpre381/Proj1/scr/register.vhd|/home/blevake/cpre381/Proj1/scr/regfile.vhd|/home/blevake/cpre381/Proj1/scr/org2.vhd|/home/blevake/cpre381/Proj1/scr/onesComp.vhd|/home/blevake/cpre381/Proj1/scr/N_bitRegister.vhd|/home/blevake/cpre381/Proj1/scr/mux32t1.vhd|/home/blevake/cpre381/Proj1/scr/mux2t_1.vhd|/home/blevake/cpre381/Proj1/scr/mux2t1_N.vhd|/home/blevake/cpre381/Proj1/scr/Multiplier.vhd|/home/blevake/cpre381/Proj1/scr/invg.vhd|/home/blevake/cpre381/Proj1/scr/fullAdder_n.vhd|/home/blevake/cpre381/Proj1/scr/fullAdder.vhd|/home/blevake/cpre381/Proj1/scr/extender.vhd|/home/blevake/cpre381/Proj1/scr/dfmux.vhd|/home/blevake/cpre381/Proj1/scr/decoder5t32.vhd|/home/blevake/cpre381/Proj1/scr/datapathv2.vhd|/home/blevake/cpre381/Proj1/scr/beq_bne.vhd|/home/blevake/cpre381/Proj1/scr/barrelshifter_32.vhd|/home/blevake/cpre381/Proj1/scr/andg2.vhd|/home/blevake/cpre381/Proj1/scr/alu_addersubtractor.vhd|/home/blevake/cpre381/Proj1/scr/alu.vhd|/home/blevake/cpre381/Proj1/scr/addersubtractor.vhd|/home/blevake/cpre381/Proj1/scr/Adder.vhd|
+!i113 0
+Z22 o-work work
+Z23 tExplicit 1 NoCoverage 1 CvgOpt 0
+Abehavior
+R12
+R13
+DEx4 work 5 adder 0 22 l`7594K05H^DifHS0J6>?1
+!i122 84
+l14
+Z24 L13 11
+VLZLcn5iEU`ZT>Cgd<`6XH0
+!s100 ;Z`7=77Oh7aRo40Vn@SoA3
+R17
+33
+R18
+!i10b 1
+R19
+R20
+R21
+!i113 0
+R22
+R23
+Eaddersubtractor
+Z25 w1727460225
+R12
+R13
+!i122 84
+R14
+Z26 8/home/blevake/cpre381/Proj1/scr/addersubtractor.vhd
+Z27 F/home/blevake/cpre381/Proj1/scr/addersubtractor.vhd
+l0
+L4 1
+VYh4L48JoWlOJSjZB3g2BF1
+!s100 0g[O_7zYL]jG`3Si?k0NB3
+R17
+33
+R18
+!i10b 1
+R19
+R20
+R21
+!i113 0
+R22
+R23
+Astructural
+R12
+R13
+DEx4 work 15 addersubtractor 0 22 Yh4L48JoWlOJSjZB3g2BF1
+!i122 84
+l54
+L17 73
+V^jfDNeznn9FW>4zakjRRF2
+!s100 9YThgXjV7O385;O@U5O@D3
+R17
+33
+R18
+!i10b 1
+R19
+R20
+R21
+!i113 0
+R22
+R23
+Ealu
+Z28 w1729270699
+R12
+R13
+!i122 84
+R14
+Z29 8/home/blevake/cpre381/Proj1/scr/alu.vhd
+Z30 F/home/blevake/cpre381/Proj1/scr/alu.vhd
+l0
+L5 1
+V=30f;kh>h[U_4=_7C4[?W1
+!s100 cAQig;Q8FYGzA7Yh3aQg72
+R17
+33
+R18
+!i10b 1
+R19
+R20
+R21
+!i113 0
+R22
+R23
+Amixed
+R12
+R13
+DEx4 work 3 alu 0 22 =30f;kh>h[U_4=_7C4[?W1
+!i122 84
+l60
+L18 139
+V>TD4:?ZCDUV1SGLDPL??R3
+!s100 G[@2A;hO3?d@3PVCk?U0^1
+R17
+33
+R18
+!i10b 1
+R19
+R20
+R21
+!i113 0
+R22
+R23
+Ealu_addersubtractor
+Z31 w1729270039
+R12
+R13
+!i122 84
+R14
+Z32 8/home/blevake/cpre381/Proj1/scr/alu_addersubtractor.vhd
+Z33 F/home/blevake/cpre381/Proj1/scr/alu_addersubtractor.vhd
+l0
+L4 1
+VAWb8d[MFG6==CP:3iQdVR3
+!s100 CVGB`lh9:PPPnkO_@9[3N3
+R17
+33
+R18
+!i10b 1
+R19
+R20
+R21
+!i113 0
+R22
+R23
+Astructural
+R12
+R13
+DEx4 work 19 alu_addersubtractor 0 22 AWb8d[MFG6==CP:3iQdVR3
+!i122 84
+l66
+L15 93
+Vi4K7QYFTn7`R5oKZdE20a2
+!s100 MghM<mPEa]=Yl9DB8OacL2
+R17
+33
+R18
+!i10b 1
+R19
+R20
+R21
+!i113 0
+R22
+R23
+Eandg2
+Z34 w1727460239
+R12
+R13
+!i122 84
+R14
+Z35 8/home/blevake/cpre381/Proj1/scr/andg2.vhd
+Z36 F/home/blevake/cpre381/Proj1/scr/andg2.vhd
+l0
+L4 1
+VzBgYURdB55jUakJ[AXD7e0
+!s100 P:KB_nW9X2EY[A?ool>dV1
+R17
+33
+R18
+!i10b 1
+R19
+R20
+R21
+!i113 0
+R22
+R23
+Adataflow
+R12
+R13
+DEx4 work 5 andg2 0 22 zBgYURdB55jUakJ[AXD7e0
+!i122 84
+l13
+Z37 L12 6
+V8[;R138D2O3P5TngN;Zhj2
+!s100 72FZ0OQ_1NEH]?gzi>6ZQ0
+R17
+33
+R18
+!i10b 1
+R19
+R20
+R21
+!i113 0
+R22
+R23
+Ebarrelshifter_32
+Z38 w1729197187
+Z39 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z40 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+R12
+R13
+!i122 84
+R14
+Z41 8/home/blevake/cpre381/Proj1/scr/barrelshifter_32.vhd
+Z42 F/home/blevake/cpre381/Proj1/scr/barrelshifter_32.vhd
+l0
+L9 1
+VnFQ`@Zfb5E5_jJZ5Wd_XB2
+!s100 M>@W=BCioPXB3zjZHJP8<1
+R17
+33
+R18
+!i10b 1
+R19
+R20
+R21
+!i113 0
+R22
+R23
+Amixed
+R39
+R40
+R12
+R13
+DEx4 work 16 barrelshifter_32 0 22 nFQ`@Zfb5E5_jJZ5Wd_XB2
+!i122 84
+l34
+L21 44
+VMizW?:KPj4IkQD_8U^]lE1
+!s100 n9^zFhHzogj5XH]i;i6c=0
+R17
+33
+R18
+!i10b 1
+R19
+R20
+R21
+!i113 0
+R22
+R23
+Ebeq_bne
+Z43 w1729270471
+R12
+R13
+!i122 84
+R14
+Z44 8/home/blevake/cpre381/Proj1/scr/beq_bne.vhd
+Z45 F/home/blevake/cpre381/Proj1/scr/beq_bne.vhd
+l0
+L4 1
+VKbC]TYPj6`an^TYh=z[=i0
+!s100 KMgSQ>4e]9POEJc15dj<b0
+R17
+33
+R18
+!i10b 1
+R19
+R20
+R21
+!i113 0
+R22
+R23
+Astructural
+R12
+R13
+DEx4 work 7 beq_bne 0 22 KbC]TYPj6`an^TYh=z[=i0
+!i122 84
+l38
+L13 84
+Vn772SBHiKizA`eGJS4L@:2
+!s100 O;SPIaoQ]8k3W[Ye9V9fm0
+R17
+33
+R18
+!i10b 1
+R19
+R20
+R21
+!i113 0
+R22
+R23
+Econtrol
+Z46 w1729192953
+R12
+R13
+!i122 85
+R14
+Z47 8/home/blevake/cpre381/Proj1/scr/control.vhd
+Z48 F/home/blevake/cpre381/Proj1/scr/control.vhd
+l0
+L4 1
+V4B[idccV;z5MmQh:`T6M>3
+!s100 Bgj<A`k3zlB3;`8lD@:e23
+R17
+33
+Z49 !s110 1729270712
+!i10b 1
+Z50 !s108 1729270712.000000
+Z51 !s90 -reportprogress|300|-work|work|/home/blevake/cpre381/Proj1/scr/control.vhd|/home/blevake/cpre381/Proj1/scr/mem.vhd|/home/blevake/cpre381/Proj1/scr/Reg.vhd|
+Z52 !s107 /home/blevake/cpre381/Proj1/scr/Reg.vhd|/home/blevake/cpre381/Proj1/scr/mem.vhd|/home/blevake/cpre381/Proj1/scr/control.vhd|
+!i113 0
+R22
+R23
+Abehavior
+R12
+R13
+DEx4 work 7 control 0 22 4B[idccV;z5MmQh:`T6M>3
+!i122 85
+l22
+L20 296
+VSKSOQ;F<?F1@l1MNdmNPL2
+!s100 RcRI4DF3bcKh5@joNdamd1
+R17
+33
+R49
+!i10b 1
+R50
+R51
+R52
+!i113 0
+R22
+R23
+Edatapathv2
+Z53 w1727470630
+Z54 DPx4 work 6 mypack 0 22 EdJhYTXTPc0>oN4o1TCGm1
+R12
+R13
+!i122 84
+R14
+Z55 8/home/blevake/cpre381/Proj1/scr/datapathv2.vhd
+Z56 F/home/blevake/cpre381/Proj1/scr/datapathv2.vhd
+l0
+L5 1
+Va=?Cgdoj3;`E:n@V_H1PH1
+!s100 J[_g9A]MVT`dg?DQkfIV=2
+R17
+33
+R18
+!i10b 1
+R19
+R20
+R21
+!i113 0
+R22
+R23
+Astructural
+R54
+R12
+R13
+DEx4 work 10 datapathv2 0 22 a=?Cgdoj3;`E:n@V_H1PH1
+!i122 84
+l84
+L23 80
+V3BAnY2QZcL[d^]XPLSJ<c0
+!s100 Vl8^@YI_b5m4fI9zVJj@32
+R17
+33
+R18
+!i10b 1
+R19
+R20
+R21
+!i113 0
+R22
+R23
+Edecoder5t32
+Z57 w1727460385
+R12
+R13
+!i122 84
+R14
+Z58 8/home/blevake/cpre381/Proj1/scr/decoder5t32.vhd
+Z59 F/home/blevake/cpre381/Proj1/scr/decoder5t32.vhd
+l0
+L4 1
+Vo7JE0@@;m^l=i:3VX]lP[1
+!s100 =[DfJXngio5b9R4NQY]hL2
+R17
+33
+R18
+!i10b 1
+R19
+R20
+R21
+!i113 0
+R22
+R23
+Abehavior
+R12
+R13
+DEx4 work 11 decoder5t32 0 22 o7JE0@@;m^l=i:3VX]lP[1
+!i122 84
+l12
+L10 39
+V^<n`2?nSK0OM:@WJOMCig1
+!s100 ?iRZJREOXKe0<0179H5l82
+R17
+33
+R18
+!i10b 1
+R19
+R20
+R21
+!i113 0
+R22
+R23
+Edfmux
+Z60 w1727460420
+R12
+R13
+!i122 84
+R14
+Z61 8/home/blevake/cpre381/Proj1/scr/dfmux.vhd
+Z62 F/home/blevake/cpre381/Proj1/scr/dfmux.vhd
+l0
+L5 1
+Vo`GMI^80>f`jn<fzhQEKk0
+!s100 9h>R<z?e3S3eOg_3;29e23
+R17
+33
+R18
+!i10b 1
+R19
+R20
+R21
+!i113 0
+R22
+R23
+Adataflow
+R12
+R13
+DEx4 work 5 dfmux 0 22 o`GMI^80>f`jn<fzhQEKk0
+!i122 84
+l15
+L14 6
+VDC5bFOdPYU9J8Lh=hEIRk3
+!s100 =Vg@6V24VN5?lZ=o0U_I_2
+R17
+33
+R18
+!i10b 1
+R19
+R20
+R21
+!i113 0
+R22
+R23
+Eextender
+Z63 w1727468364
+R12
+R13
+!i122 84
+R14
+Z64 8/home/blevake/cpre381/Proj1/scr/extender.vhd
+Z65 F/home/blevake/cpre381/Proj1/scr/extender.vhd
+l0
+L4 1
+VVm6K4cl6]al2:E:9[Og<]0
+!s100 AA=;gi4ESm_a;iA^H9@5H1
+R17
+33
+R18
+!i10b 1
+R19
+R20
+R21
+!i113 0
+R22
+R23
+Abehavior
+R12
+R13
+DEx4 work 8 extender 0 22 Vm6K4cl6]al2:E:9[Og<]0
+!i122 84
+l13
+L12 12
+V`A@0O8JlJ7g>5@Lf4cVcZ1
+!s100 aP[Q7JECj;f=S`J^Zh;8:3
+R17
+33
+R18
+!i10b 1
+R19
+R20
+R21
+!i113 0
+R22
+R23
+Efulladder
+Z66 w1727460718
+R12
+R13
+!i122 84
+R14
+Z67 8/home/blevake/cpre381/Proj1/scr/fullAdder.vhd
+Z68 F/home/blevake/cpre381/Proj1/scr/fullAdder.vhd
+l0
+L4 1
+V26`7i95:>`n2I>on0bDNb2
+!s100 8^TBiM5EzAW59VoVWAn[<1
+R17
+33
+R18
+!i10b 1
+R19
+R20
+R21
+!i113 0
+R22
+R23
+Astructural
+R12
+R13
+DEx4 work 9 fulladder 0 22 26`7i95:>`n2I>on0bDNb2
+!i122 84
+l29
+L14 22
+VEj;5[e6BVQ4j8M2deonOF1
+!s100 bTPK@]eP;FSo[J8NTa;i50
+R17
+33
+R18
+!i10b 1
+R19
+R20
+R21
+!i113 0
+R22
+R23
+Efulladder_n
+Z69 w1727460734
+R12
+R13
+!i122 84
+R14
+Z70 8/home/blevake/cpre381/Proj1/scr/fullAdder_n.vhd
+Z71 F/home/blevake/cpre381/Proj1/scr/fullAdder_n.vhd
+l0
+L4 1
+VoVo0fdURiH?ED9?3GSdih3
+!s100 MYAFC`Wh2:ij@0>CO<K2Q3
+R17
+33
+R18
+!i10b 1
+R19
+R20
+R21
+!i113 0
+R22
+R23
+Astructural
+R12
+R13
+DEx4 work 11 fulladder_n 0 22 oVo0fdURiH?ED9?3GSdih3
+!i122 84
+l28
+L15 24
+VBIgcN:9QM:hXl400EWGUz3
+!s100 <dDUXX9JY?Fnn6kgoM8WQ0
+R17
+33
+R18
+!i10b 1
+R19
+R20
+R21
+!i113 0
+R22
+R23
+Einvg
+Z72 w1727460769
+R12
+R13
+!i122 84
+R14
+Z73 8/home/blevake/cpre381/Proj1/scr/invg.vhd
+Z74 F/home/blevake/cpre381/Proj1/scr/invg.vhd
+l0
+L4 1
+VfW?f`?eeF]Oa0cbDY20bh3
+!s100 cL2]DbI4O78O0A0_D3oFO0
+R17
+33
+R18
+!i10b 1
+R19
+R20
+R21
+!i113 0
+R22
+R23
+Adataflow
+R12
+R13
+DEx4 work 4 invg 0 22 fW?f`?eeF]Oa0cbDY20bh3
+!i122 84
+l12
+L11 6
+VM@_gJR^PG8VX3[:A0[6=[1
+!s100 z>TRmS5Vb@I5me`cGFTM33
+R17
+33
+R18
+!i10b 1
+R19
+R20
+R21
+!i113 0
+R22
+R23
+Emem
+Z75 w1727466544
+Z76 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+R12
+R13
+!i122 85
+R14
+Z77 8/home/blevake/cpre381/Proj1/scr/mem.vhd
+Z78 F/home/blevake/cpre381/Proj1/scr/mem.vhd
+l0
+L8 1
+VQ_Y953^@mg4h;HoXAPe2d2
+!s100 fRlcaiTJZJ1H;nZh;8=LI3
+R17
+33
+R49
+!i10b 1
+R50
+R51
+R52
+!i113 0
+R22
+R23
+Artl
+R76
+R12
+R13
+DEx4 work 3 mem 0 22 Q_Y953^@mg4h;HoXAPe2d2
+!i122 85
+l37
+L27 24
+VcdMDH_i8fEBbejOT7K`iC2
+!s100 OI8_3><BhDkT3l3n8`OXd3
+R17
+33
+R49
+!i10b 1
+R50
+R51
+R52
+!i113 0
+R22
+R23
+Emultiplier
+Z79 w1727460830
+R12
+R13
+!i122 84
+R14
+Z80 8/home/blevake/cpre381/Proj1/scr/Multiplier.vhd
+Z81 F/home/blevake/cpre381/Proj1/scr/Multiplier.vhd
+l0
+L4 1
+VeRhZd<lWeJP04?GWECWAX3
+!s100 O;o:aSJzSLCTUWPA8>Q6c2
+R17
+33
+R18
+!i10b 1
+R19
+R20
+R21
+!i113 0
+R22
+R23
+Abehavior
+R12
+R13
+DEx4 work 10 multiplier 0 22 eRhZd<lWeJP04?GWECWAX3
+!i122 84
+l14
+R24
+Vh?5LLCTl]9zRe=BE]z4[U3
+!s100 b2Ma@RYG8NmWlPQbD@GVi3
+R17
+33
+R18
+!i10b 1
+R19
+R20
+R21
+!i113 0
+R22
+R23
+Emux2t1
+Z82 w1727460854
+R12
+R13
+!i122 84
+R14
+Z83 8/home/blevake/cpre381/Proj1/scr/mux2t_1.vhd
+Z84 F/home/blevake/cpre381/Proj1/scr/mux2t_1.vhd
+l0
+L5 1
+VTBG<lLl?_=BDNifN[SJF11
+!s100 9>4IKc;?=:>_4acoY=DA<2
+R17
+33
+R18
+!i10b 1
+R19
+R20
+R21
+!i113 0
+R22
+R23
+Adataflow
+R12
+R13
+DEx4 work 6 mux2t1 0 22 TBG<lLl?_=BDNifN[SJF11
+!i122 84
+l16
+L14 10
+VVe:k[=QeWE<1zMm3Y3MIA1
+!s100 3<oCF^E1?fRoLbaNdSG581
+R17
+33
+R18
+!i10b 1
+R19
+R20
+R21
+!i113 0
+R22
+R23
+Emux2t1_n
+Z85 w1727461105
+R12
+R13
+!i122 84
+R14
+Z86 8/home/blevake/cpre381/Proj1/scr/mux2t1_N.vhd
+Z87 F/home/blevake/cpre381/Proj1/scr/mux2t1_N.vhd
+l0
+L4 1
+V5zZHcQMKN?=LFJ0eH;QAC3
+!s100 3f5YnY4:0a9BN4ECa78KD0
+R17
+33
+R18
+!i10b 1
+R19
+R20
+R21
+!i113 0
+R22
+R23
+Astructural
+R12
+R13
+DEx4 work 8 mux2t1_n 0 22 5zZHcQMKN?=LFJ0eH;QAC3
+!i122 84
+l28
+L16 25
+V7mXGZML2cVX[>^`[AKJmM3
+!s100 0nBKM:d4:WLbMgioa@^;32
+R17
+33
+R18
+!i10b 1
+R19
+R20
+R21
+!i113 0
+R22
+R23
+Emux32t1
+Z88 w1727461212
+R54
+R12
+R13
+!i122 84
+R14
+Z89 8/home/blevake/cpre381/Proj1/scr/mux32t1.vhd
+Z90 F/home/blevake/cpre381/Proj1/scr/mux32t1.vhd
+l0
+L14 1
+VkmVZYFYo0AhWkKFBG3miZ3
+!s100 S`^MIcbNMnWAOhQeCc6003
+R17
+33
+R18
+!i10b 1
+R19
+R20
+R21
+!i113 0
+R22
+R23
+Abehavior
+R54
+R12
+R13
+DEx4 work 7 mux32t1 0 22 kmVZYFYo0AhWkKFBG3miZ3
+!i122 84
+l23
+L22 40
+Vm_8Jm]]gnikoK<PJ>2Q;Q1
+!s100 [52RoS5o7n:=F<_`Y63f80
+R17
+33
+R18
+!i10b 1
+R19
+R20
+R21
+!i113 0
+R22
+R23
+Pmypack
+R12
+R13
+!i122 84
+R88
+R14
+R89
+R90
+l0
+L4 4
+VEdJhYTXTPc0>oN4o1TCGm1
+!s100 7_7l;09>;fDgQW5Pf6?DN3
+R17
+33
+R18
+!i10b 1
+R19
+R20
+R21
+!i113 0
+R22
+R23
+En_bitregister
+Z91 w1727464565
+R12
+R13
+!i122 84
+R14
+Z92 8/home/blevake/cpre381/Proj1/scr/N_bitRegister.vhd
+Z93 F/home/blevake/cpre381/Proj1/scr/N_bitRegister.vhd
+l0
+L4 1
+VS?Me^kTQ_;m3Zg^zCleDa0
+!s100 U;B4]YbcSH1hU8TSQWOU>1
+R17
+33
+R18
+!i10b 1
+R19
+R20
+R21
+!i113 0
+R22
+R23
+Amixed
+R12
+R13
+DEx4 work 13 n_bitregister 0 22 S?Me^kTQ_;m3Zg^zCleDa0
+!i122 84
+l18
+L15 20
+VCK5P_`PDkGIIzJkOZ7^IO2
+!s100 ;eaJAZdDg1a?LG:c]][cA1
+R17
+33
+R18
+!i10b 1
+R19
+R20
+R21
+!i113 0
+R22
+R23
+Eonescomp
+Z94 w1727461245
+R12
+R13
+!i122 84
+R14
+Z95 8/home/blevake/cpre381/Proj1/scr/onesComp.vhd
+Z96 F/home/blevake/cpre381/Proj1/scr/onesComp.vhd
+l0
+L4 1
+V10WHh^GX0j;90;b9_=NmL2
+!s100 MSDJ2SKQ:6]a54Yba[M790
+R17
+33
+R18
+!i10b 1
+R19
+R20
+R21
+!i113 0
+R22
+R23
+Astructural
+R12
+R13
+DEx4 work 8 onescomp 0 22 10WHh^GX0j;90;b9_=NmL2
+!i122 84
+l24
+L14 21
+V[9<eVai1JTWn;<K<5^_PT1
+!s100 XF41FMK_1eHMm0SUEbzEB0
+R17
+33
+R18
+!i10b 1
+R19
+R20
+R21
+!i113 0
+R22
+R23
+Eorg2
+Z97 w1727460917
+R12
+R13
+!i122 84
+R14
+Z98 8/home/blevake/cpre381/Proj1/scr/org2.vhd
+Z99 F/home/blevake/cpre381/Proj1/scr/org2.vhd
+l0
+L4 1
+V4knANz1;hTKCn0Y0h4j6S1
+!s100 I^ahl^TAOFza3;niB<0Z80
+R17
+33
+R18
+!i10b 1
+R19
+R20
+R21
+!i113 0
+R22
+R23
+Adataflow
+R12
+R13
+DEx4 work 4 org2 0 22 4knANz1;hTKCn0Y0h4j6S1
+!i122 84
+l13
+R37
+V9eR59nMj>dzF:6BbO<oSC0
+!s100 CQaPYCEOgzH=GkWc0QaIg0
+R17
+33
+R18
+!i10b 1
+R19
+R20
+R21
+!i113 0
+R22
+R23
+Ereg
+Z100 w1727460925
+R12
+R13
+!i122 85
+R14
+Z101 8/home/blevake/cpre381/Proj1/scr/Reg.vhd
+Z102 F/home/blevake/cpre381/Proj1/scr/Reg.vhd
+l0
+L4 1
+VnXQ=6cFT3jmhiP2616dTN1
+!s100 EMeBo2R_R:`d:;YSK]G9b3
+R17
+33
+R49
+!i10b 1
+R50
+R51
+R52
+!i113 0
+R22
+R23
+Abehavior
+R12
+R13
+DEx4 work 3 reg 0 22 nXQ=6cFT3jmhiP2616dTN1
+!i122 85
+l13
+L12 11
+V]X3JQT`W3T9PH2Y5VdGQ:1
+!s100 <1BbH]d;mE>@VmX;DLRl11
+R17
+33
+R49
+!i10b 1
+R50
+R51
+R52
+!i113 0
+R22
+R23
+Eregfile
+Z103 w1727471035
+R54
+R12
+R13
+!i122 84
+R14
+Z104 8/home/blevake/cpre381/Proj1/scr/regfile.vhd
+Z105 F/home/blevake/cpre381/Proj1/scr/regfile.vhd
+l0
+L5 1
+VSg3k`FiO`AzMzMml16m>P1
+!s100 OmZIeT;Ro@3n:59W^mn1`2
+R17
+33
+R18
+!i10b 1
+R19
+R20
+R21
+!i113 0
+R22
+R23
+Astructural
+R54
+R12
+R13
+DEx4 work 7 regfile 0 22 Sg3k`FiO`AzMzMml16m>P1
+!i122 84
+l51
+L19 75
+V0`7<W]O06HQ80eO<Cl3BL3
+!s100 YW=7GTlFmT``U;B5ZaI]a2
+R17
+33
+R18
+!i10b 1
+R19
+R20
+R21
+!i113 0
+R22
+R23
+Eregld
+Z106 w1727460966
+R12
+R13
+!i122 84
+R14
+Z107 8/home/blevake/cpre381/Proj1/scr/RegLd.vhd
+Z108 F/home/blevake/cpre381/Proj1/scr/RegLd.vhd
+l0
+L4 1
+VP=D[VVmKgc=MO`C:STR>o1
+!s100 KFZkJangJk3LL]IdnF^[a3
+R17
+33
+R18
+!i10b 1
+R19
+R20
+R21
+!i113 0
+R22
+R23
+Abehavior
+R12
+R13
+DEx4 work 5 regld 0 22 P=D[VVmKgc=MO`C:STR>o1
+!i122 84
+l15
+L13 18
+V]:lfig]Mh1;a1i9gVDl=D2
+!s100 go<hPJ54G2mCC_<7j4c3o2
+R17
+33
+R18
+!i10b 1
+R19
+R20
+R21
+!i113 0
+R22
+R23
+Etb_control
+Z109 w1729190684
+R76
+R12
+R13
+!i122 84
+R14
+Z110 8/home/blevake/cpre381/Proj1/scr/tb_control.vhd
+Z111 F/home/blevake/cpre381/Proj1/scr/tb_control.vhd
+l0
+L5 1
+VAMK[SVLjVMg7<9_ebhX>]2
+!s100 j8eWX_41JFdColdj?X7__1
+R17
+33
+R18
+!i10b 1
+R19
+R20
+R21
+!i113 0
+R22
+R23
+Abehavior
+R76
+R12
+R13
+DEx4 work 10 tb_control 0 22 AMK[SVLjVMg7<9_ebhX>]2
+!i122 84
+l42
+L9 205
+V1[7NP7G;J;zU>X81WA_?Z2
+!s100 =o>;z7_dCmXec=bbUBm;m3
+R17
+33
+R18
+!i10b 1
+R19
+R20
+R21
+!i113 0
+R22
+R23
+Etb_datapathv2
+Z112 w1727473799
+R12
+R13
+!i122 84
+R14
+Z113 8/home/blevake/cpre381/Proj1/scr/tb_datapathv2.vhd
+Z114 F/home/blevake/cpre381/Proj1/scr/tb_datapathv2.vhd
+l0
+L4 1
+V@0WI5zY@Fd?Tf?HQ8M`PN2
+!s100 ;EE4H9KW2d;?NUHT?K0i:3
+R17
+33
+R18
+!i10b 1
+R19
+R20
+R21
+!i113 0
+R22
+R23
+Abehavior
+R12
+R13
+DEx4 work 13 tb_datapathv2 0 22 @0WI5zY@Fd?Tf?HQ8M`PN2
+!i122 84
+l35
+L8 136
+V_FM1LY`Vlz0:LzCf?fhC83
+!s100 1zaBKTlC@;zJ:nEij939e0
+R17
+33
+R18
+!i10b 1
+R19
+R20
+R21
+!i113 0
+R22
+R23
+Etb_dmem
+Z115 w1727466197
+R12
+R13
+!i122 84
+R14
+Z116 8/home/blevake/cpre381/Proj1/scr/tb_dmem.vhd
+Z117 F/home/blevake/cpre381/Proj1/scr/tb_dmem.vhd
+l0
+L4 1
+VcgdPKXBh9S@aWH4Qm]IO31
+!s100 o8Iz7Jec[O=0R1IW`n3Ao1
+R17
+33
+R18
+!i10b 1
+R19
+R20
+R21
+!i113 0
+R22
+R23
+Abehavior
+R12
+R13
+DEx4 work 7 tb_dmem 0 22 cgdPKXBh9S@aWH4Qm]IO31
+!i122 84
+l31
+L8 173
+VAmVIdN?hLI9^4<L4fj^z`1
+!s100 DV1SfJjoIMngMA5Zd=LOE0
+R17
+33
+R18
+!i10b 1
+R19
+R20
+R21
+!i113 0
+R22
+R23
+Etb_extender
+Z118 w1727468512
+R12
+R13
+!i122 84
+R14
+Z119 8/home/blevake/cpre381/Proj1/scr/tb_extender.vhd
+Z120 F/home/blevake/cpre381/Proj1/scr/tb_extender.vhd
+l0
+L4 1
+VoXIkk20NHBG?54gkIP1=<2
+!s100 RzkLL?W@m:J4ZG:2bkK161
+R17
+33
+R18
+!i10b 1
+R19
+R20
+R21
+!i113 0
+R22
+R23
+Abehavior
+R12
+R13
+DEx4 work 11 tb_extender 0 22 oXIkk20NHBG?54gkIP1=<2
+!i122 84
+l26
+L8 74
+VdPicDoVh[LzlMJ]2011B41
+!s100 `FH76Qz]B]GJ[;0=X<J4J0
+R17
+33
+R18
+!i10b 1
+R19
+R20
+R21
+!i113 0
+R22
+R23
+Exorg2
+Z121 w1727470857
+R12
+R13
+!i122 86
+R14
+Z122 8/home/blevake/cpre381/Proj1/scr/xorg2.vhd
+Z123 F/home/blevake/cpre381/Proj1/scr/xorg2.vhd
+l0
+L4 1
+V<]E5<@o43l<5fj=WMG8Tj1
+!s100 g7^@DKij>@6@MbM_ghb2=1
+R17
+33
+Z124 !s110 1729270715
+!i10b 1
+Z125 !s108 1729270715.000000
+Z126 !s90 -reportprogress|300|-work|work|/home/blevake/cpre381/Proj1/scr/xorg2.vhd|
+!s107 /home/blevake/cpre381/Proj1/scr/xorg2.vhd|
+!i113 0
+R22
+R23
+Adataflow
+R12
+R13
+Z127 DEx4 work 5 xorg2 0 22 <]E5<@o43l<5fj=WMG8Tj1
+!i122 86
+l13
+R37
+Z128 VZ2kij>AdllE_aaHW7QiTW3
+Z129 !s100 j<Nh<???:AN]W2`GGc<e70
+R17
+33
+R124
+!i10b 1
+R125
+R126
+Z130 !s107 /home/blevake/cpre381/Proj1/scr/xorg2.vhd|
+!i113 0
+R22
+R23
