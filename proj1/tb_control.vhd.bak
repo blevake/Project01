@@ -28,6 +28,7 @@ architecture behavior of tb_control is
   signal s_opcode    : std_logic_vector(5 downto 0) := (others => '0');
   signal s_funct     : std_logic_vector(5 downto 0) := (others => '0');
   signal expected_out: std_logic_vector(14 downto 0):= (others => '0');
+  signal s_Ctrl      : std_logic_vector(14 downto 0);
   
   -- Output signals from control 
   signal s_ALUSrc    : std_logic;

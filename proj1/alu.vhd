@@ -74,7 +74,7 @@ begin
       o_d        => barrelOutput
     );
 
-  -- BEQ/BNE block for equality checking
+  -- BEQ_BNE block for equality checking
   beq_bne_block: beq_bne
     port map(
       i_F         => s_out,
