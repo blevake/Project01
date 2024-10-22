@@ -196,6 +196,8 @@ begin
       o_Ctrl_Unt => s_Ctrl
     );
 
-  -- Additional processes, muxes, and components (add more as needed)
+  -- Additional processes, muxes, and components 
+  -- TODO
   
 end structure;
+
