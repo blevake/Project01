@@ -2,10 +2,10 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
-entity tb_barrelshifter_32 is
-end tb_barrelshifter_32;
+entity tb_barrelShifter is
+end tb_barrelShifter;
 
-architecture behavior of tb_barrelshifter_32 is
+architecture behavior of tb_barrelShifter is
 
     -- Component declaration for the barrel shifter
     component barrelshifter_32
