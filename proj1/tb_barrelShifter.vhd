@@ -7,7 +7,6 @@ end tb_barrelShifter;
 
 architecture behavior of tb_barrelShifter is
 
-    -- Component declaration for the barrel shifter
     component barrelshifter_32
     generic (N: integer := 32);
     port (
@@ -19,14 +18,12 @@ architecture behavior of tb_barrelShifter is
     );
     end component;
 
-    -- Signals to connect to the barrel shifter
     signal i_d        : std_logic_vector(31 downto 0) := (others => '0'); -- Input data
     signal o_d        : std_logic_vector(31 downto 0);                     -- Output data
     signal i_shiftdir : std_logic := '0';                                  -- Shift direction: 0 for left, 1 for right
     signal i_shiftamt : std_logic_vector(4 downto 0) := "00000";           -- Shift amount (0 to 31)
     signal i_shifttype: std_logic := '0';                                  -- Shift type: 0 for logical, 1 for arithmetic
 
-    -- Clock period for simulation (not really needed since there's no clock in this design)
     constant clk_period : time := 10 ns;
 
 begin
@@ -41,7 +38,7 @@ begin
         i_shifttype=> i_shifttype
     );
 
-    -- Test process
+  
     process
     begin
         -- Test case 1: Logical left shift by 1
@@ -79,7 +76,7 @@ begin
         i_shifttype <= '1';  -- Arithmetic shift
         wait for clk_period;
 
-        -- Stop the simulation after tests
+        
         wait;
     end process;
 

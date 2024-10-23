@@ -1,8 +1,5 @@
-/*
-
 library IEEE;
 use IEEE.std_logic_1164.all;
-
 
 entity alu is
   port(
@@ -10,50 +7,50 @@ entity alu is
     i_B         : in std_logic_vector(31 downto 0);   -- Second operand
     i_aluOp     : in std_logic_vector(3 downto 0);    -- ALU operation control signal
     i_shamt     : in std_logic_vector(4 downto 0);    -- Shift amount
-    o_F         : out std_logic_vector(31 downto 0);  -- ALU result
-    overFlow    : out std_logic;                      -- Overflow signal
+    o_F         : out std_logic_vector(31 downto 0);   -- ALU result
+    o_C         : out std_logic;                       -- Carry signal
+    overFlow     : out std_logic;                     -- Overflow signal
     zero        : out std_logic                       -- Zero flag
   );
 end alu;
 
 
-architecture mixed of alu is
+architecture structural of alu is
 
+-- Declare intermediate signals
   signal adderOutput, barrelOutput, s_out : std_logic_vector(31 downto 0); -- Intermediate signals
+  signal temp_or : std_logic_vector(31 downto 0);                          -- Temporary signal for NOR
   signal s_overflowControl, s_addSuboverFlow : std_logic;                   -- Overflow control signals
+  signal carryOut : std_logic;    
+  signal eqOut : std_logic;                                                 -- Equality output
+  signal neqOut : std_logic;                                                -- Negation of equality
+  signal andOutput : std_logic_vector(31 downto 0);                        -- Bitwise AND output
+  signal orOutput : std_logic_vector(31 downto 0);                         -- Bitwise OR output
+  signal xorOutput : std_logic_vector(31 downto 0);                        -- Bitwise XOR output
+  signal norOutput : std_logic_vector(31 downto 0);                        -- NOR output
+  signal sltOutput : std_logic_vector(31 downto 0);                        -- Set Less Than output
+  signal notAluOp0 : std_logic;                                           -- Control signal for ALU operation
+  signal notAluOp2 : std_logic;                                           -- Control signal for ALU operation
 
-  component barrelshifter_32 is
+  -- ALU component declarations
+  component cla_adder is
     port(
-      i_d         : in std_logic_vector(31 downto 0);  -- Input data
-      o_d         : out std_logic_vector(31 downto 0); -- Output data
-      i_shiftdir  : in std_logic;                      -- Shift direction (0: left, 1: right)
-      i_shiftamt  : in std_logic_vector(4 downto 0);   -- Shift amount (0 to 31)
-      i_shifttype : in std_logic                       -- Shift type (0: logical, 1: arithmetic)
+      i_A        : in std_logic_vector(31 downto 0); -- First operand
+      i_B        : in std_logic_vector(31 downto 0); -- Second operand
+      i_nAddSub  : in std_logic;                     -- Add/Subtract control
+      o_C        : out std_logic;                    -- Carry output
+      o_O        : out std_logic;                    -- Overflow output
+      o_S        : out std_logic_vector(31 downto 0) -- Result
     );
   end component;
 
-  component beq_bne is
+    component barrelShifter is
     port(
-      i_F         : in std_logic_vector(31 downto 0);  -- Input data for equality comparison
-      i_equal_type: in std_logic;                      -- 0: BNE, 1: BEQ
-      o_zero      : out std_logic                      -- Zero flag output
-    );
-  end component;
-
-  component alu_addersubtractor is
-    generic(N : integer := 32); -- Generic for input/output data width, default 32
-    port(
-      nAdd_Sub   : in std_logic;                      -- Control signal for add/subtract
-      i_A        : in std_logic_vector(N-1 downto 0); -- First operand
-      i_B        : in std_logic_vector(N-1 downto 0); -- Second operand
-      o_Y        : out std_logic_vector(N-1 downto 0);-- ALU result
-      o_Overflow : out std_logic                      -- Overflow signal
-    );
-  end component;
-
-component invg
-    port(i_A          : in std_logic;
-         o_F          : out std_logic);
+      i_Shft_Type_Sel    : in std_logic;                              
+      i_Shft_Dir         : in std_logic;                              
+      i_Shft_Amt         : in std_logic_vector(4 downto 0);           
+      i_D                : in std_logic_vector(31 downto 0);          
+      o_O                : out std_logic_vector(31 downto 0));       
   end component;
 
   component andg2
@@ -72,184 +69,6 @@ component invg
     port(i_A          : in std_logic;
          i_B          : in std_logic;
          o_F          : out std_logic);
-  end component;
-
-begin
-  -- Overflow control logic for specific ALU operations (overflow for "1110" and "1111")
-  with i_aluOp select 
-    s_overflowControl <=
-      '1' when "1110",
-      '1' when "1111",
-      '0' when others;
-
-  shifter: barrelshifter_32
-    port map(
-      i_d        => i_B,
-      i_shiftamt => i_shamt,
-      i_shiftdir => i_aluOp(0),
-      i_shifttype=> i_aluOp(1),
-      o_d        => barrelOutput
-    );
-
-  -- BEQ_BNE block for equality checking
-  beq_bne_block: beq_bne
-    port map(
-      i_F         => s_out,
-      i_equal_type=> i_aluOp(0),
-      o_zero      => zero
-    );
-
-  -- ALU adder/subtractor instance
-  addsub: alu_addersubtractor
-    generic map(N => 32)
-    port map(
-      nAdd_Sub   => i_aluOp(0),
-      i_A        => i_A,
-      i_B        => i_B,
-      o_Y        => adderOutput,
-      o_Overflow => s_addSuboverFlow
-    );
-
-  -- Overflow control logic using AND gate
-  overflow_control: andg2
-    port map(
-      i_A => s_overflowControl,
-      i_B => s_addSuboverFlow,
-      o_F => overFlow
-    );
-
-  -- ALU operation process
- alu_process : process(i_aluOp, i_A, i_B, adderOutput, barrelOutput, s_addSuboverFlow)
-begin
-  case i_aluOp is
-    when "0010" =>  -- AND operation
-      and_gen : for i in 0 to 31 generate
-        U_andg2: andg2
-          port map (
-            i_A => i_A(i),
-            i_B => i_B(i),
-            o_F => s_out(i)
-          );
-      end generate and_gen;
-
-    when "0011" =>  -- OR operation
-      or_gen : for i in 0 to 31 generate
-        U_org2: org2
-          port map (
-            i_A => i_A(i),
-            i_B => i_B(i),
-            o_F => s_out(i)
-          );
-      end generate or_gen;
-
-    when "0100" | "1011" | "1100" =>  -- XOR operation
-      xor_gen : for i in 0 to 31 generate
-        U_xorg2: xorg2
-          port map (
-            i_A => i_A(i),
-            i_B => i_B(i),
-            o_F => s_out(i)
-          );
-      end generate xor_gen;
-
-    when "0101" =>  -- NOR operation
-      nor_gen : for i in 0 to 31 generate
-        U_org2: org2
-          port map (
-            i_A => i_A(i),
-            i_B => i_B(i),
-            o_F => temp_or(i)  -- Temporary signal to hold OR result
-          );
-        
-        U_invg: invg
-          port map (
-            i_A => temp_or(i),
-            o_F => s_out(i)  -- Final NOR result after inversion
-          );
-      end generate nor_gen;
-
-    when "0111" =>  -- Set less than (slt)
-      s_out(0) <= adderOutput(31) XOR s_addSuboverFlow; -- Copy sign bit XOR overflow
-      for i in 1 to 31 loop
-        s_out(i) <= '0';
-      end loop;
-
-    when "0110" =>  -- Load upper immediate (lui)
-      for i in 0 to 15 loop
-        s_out(i) <= '0';
-      end loop;
-      for i in 16 to 31 loop
-        s_out(i) <= i_B(i-16);
-      end loop;
-
-    when "1001" | "1000" | "1010" =>  -- Shift operations (SRL, SRA, SLL)
-      s_out <= barrelOutput;
-
-    when "0000" | "0001" | "1110" | "1111" =>  -- Add, Subtract, Add unsigned, Subtract unsigned
-      s_out <= adderOutput;
-
-    when others =>  -- Default case for unrecognized ALU operations
-      s_out <= (others => '0');
-  end case;
-end process;
-
-
-  o_F <= s_out;
-
-end mixed;
-
-*/
-
-
-library IEEE;
-use IEEE.std_logic_1164.all;
-
-entity alu is
-  port(
-    i_A         : in std_logic_vector(31 downto 0);   -- First operand
-    i_B         : in std_logic_vector(31 downto 0);   -- Second operand
-    i_aluOp     : in std_logic_vector(3 downto 0);    -- ALU operation control signal
-    i_shamt     : in std_logic_vector(4 downto 0);    -- Shift amount
-    o_F         : out std_logic_vector(31 downto 0);  -- ALU result
-    overFlow    : out std_logic;                      -- Overflow signal
-    zero        : out std_logic                       -- Zero flag
-  );
-end alu;
-
-architecture mixed of alu is
-
-  signal adderOutput, barrelOutput, s_out : std_logic_vector(31 downto 0); -- Intermediate signals
-  signal temp_or : std_logic_vector(31 downto 0);                          -- Temporary signal for NOR
-  signal s_overflowControl, s_addSuboverFlow : std_logic;                   -- Overflow control signals
-
-  -- Component declarations
-  component barrelshifter_32 is
-    port(
-      i_d         : in std_logic_vector(31 downto 0);  -- Input data
-      o_d         : out std_logic_vector(31 downto 0); -- Output data
-      i_shiftdir  : in std_logic;                      -- Shift direction (0: left, 1: right)
-      i_shiftamt  : in std_logic_vector(4 downto 0);   -- Shift amount (0 to 31)
-      i_shifttype : in std_logic                       -- Shift type (0: logical, 1: arithmetic)
-    );
-  end component;
-
-  component beq_bne is
-    port(
-      i_F         : in std_logic_vector(31 downto 0);  -- Input data for equality comparison
-      i_equal_type: in std_logic;                      -- 0: BNE, 1: BEQ
-      o_zero      : out std_logic                      -- Zero flag output
-    );
-  end component;
-
-  component alu_addersubtractor is
-    generic(N : integer := 32); -- Generic for input/output data width, default 32
-    port(
-      nAdd_Sub   : in std_logic;                      -- Control signal for add/subtract
-      i_A        : in std_logic_vector(N-1 downto 0); -- First operand
-      i_B        : in std_logic_vector(N-1 downto 0); -- Second operand
-      o_Y        : out std_logic_vector(N-1 downto 0);-- ALU result
-      o_Overflow : out std_logic                      -- Overflow signal
-    );
   end component;
 
   component invg
@@ -257,118 +76,147 @@ architecture mixed of alu is
          o_F          : out std_logic);
   end component;
 
-  component andg2
-    port(i_A          : in std_logic;
-         i_B          : in std_logic;
+  component onesComp_N is
+    port(i_I          : in std_logic_vector(31 downto 0);
+         o_O          : out std_logic_vector(31 downto 0));
+  end component;
+
+  component mux2t1_N is
+    port(i_S          : in std_logic;
+         i_D0         : in std_logic_vector(31 downto 0);
+         i_D1         : in std_logic_vector(31 downto 0);
+         o_O          : out std_logic_vector(31 downto 0));
+  end component;
+
+  component mux8t1_32 is
+    port(i_S          : in std_logic_vector(2 downto 0);
+         i_D0         : in std_logic_vector(31 downto 0);
+         i_D1         : in std_logic_vector(31 downto 0);
+         i_D2         : in std_logic_vector(31 downto 0);
+         i_D3         : in std_logic_vector(31 downto 0);
+         i_D4         : in std_logic_vector(31 downto 0);
+         i_D5         : in std_logic_vector(31 downto 0);
+         i_D6         : in std_logic_vector(31 downto 0);
+         i_D7         : in std_logic_vector(31 downto 0);
+         o_O          : out std_logic_vector(31 downto 0));
+  end component;
+
+  -- Equality and comparison
+  component equalityModule is
+    port(i_A          : in std_logic_vector(31 downto 0);
+         i_B          : in std_logic_vector(31 downto 0);
          o_F          : out std_logic);
   end component;
 
-  component org2
-    port(i_A          : in std_logic;
-         i_B          : in std_logic;
-         o_F          : out std_logic);
+  component lessThanModule is
+    port(i_A          : in std_logic_vector(31 downto 0);
+         i_B          : in std_logic_vector(31 downto 0);
+         o_F          : out std_logic_vector(31 downto 0));
   end component;
 
-  component xorg2
-    port(i_A          : in std_logic;
-         i_B          : in std_logic;
-         o_F          : out std_logic);
-  end component;
+  -- Additional signals for zero and overflow
+  signal muxOutput : std_logic_vector(31 downto 0);
 
 begin
-  -- Overflow control logic for specific ALU operations
-  with i_aluOp select 
-    s_overflowControl <=
-      '1' when "1110",
-      '1' when "1111",
-      '0' when others;
 
-  -- Shifter instance
-  shifter: barrelshifter_32
+  -- Equality check for beq/bne
+  e_eqModule: equalityModule
     port map(
-      i_d        => i_B,
-      i_shiftamt => i_shamt,
-      i_shiftdir => i_aluOp(0),
-      i_shifttype=> i_aluOp(1),
-      o_d        => barrelOutput
+      i_A  => i_A,
+      i_B  => i_B,
+      o_F  => eqOut
     );
 
-  -- BEQ_BNE block for equality checking
-  beq_bne_block: beq_bne
+  -- Generate negated version of equality output
+  g_inverter: invg
     port map(
-      i_F         => s_out,
-      i_equal_type=> i_aluOp(0),
-      o_zero      => zero
+      i_A => eqOut,
+      o_F => neqOut
     );
 
-  -- ALU adder/subtractor instance
-  addsub: alu_addersubtractor
-    generic map(N => 32)
+  -- Overflow and add/subtract control logic
+  c_carryAdder: cla_adder
     port map(
-      nAdd_Sub   => i_aluOp(0),
-      i_A        => i_A,
-      i_B        => i_B,
-      o_Y        => adderOutput,
-      o_Overflow => s_addSuboverFlow
+      i_A       => i_A,
+      i_B       => i_B,
+      i_nAddSub => i_aluOp(0),  -- Add/Subtract control bit
+      o_C       => carryOut,
+      o_O       => overFlow,
+      o_S       => adderOutput
     );
 
-  -- Overflow control logic using AND gate
-  overflow_control: andg2
+  -- Bitwise AND operation
+  G_NBit_AND: for i in 0 to 31 generate
+    andGate: andg2 
+      port map(
+        i_A => i_A(i), 
+        i_B => i_B(i), 
+        o_F => andOutput(i)
+      );
+  end generate;
+
+  -- Bitwise OR operation
+  G_NBit_OR: for i in 0 to 31 generate
+    orGate: org2 
+      port map(
+        i_A => i_A(i), 
+        i_B => i_B(i), 
+        o_F => orOutput(i)
+      );
+  end generate;
+
+  -- Bitwise XOR operation
+  G_NBit_XOR: for i in 0 to 31 generate
+    xorGate: xorg2 
+      port map(
+        i_A => i_A(i), 
+        i_B => i_B(i), 
+        o_F => xorOutput(i)
+      );
+  end generate;
+
+  -- NOR operation using one's complement
+  onesComp: onesComp_N
     port map(
-      i_A => s_overflowControl,
-      i_B => s_addSuboverFlow,
-      o_F => overFlow
+      i_I  => orOutput,
+      o_O  => norOutput
     );
 
-  -- AND operation
-  and_gen : for i in 0 to 31 generate
-    U_andg2: andg2
-      port map (
-        i_A => i_A(i),
-        i_B => i_B(i),
-        o_F => s_out(i)
-      );
-  end generate and_gen;
+  -- Less-than comparison (slt)
+  sltModule: lessThanModule
+    port map(
+      i_A => i_A,
+      i_B => i_B,
+      o_F => sltOutput
+    );
 
-  -- OR operation
-  or_gen : for i in 0 to 31 generate
-    U_org2: org2
-      port map (
-        i_A => i_A(i),
-        i_B => i_B(i),
-        o_F => s_out(i)
-      );
-  end generate or_gen;
+  -- Shift operations (right and left)
+  shiftModule: barrelShifter
+    port map(
+      i_Shft_Type_Sel => notAluOp0,  -- Type selection based on ALU control
+      i_Shft_Dir      => notAluOp2,  -- Direction control based on ALU control
+      i_Shft_Amt      => i_shamt,    
+      i_D            => i_B,
+      o_O            => barrelOutput
+    );
 
-  -- XOR operation
-  xor_gen : for i in 0 to 31 generate
-    U_xorg2: xorg2
-      port map (
-        i_A => i_A(i),
-        i_B => i_B(i),
-        o_F => s_out(i)
-      );
-  end generate xor_gen;
+  -- ALU operation selection using MUX
+  aluOutMux: mux8t1_32
+    port map(
+      i_D0 => norOutput,     -- NOR
+      i_D1 => adderOutput,   -- ADD/SUB
+      i_D2 => xorOutput,     -- XOR
+      i_D3 => sltOutput,     -- SLT
+      i_D4 => barrelOutput,  -- SHIFT
+      i_D5 => adderOutput,   -- Could be used for equality
+      i_D6 => barrelOutput,  -- SHIFT other direction
+      i_D7 => andOutput,     -- AND
+      i_S  => i_aluOp(3 downto 1),
+      o_O  => o_F
+    );
 
-  -- NOR operation (OR followed by INV)
-  nor_gen : for i in 0 to 31 generate
-    U_org2: org2
-      port map (
-        i_A => i_A(i),
-        i_B => i_B(i),
-        o_F => temp_or(i)  -- Temporary signal to hold OR result
-      );
-    
-    U_invg: invg
-      port map (
-        i_A => temp_or(i),
-        o_F => s_out(i)  -- Final NOR result after inversion
-      );
-  end generate nor_gen;
+  -- Zero flag output
+  zero <= '1' when o_F = "00000000000000000000000000000000" else '0';
 
-  -- Result assignment
-  o_F <= s_out;
-
-end mixed;
-
+end structural;
 
