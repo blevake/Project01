@@ -22,7 +22,6 @@ architecture structural of onesComp_N is
 
 begin
 
-  -- Instantiate N one-bit one's complementor components
   G_NBit_ONES: for i in 0 to N-1 generate
     ONESI: onesComp 
       port map(

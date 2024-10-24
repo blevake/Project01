@@ -17,7 +17,6 @@ end alu;
 
 architecture structural of alu is
 
--- Declare intermediate signals
   signal adderOutput, barrelOutput, s_out : std_logic_vector(31 downto 0); -- Intermediate signals
   signal temp_or : std_logic_vector(31 downto 0);                          -- Temporary signal for NOR
   signal s_overflowControl, s_addSuboverFlow : std_logic;                   -- Overflow control signals
@@ -31,8 +30,8 @@ architecture structural of alu is
   signal sltOutput : std_logic_vector(31 downto 0);                        -- Set Less Than output
   signal notAluOp0 : std_logic;                                           -- Control signal for ALU operation
   signal notAluOp2 : std_logic;                                           -- Control signal for ALU operation
+signal eqMux : std_logic_vector(31 downto 0);
 
-  -- ALU component declarations
   component cla_adder is
     port(
       i_A        : in std_logic_vector(31 downto 0); -- First operand
@@ -44,13 +43,14 @@ architecture structural of alu is
     );
   end component;
 
-    component barrelShifter is
+    component barrelShifter_32 is
     port(
-      i_Shft_Type_Sel    : in std_logic;                              
-      i_Shft_Dir         : in std_logic;                              
-      i_Shft_Amt         : in std_logic_vector(4 downto 0);           
-      i_D                : in std_logic_vector(31 downto 0);          
-      o_O                : out std_logic_vector(31 downto 0));       
+      i_d	:	in std_logic_vector(31 downto 0);	--input data
+	o_d	:	out std_logic_vector(31 downto 0);	--output data
+	i_shiftdir:	in std_logic;				--0 for left, 1 for right
+	i_shiftamt:	in std_logic_vector(4 downto 0);	--shift amount is 0 to 31
+	i_shifttype:	in std_logic				--shift type 0 for logical, 1 for arithmetic, arithmetic for shift left does nothing
+	);
   end component;
 
   component andg2
@@ -108,11 +108,17 @@ architecture structural of alu is
          o_F          : out std_logic);
   end component;
 
-  component lessThanModule is
+  component lessThanCheck is
     port(i_A          : in std_logic_vector(31 downto 0);
          i_B          : in std_logic_vector(31 downto 0);
          o_F          : out std_logic_vector(31 downto 0));
   end component;
+
+ component equality_check is
+  port(i_A          : in std_logic_vector(31 downto 0);
+       i_B          : in std_logic_vector(31 downto 0);
+       o_F          : out std_logic_vector(31 downto 0));
+end component;
 
   -- Additional signals for zero and overflow
   signal muxOutput : std_logic_vector(31 downto 0);
@@ -126,6 +132,13 @@ begin
       i_B  => i_B,
       o_F  => eqOut
     );
+
+e_eqMuxModule: equality_check
+  port map(
+            i_A  => i_A,
+      	    i_B  => i_B,
+      	    o_F  => eqMux
+);
 
   -- Generate negated version of equality output
   g_inverter: invg
@@ -183,7 +196,7 @@ begin
     );
 
   -- Less-than comparison (slt)
-  sltModule: lessThanModule
+  sltModule: lessThanCheck
     port map(
       i_A => i_A,
       i_B => i_B,
@@ -191,13 +204,15 @@ begin
     );
 
   -- Shift operations (right and left)
-  shiftModule: barrelShifter
+  shiftModule: barrelShifter_32
     port map(
-      i_Shft_Type_Sel => notAluOp0,  -- Type selection based on ALU control
-      i_Shft_Dir      => notAluOp2,  -- Direction control based on ALU control
-      i_Shft_Amt      => i_shamt,    
-      i_D            => i_B,
-      o_O            => barrelOutput
+      i_shifttype => notAluOp0,  -- Type selection based on ALU control
+      i_shiftdir      => notAluOp2,  -- Direction control based on ALU control
+      i_shiftamt      => i_shamt,    
+      i_d            => i_B,
+      o_d            => barrelOutput			--shift type 0 for logical, 1 for arithmetic, arithmetic for shift left does nothing
+);end barrelshifter_32;
+
     );
 
   -- ALU operation selection using MUX
@@ -208,7 +223,7 @@ begin
       i_D2 => xorOutput,     -- XOR
       i_D3 => sltOutput,     -- SLT
       i_D4 => barrelOutput,  -- SHIFT
-      i_D5 => adderOutput,   -- Could be used for equality
+      i_D5 => eqMux,   -- Could be used for equality
       i_D6 => barrelOutput,  -- SHIFT other direction
       i_D7 => andOutput,     -- AND
       i_S  => i_aluOp(3 downto 1),
@@ -217,6 +232,8 @@ begin
 
   -- Zero flag output
   zero <= '1' when o_F = "00000000000000000000000000000000" else '0';
+
+o_C <= carryOut;  -- Ensure o_C is assigned a value
 
 end structural;
 

@@ -8,7 +8,7 @@ entity onesComp_N is
     i_I : in  std_logic_vector(N-1 downto 0);  -- Input vector (N bits)
     o_O : out std_logic_vector(N-1 downto 0)   -- Output vector (N bits), one's complement of input
   );
-end ones_complementor;
+end onesComp_N;
 
 architecture structural of onesComp_N is
 
