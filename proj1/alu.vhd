@@ -32,14 +32,13 @@ architecture structural of alu is
   signal notAluOp2 : std_logic;                                           -- Control signal for ALU operation
 signal eqMux : std_logic_vector(31 downto 0);
 
-  component cla_adder is
+  component alu_addersubtractor is
     port(
-      i_A        : in std_logic_vector(31 downto 0); -- First operand
-      i_B        : in std_logic_vector(31 downto 0); -- Second operand
-      i_nAddSub  : in std_logic;                     -- Add/Subtract control
-      o_C        : out std_logic;                    -- Carry output
-      o_O        : out std_logic;                    -- Overflow output
-      o_S        : out std_logic_vector(31 downto 0) -- Result
+      nAdd_Sub   : in  std_logic;                          -- Control signal (0 for addition, 1 for subtraction)
+    i_A        : in  std_logic_vector(N-1 downto 0);     -- Input A (N-bit)
+    i_B        : in  std_logic_vector(N-1 downto 0);     -- Input B (N-bit)
+    o_Y        : out std_logic_vector(N-1 downto 0);     -- Result (N-bit)
+    o_Overflow : out std_logic                           -- Overflow flag
     );
   end component;
 
@@ -148,14 +147,13 @@ e_eqMuxModule: equality_check
     );
 
   -- Overflow and add/subtract control logic
-  c_carryAdder: cla_adder
+  c_carryAdder: alu_addersubtractor
     port map(
       i_A       => i_A,
       i_B       => i_B,
-      i_nAddSub => i_aluOp(0),  -- Add/Subtract control bit
-      o_C       => carryOut,
-      o_O       => overFlow,
-      o_S       => adderOutput
+      nAdd_Sub => i_aluOp(0),  -- Add/Subtract control bit
+      o_Overflow       => overFlow,
+      o_Y       => adderOutput
     );
 
   -- Bitwise AND operation
@@ -213,7 +211,24 @@ e_eqMuxModule: equality_check
       o_d            => barrelOutput			--shift type 0 for logical, 1 for arithmetic, arithmetic for shift left does nothing
 );
 
-    
+  --   |    ALU control
+--   |  ______________________________
+--   |     0  |   0  |   0   |   0   |  nor
+--   |     0  |   0  |   0   |   1   |  or, ori
+--   |     0  |   0  |   1   |   0   |  add, addi, addu, addiu, lw, sw, 
+--   |     0  |   0  |   1   |   1   |  sub, subu 
+--   |     0  |   1  |   0   |   0   |  xor, xori
+--   |     0  |   1  |   0   |   1   |  
+--   |     0  |   1  |   1   |   0   |  
+--   |     0  |   1  |   1   |   1   |  slt, slti, sltiu, sltu
+--   |     1  |   0  |   0   |   0   |  sra
+--   |     1  |   0  |   0   |   1   |  srl
+--   |     1  |   0  |   1   |   0   |  beq
+--   |     1  |   0  |   1   |   1   |  bne
+--   |     1  |   1  |   0   |   0   | 
+--   |     1  |   1  |   0   |   1   |  sll
+--   |     1  |   1  |   1   |   0   |  and, andi
+--   |     1  |   1  |   1   |   1   |  
 
   -- ALU operation selection using MUX
   aluOutMux: mux8t1_32
@@ -223,7 +238,7 @@ e_eqMuxModule: equality_check
       i_D2 => xorOutput,     -- XOR
       i_D3 => sltOutput,     -- SLT
       i_D4 => barrelOutput,  -- SHIFT
-      i_D5 => eqMux,   -- Could be used for equality
+      i_D5 => eqMux,   -- beq or not beq
       i_D6 => barrelOutput,  -- SHIFT other direction
       i_D7 => andOutput,     -- AND
       i_S  => i_aluOp(3 downto 1),
@@ -233,7 +248,7 @@ e_eqMuxModule: equality_check
   -- Zero flag output
   zero <= '1' when o_F = "00000000000000000000000000000000" else '0';
 
-o_C <= carryOut;  -- Ensure o_C is assigned a value
+o_C <= carryOut;  
 
 end structural;
 
