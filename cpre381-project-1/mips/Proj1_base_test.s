@@ -6,7 +6,7 @@ info: .word 66
 main:
 add $1, $0, $0
 addi $2, $1, 10
-addiu $3, $2, $5
+addiu $3, $2, 6
 addu $4, $3, $2
 
 and $5, $4, $3
