@@ -17,6 +17,7 @@ port (
 	i_JumpInstrImm	:	in std_logic_vector(25 downto 0);	--will be shifted left, then take top 4 bits from PC
 	i_BranchInstrImm:	in std_logic_vector(N-1 downto 0);	--will be shifted left then added to PC, already sign extended
 	i_RSInput	:	in std_logic_vector(N-1 downto 0);
+	o_PC4		:	out std_logic_vector(N-1 downto 0);
 	o_PC		:	out std_logic_vector(N-1 downto 0)	--output program counter
 );end fetchLogic;
 
@@ -72,6 +73,7 @@ begin
 
 process (i_JumpInstrImm, s_UpdatedPC) is
 	begin
+		o_PC4 <= s_UpdatedPC;
 		s_JRMux0(31 downto 28) <= s_UpdatedPC(31 downto 28);
 		s_JRMux0temp <= (others => '0');
 		s_JRMux0temp(25 downto 0) <= i_JumpInstrImm;

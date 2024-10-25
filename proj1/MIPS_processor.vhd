@@ -3,16 +3,9 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 
 
-/*
- * Required Files:
- * - MIPS_processor
- * - sign_Ext
-   - new Control
- */
-
-
 library work;
 use work.MIPS_types.all;
+
 
 entity MIPS_Processor is
   generic(N : integer := DATA_WIDTH);
@@ -83,6 +76,7 @@ architecture structure of MIPS_Processor is
             oSE       : out std_logic;                      -- Sign extension enable
             oJR       : out std_logic;
             oRegDst   : out std_logic                       -- Register destination selection
+);
 
     end component;
 
@@ -125,11 +119,11 @@ architecture structure of MIPS_Processor is
     end component;
 
 
-    component org2 is
+    component and2_N is
         port(
-            i_A : in std_logic;                            -- First input
-            i_B : in std_logic;                            -- Second input
-            o_F : out std_logic                            -- OR output
+            i_D0         : in std_logic_vector(N-1 downto 0);
+       		i_D1         : in std_logic_vector(N-1 downto 0);
+       		o_O          : out std_logic_vector(N-1 downto 0)
         );
     end component;
 
@@ -155,17 +149,16 @@ architecture structure of MIPS_Processor is
 	i_JumpInstrImm	:	in std_logic_vector(25 downto 0);	--will be shifted left, then take top 4 bits from PC
 	i_BranchInstrImm:	in std_logic_vector(N-1 downto 0);	--will be shifted left then added to PC, already sign extended
 	i_RSInput	:	in std_logic_vector(N-1 downto 0);
+	o_PC4		:	out std_logic_vector(N-1 downto 0);
 	o_PC		:	out std_logic_vector(N-1 downto 0)	--output program counter
 );
 end component;
 
-    -- Needed: fetch logic
 
-    -- TODO Signals
-
-signal s_RF_rd1, s_RF_rd2, s_aluResult, s_ialu2 : std_logic_vector(31 downto 0);  
+signal s_RF_rd1, s_RF_rd2, s_aluResult, s_ialu2, s_aluWriteData. s_PC4 : std_logic_vector(31 downto 0);  
 signal s_aluCtl : std_logic_vector(3 downto 0);
 signal s_aluScr, s_memToReg, s_j, s_jr, s_regDst, s_signExtSel, s_Br, s_zero : std_logic;
+signal s_regjalMux, s_jal, s_regjalMux2, s_regWrMux : std_logic_vector(5 downto 0);
 
 
 begin
@@ -234,25 +227,82 @@ begin
 
   g_ALU : alu port map(
 		i_A		=> s_RF_rd1,
-		i_B		=> s_ialu2, -- Goes to mux TODO
+		i_B		=> s_ialu2, 
 		i_aluOp		=> s_aluCtl,
 		i_shamt		=> s_Inst(10 downto 6),
-		o_F		=> s_aluResult, -- Goes to mux TODO
+		o_F		=> s_aluResult, 
 		overFlow	=> s_Ovfl,
 		zero		=> s_zero 
 		);
 
 g_FETCHLOGIC : fetchLogic port map(
-	i_PC       		=> , 
+	i_PC       		=> s_NextInstAddr, 
        	i_JumpReg       	=> s_jr, 
 	i_Jump  		=> s_j,
 	i_Branch  		=> s_Br,
-	i_ALUComp  		=> ,
-	i_JumpInstrImm  	=> ,
-	i_BranchInstrImm    	=> , 
-	i_RSInput    		=> , 
+	i_ALUComp  		=> s_zero,
+	i_JumpInstrImm  	=> s_Inst(25 downto 0),
+	i_BranchInstrImm    	=> s_imm, 
+	i_RSInput    		=> s_RF_rd1, 
+        o_PC4			=> s_PC4,
 	o_PC    		=> s_NextInstAddr
 );
+
+g_jal_AND: and2_n port map (
+	i_D0  =>      s_RegWr,
+       	i_D1    =>           s_j,
+       	o_O      =>      s_jal,   
+);
+
+
+g_Regjal_MUX: mux2t1_N port map (
+		i_S => s_jal,	
+		i_D0 => s_Inst(20 downto 16),  
+		i_D1 => s_regjalMux, 
+		o_O => s_regjalMux
+		);
+
+g_RegDst_MUX: mux2t1_N port map (
+		i_S => s_regDst,	
+		i_D0 => s_Inst(15 downto 11),  
+		i_D1 => s_regjalMux, 
+		o_O => s_regjalMux2
+		);
+
+g_Regjal2_MUX: mux2t1_N port map (
+		i_S => s_jal,	
+		i_D0 => s_regjalMux2, 
+		i_D1 => "11111", 
+		o_O => s_RegWr
+		);
+
+g_Regjal2_MUX: mux2t1_N port map (
+		i_S => s_jal,	
+		i_D0 => s_regjalMux2, 
+		i_D1 => "11111", 
+		o_O => s_regWrMux
+		);
+
+g_RegWriteData1_MUX: mux2t1_N port map (
+		i_S => s_jal,	
+		i_D0 => s_aluResult, 
+		i_D1 => s_PC4,	 
+		o_O => s_aluWriteData
+		);
+
+g_RegWriteData2_MUX: mux2t1_N port map (
+		i_S => s_memToReg,	
+		i_D0 => s_aluWriteData, 
+		i_D1 => s_DMemOut,		
+		o_O => s_RegWrData
+		);
+
+g_ALUI2_MUX: mux2t1_N port map (
+		i_S => s_aluScr,	
+		i_D0 => s_RF_rd2, 
+		i_D1 => s_imm,		
+		o_O => s_ialu2
+		);
 
 
 end structure;
