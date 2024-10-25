@@ -1,0 +1,2887 @@
+# //  Questa Sim-64
+# //  Version 2024.2 linux_x86_64 May 20 2024
+# //
+# // Unpublished work. Copyright 2024 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+vlib work
+vcom -reportprogress 300 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/Add_Sub_N.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:26:18 on Oct 25,2024
+# vcom -reportprogress 300 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/Add_Sub_N.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Add_Sub_N
+# -- Compiling architecture structural of Add_Sub_N
+# End time: 13:26:18 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/Adder.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:26:18 on Oct 25,2024
+# vcom -reportprogress 300 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/Adder.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Adder
+# -- Compiling architecture behavior of Adder
+# End time: 13:26:18 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/addersubtractor.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:26:18 on Oct 25,2024
+# vcom -reportprogress 300 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/addersubtractor.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity addersubtractor
+# -- Compiling architecture structural of addersubtractor
+# End time: 13:26:18 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/alu.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:26:18 on Oct 25,2024
+# vcom -reportprogress 300 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/alu.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity alu
+# -- Compiling architecture structural of alu
+# End time: 13:26:18 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/alu_addersubtractor.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:26:18 on Oct 25,2024
+# vcom -reportprogress 300 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/alu_addersubtractor.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity alu_addersubtractor
+# -- Compiling architecture structural of alu_addersubtractor
+# End time: 13:26:18 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/and2_N.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:26:18 on Oct 25,2024
+# vcom -reportprogress 300 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/and2_N.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity and2_N
+# -- Compiling architecture structural of and2_N
+# End time: 13:26:18 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/andg2.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:26:18 on Oct 25,2024
+# vcom -reportprogress 300 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/andg2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity andg2
+# -- Compiling architecture dataflow of andg2
+# End time: 13:26:18 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/barrelshifter_32.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:26:18 on Oct 25,2024
+# vcom -reportprogress 300 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/barrelshifter_32.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity barrelshifter_32
+# -- Compiling architecture mixed of barrelshifter_32
+# End time: 13:26:18 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/beq.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:26:18 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/beq.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity beq
+# -- Compiling architecture dataflow of beq
+# End time: 13:26:18 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/beq_bne.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:26:18 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/beq_bne.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity beq_bne
+# -- Compiling architecture structural of beq_bne
+# End time: 13:26:18 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/cla_adder.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:26:18 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/cla_adder.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity cla_adder
+# -- Compiling architecture mixed of cla_adder
+# End time: 13:26:18 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/control.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:26:18 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/control.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity control
+# -- Compiling architecture behavior of control
+# End time: 13:26:18 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/datapathv2.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:26:18 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/datapathv2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# ** Error: (vcom-11) Could not find work.mypack.
+# ** Error (suppressible): /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/datapathv2.vhd(3): (vcom-1195) Cannot find expanded name "work.mypack".
+# ** Error: /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/datapathv2.vhd(3): Unknown expanded name.
+# ** Note: /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/datapathv2.vhd(5): VHDL Compiler exiting
+# End time: 13:26:19 on Oct 25,2024, Elapsed time: 0:00:01
+# Errors: 3, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/decoder5t32.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:26:19 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/decoder5t32.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity decoder5t32
+# -- Compiling architecture behavior of decoder5t32
+# End time: 13:26:19 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/dfmux.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:26:19 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/dfmux.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity dfmux
+# -- Compiling architecture dataflow of dfmux
+# End time: 13:26:19 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/equality_check.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:26:19 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/equality_check.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity equality_check
+# -- Compiling architecture dataflow of equality_check
+# End time: 13:26:19 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/equality_checker.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:26:19 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/equality_checker.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity equalityModule
+# -- Compiling architecture dataflow of equalityModule
+# ** Error: /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/equality_checker.vhd(17): Illegal concurrent statement.
+# ** Error: /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/equality_checker.vhd(21): near "dataflow": (vcom-1576) expecting LOOP.
+# End time: 13:26:19 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/equalityMuxModule.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:26:19 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/equalityMuxModule.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# ** Warning: /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/equalityMuxModule.vhd(5): (vcom-1615) Existing entity 'equality_check' at /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/equality_check.vhd(5) will be overwritten.
+# -- Compiling entity equality_check
+# ** Warning: /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/equalityMuxModule.vhd(13): (vcom-1615) Existing architecture 'equality_check(dataflow)' at /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/equality_check.vhd(13) will be overwritten.
+# -- Compiling architecture dataflow of equality_check
+# End time: 13:26:19 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 2
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/extender.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:26:19 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/extender.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity extender
+# -- Compiling architecture behavior of extender
+# End time: 13:26:19 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/fetchLogic.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:26:19 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/fetchLogic.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity fetchLogic
+# -- Compiling architecture mixed of fetchLogic
+# End time: 13:26:19 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/FullAdder.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:26:19 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/FullAdder.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity FullAdder
+# -- Compiling architecture mixed of FullAdder
+# End time: 13:26:19 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/FullAdder_N.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:26:19 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/FullAdder_N.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity FullAdder_N
+# -- Compiling architecture structural of FullAdder_N
+# End time: 13:26:19 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/invg.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:26:19 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/invg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity invg
+# -- Compiling architecture dataflow of invg
+# End time: 13:26:19 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/invg_N.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:26:19 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/invg_N.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity invg_N
+# -- Compiling architecture structural of invg_N
+# End time: 13:26:19 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/lessThanCheck.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:26:19 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/lessThanCheck.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_SIGNED
+# -- Compiling entity lessThanCheck
+# -- Compiling architecture dataflow of lessThanCheck
+# End time: 13:26:19 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/mem.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:26:19 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/mem.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity mem
+# -- Compiling architecture rtl of mem
+# End time: 13:26:19 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/MIPS_processor.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:26:19 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/MIPS_processor.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity MIPS_processor
+# -- Compiling architecture structure of MIPS_processor
+# End time: 13:26:19 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/Multiplier.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:26:19 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/Multiplier.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Multiplier
+# -- Compiling architecture behavior of Multiplier
+# End time: 13:26:19 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/mux2t1_N.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:26:19 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/mux2t1_N.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux2t1_N
+# -- Compiling architecture structural of mux2t1_N
+# End time: 13:26:19 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/mux2t_1.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:26:19 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/mux2t_1.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux2t1
+# -- Compiling architecture dataflow of mux2t1
+# End time: 13:26:19 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/mux2to1.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:26:19 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/mux2to1.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux2to1
+# -- Compiling architecture mixed of mux2to1
+# End time: 13:26:19 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/mux8t1_32.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:26:19 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/mux8t1_32.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux8t1_32
+# -- Compiling architecture structural of mux8t1_32
+# End time: 13:26:19 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/mux32t1.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:26:19 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/mux32t1.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package mypack
+# -- Loading package mypack
+# -- Compiling entity mux32t1
+# -- Compiling architecture behavior of mux32t1
+# End time: 13:26:19 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/N_bitRegister.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:26:19 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/N_bitRegister.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity N_bitRegister
+# -- Compiling architecture mixed of N_bitRegister
+# End time: 13:26:19 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/onesComp.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:26:19 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/onesComp.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity onesComp
+# -- Compiling architecture structure of onesComp
+# End time: 13:26:19 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/onesComp_N.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:26:19 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/onesComp_N.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity onesComp_N
+# -- Compiling architecture structural of onesComp_N
+# End time: 13:26:19 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/org2.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:26:19 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/org2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity org2
+# -- Compiling architecture dataflow of org2
+# End time: 13:26:19 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/Reg.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:26:19 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/Reg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Reg
+# -- Compiling architecture behavior of Reg
+# End time: 13:26:20 on Oct 25,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/regfile.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:26:20 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/regfile.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package mypack
+# -- Compiling entity regfile
+# -- Compiling architecture structural of regfile
+# End time: 13:26:20 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/register.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:26:20 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/register.vhd 
+# -- Loading package STANDARD
+# ** Error (suppressible): /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/register.vhd(1): (vcom-1491) Empty source files.
+# End time: 13:26:20 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/RegLd.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:26:20 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/RegLd.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity RegLd
+# -- Compiling architecture behavior of RegLd
+# End time: 13:26:20 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/tb_ALU.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:26:20 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/tb_ALU.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity tb_alu
+# -- Compiling architecture test of tb_alu
+# End time: 13:26:20 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/tb_barrelShifter.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:26:20 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/tb_barrelShifter.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity tb_barrelShifter
+# -- Compiling architecture behavior of tb_barrelShifter
+# End time: 13:26:20 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/tb_control.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:26:20 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/tb_control.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity tb_control
+# -- Compiling architecture behavior of tb_control
+# End time: 13:26:20 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/tb_datapathv2.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:26:20 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/tb_datapathv2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity tb_datapathv2
+# -- Compiling architecture behavior of tb_datapathv2
+# End time: 13:26:20 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/tb_dmem.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:26:20 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/tb_dmem.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity tb_dmem
+# -- Compiling architecture behavior of tb_dmem
+# End time: 13:26:20 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/tb_extender.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:26:20 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/tb_extender.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity tb_extender
+# -- Compiling architecture behavior of tb_extender
+# End time: 13:26:20 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/xorg2.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:26:20 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/xorg2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity xorg2
+# -- Compiling architecture dataflow of xorg2
+# End time: 13:26:20 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/alu.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:27:01 on Oct 25,2024
+# vcom -reportprogress 300 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/alu.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity alu
+# -- Compiling architecture structural of alu
+# End time: 13:27:01 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/mux8t1_32.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:40:57 on Oct 25,2024
+# vcom -reportprogress 300 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/mux8t1_32.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux8t1_32
+# -- Compiling architecture structural of mux8t1_32
+# End time: 13:40:57 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Load canceled
+vcom -reportprogress 300 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/mux16t1_32.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:41:17 on Oct 25,2024
+# vcom -reportprogress 300 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/mux16t1_32.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux16t1_32
+# -- Compiling architecture structural of mux16t1_32
+# ** Error: /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/mux16t1_32.vhd(33): near "is": (vcom-1576) expecting ';'.
+# ** Error: /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/mux16t1_32.vhd(36): near "in": syntax error
+# ** Error: /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/mux16t1_32.vhd(37): Statement cannot be labeled.
+# ** Error: /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/mux16t1_32.vhd(37): near "in": syntax error
+# ** Error: /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/mux16t1_32.vhd(38): Statement cannot be labeled.
+# ** Error: /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/mux16t1_32.vhd(38): near "in": syntax error
+# ** Error: /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/mux16t1_32.vhd(39): Statement cannot be labeled.
+# ** Error: /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/mux16t1_32.vhd(39): near "in": syntax error
+# ** Error: /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/mux16t1_32.vhd(40): Statement cannot be labeled.
+# ** Error: /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/mux16t1_32.vhd(40): near "in": syntax error
+# ** Error: /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/mux16t1_32.vhd(41): Statement cannot be labeled.
+# ** Error: /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/mux16t1_32.vhd(41): near "in": syntax error
+# ** Error: /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/mux16t1_32.vhd(42): Statement cannot be labeled.
+# ** Error: /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/mux16t1_32.vhd(42): near "in": syntax error
+# ** Error: /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/mux16t1_32.vhd(43): Statement cannot be labeled.
+# ** Error: /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/mux16t1_32.vhd(43): near "in": syntax error
+# ** Error: /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/mux16t1_32.vhd(44): Statement cannot be labeled.
+# ** Error: /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/mux16t1_32.vhd(44): near "out": syntax error
+# ** Note: /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/mux16t1_32.vhd(46): VHDL Compiler exiting
+# End time: 13:41:17 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 18, Warnings: 0
+vcom -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/mux16t1_32.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:41:49 on Oct 25,2024
+# vcom -reportprogress 300 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/mux16t1_32.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux16t1_32
+# -- Compiling architecture structural of mux16t1_32
+# ** Error: /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/mux16t1_32.vhd(65): near "i_D0": (vcom-1576) expecting ',' or ')'.
+# ** Error: /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/mux16t1_32.vhd(76): Statement cannot be labeled.
+# ** Error: /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/mux16t1_32.vhd(79): near "i_D0": (vcom-1576) expecting ',' or ')'.
+# ** Error: /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/mux16t1_32.vhd(90): Statement cannot be labeled.
+# ** Note: /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/mux16t1_32.vhd(98): VHDL Compiler exiting
+# End time: 13:41:50 on Oct 25,2024, Elapsed time: 0:00:01
+# Errors: 4, Warnings: 0
+# /usr/local/mentor/questasim/linux_x86_64/vcom failed.
+vcom -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/mux16t1_32.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:41:59 on Oct 25,2024
+# vcom -reportprogress 300 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/mux16t1_32.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux16t1_32
+# -- Compiling architecture structural of mux16t1_32
+# End time: 13:41:59 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.mux16t1_32
+# vsim work.mux16t1_32 
+# Start time: 13:42:07 on Oct 25,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.mux16t1_32(structural)#1
+# Loading work.mux2t1_n(structural)#1
+add wave -position insertpoint sim:/mux16t1_32/*
+force -freeze sim:/mux16t1_32/i_S 4'h0 0
+force -freeze sim:/mux16t1_32/i_D00 32'h0 0
+force -freeze sim:/mux16t1_32/i_D01 32'h0 0
+force -freeze sim:/mux16t1_32/i_D02 32'h0 0
+force -freeze sim:/mux16t1_32/i_D03 32'h0 0
+force -freeze sim:/mux16t1_32/i_D04 32'h0 0
+force -freeze sim:/mux16t1_32/i_D05 32'h0 0
+force -freeze sim:/mux16t1_32/i_D06 32'h0 0
+force -freeze sim:/mux16t1_32/i_D07 32'hXXXXXXXX 0
+force -freeze sim:/mux16t1_32/i_D10 32'hXXXXXXXX 0
+force -freeze sim:/mux16t1_32/i_D11 32'hXXXXXXXX 0
+force -freeze sim:/mux16t1_32/i_D12 32'hXXXXXXXX 0
+force -freeze sim:/mux16t1_32/i_D13 32'hXXXXXXXX 0
+force -freeze sim:/mux16t1_32/i_D14 32'hXXXXXXXX 0
+force -freeze sim:/mux16t1_32/i_D15 32'hXXXXXXXX 0
+force -freeze sim:/mux16t1_32/i_D16 32'hXXXXXXXX 0
+force -freeze sim:/mux16t1_32/i_D17 32'hXXXXXXXX 0
+# Causality operation skipped due to absence of debug database file
+force -freeze sim:/mux16t1_32/i_D17 32'h0 0
+run 100
+force -freeze sim:/mux16t1_32/i_D01 32'h00000001 0
+force -freeze sim:/mux16t1_32/i_D02 32'h00000002 0
+force -freeze sim:/mux16t1_32/i_D17 32'h00000003 0
+run 100
+force -freeze sim:/mux16t1_32/i_S 4'h1 0
+run 100
+force -freeze sim:/mux16t1_32/i_S 4'h2 0
+run 100
+force -freeze sim:/mux16t1_32/i_S 4'hF 0
+run 100
+quit -sim
+# End time: 13:44:03 on Oct 25,2024, Elapsed time: 0:01:56
+# Errors: 0, Warnings: 0
+vcom -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/alu.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:52:15 on Oct 25,2024
+# vcom -reportprogress 300 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/alu.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity alu
+# -- Compiling architecture structural of alu
+# ** Error: /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/alu.vhd(308): near "i_D10": (vcom-1576) expecting ',' or ')'.
+# ** Note: /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/alu.vhd(324): VHDL Compiler exiting
+# End time: 13:52:15 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# /usr/local/mentor/questasim/linux_x86_64/vcom failed.
+vcom -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/alu.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:52:33 on Oct 25,2024
+# vcom -reportprogress 300 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/alu.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity alu
+# -- Compiling architecture structural of alu
+# ** Error: /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/alu.vhd(314): near "i_D16": (vcom-1576) expecting ',' or ')'.
+# ** Note: /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/alu.vhd(324): VHDL Compiler exiting
+# End time: 13:52:33 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# /usr/local/mentor/questasim/linux_x86_64/vcom failed.
+vcom -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/alu.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:52:40 on Oct 25,2024
+# vcom -reportprogress 300 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/alu.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity alu
+# -- Compiling architecture structural of alu
+# End time: 13:52:40 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.dfmux
+# vsim work.dfmux 
+# Start time: 13:55:27 on Oct 25,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.dfmux(dataflow)#1
+quit -sim
+# End time: 13:55:31 on Oct 25,2024, Elapsed time: 0:00:04
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/Add_Sub_N.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:56:36 on Oct 25,2024
+# vcom -reportprogress 300 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/Add_Sub_N.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Add_Sub_N
+# -- Compiling architecture structural of Add_Sub_N
+# End time: 13:56:36 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/Adder.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:56:36 on Oct 25,2024
+# vcom -reportprogress 300 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/Adder.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Adder
+# -- Compiling architecture behavior of Adder
+# End time: 13:56:36 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/addersubtractor.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:56:36 on Oct 25,2024
+# vcom -reportprogress 300 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/addersubtractor.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity addersubtractor
+# -- Compiling architecture structural of addersubtractor
+# End time: 13:56:36 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/alu.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:56:36 on Oct 25,2024
+# vcom -reportprogress 300 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/alu.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity alu
+# -- Compiling architecture structural of alu
+# End time: 13:56:36 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/alu_addersubtractor.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:56:36 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/alu_addersubtractor.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity alu_addersubtractor
+# -- Compiling architecture structural of alu_addersubtractor
+# End time: 13:56:36 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/and2_N.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:56:36 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/and2_N.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity and2_N
+# -- Compiling architecture structural of and2_N
+# End time: 13:56:36 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/andg2.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:56:36 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/andg2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity andg2
+# -- Compiling architecture dataflow of andg2
+# End time: 13:56:36 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/barrelshifter_32.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:56:36 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/barrelshifter_32.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity barrelshifter_32
+# -- Compiling architecture mixed of barrelshifter_32
+# End time: 13:56:36 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/beq.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:56:36 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/beq.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity beq
+# -- Compiling architecture dataflow of beq
+# End time: 13:56:36 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/beq_bne.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:56:36 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/beq_bne.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity beq_bne
+# -- Compiling architecture structural of beq_bne
+# End time: 13:56:36 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/cla_adder.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:56:36 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/cla_adder.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity cla_adder
+# -- Compiling architecture mixed of cla_adder
+# End time: 13:56:36 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/control.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:56:36 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/control.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity control
+# -- Compiling architecture behavior of control
+# End time: 13:56:36 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/datapathv2.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:56:36 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/datapathv2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package mypack
+# -- Compiling entity datapathv2
+# -- Compiling architecture structural of datapathv2
+# End time: 13:56:36 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/decoder5t32.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:56:36 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/decoder5t32.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity decoder5t32
+# -- Compiling architecture behavior of decoder5t32
+# End time: 13:56:36 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/dfmux.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:56:36 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/dfmux.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity dfmux
+# -- Compiling architecture dataflow of dfmux
+# End time: 13:56:36 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/equality_check.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:56:36 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/equality_check.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# ** Warning: /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/equality_check.vhd(5): (vcom-1615) Existing entity 'equality_check' at /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/equalityMuxModule.vhd(5) will be overwritten.
+# -- Compiling entity equality_check
+# ** Warning: /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/equality_check.vhd(13): (vcom-1615) Existing architecture 'equality_check(dataflow)' at /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/equalityMuxModule.vhd(13) will be overwritten.
+# -- Compiling architecture dataflow of equality_check
+# End time: 13:56:36 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 2
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/equalitymodule.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:56:36 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/equalitymodule.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity equalityModule
+# -- Compiling architecture dataflow of equalityModule
+# ** Error: /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/equalitymodule.vhd(17): Illegal concurrent statement.
+# ** Error: /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/equalitymodule.vhd(21): near "dataflow": (vcom-1576) expecting LOOP.
+# End time: 13:56:37 on Oct 25,2024, Elapsed time: 0:00:01
+# Errors: 2, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/equalityMuxModule.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:56:37 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/equalityMuxModule.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# ** Warning: /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/equalityMuxModule.vhd(5): (vcom-1615) Existing entity 'equality_check' at /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/equality_check.vhd(5) will be overwritten.
+# -- Compiling entity equality_check
+# ** Warning: /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/equalityMuxModule.vhd(13): (vcom-1615) Existing architecture 'equality_check(dataflow)' at /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/equality_check.vhd(13) will be overwritten.
+# -- Compiling architecture dataflow of equality_check
+# End time: 13:56:37 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 2
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/extender.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:56:37 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/extender.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity extender
+# -- Compiling architecture behavior of extender
+# End time: 13:56:37 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/fetchLogic.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:56:37 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/fetchLogic.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity fetchLogic
+# -- Compiling architecture mixed of fetchLogic
+# End time: 13:56:37 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/FullAdder.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:56:37 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/FullAdder.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity FullAdder
+# -- Compiling architecture mixed of FullAdder
+# End time: 13:56:37 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/FullAdder_N.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:56:37 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/FullAdder_N.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity FullAdder_N
+# -- Compiling architecture structural of FullAdder_N
+# End time: 13:56:37 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/invg.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:56:37 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/invg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity invg
+# -- Compiling architecture dataflow of invg
+# End time: 13:56:37 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/invg_N.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:56:37 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/invg_N.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity invg_N
+# -- Compiling architecture structural of invg_N
+# End time: 13:56:37 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/lessThanCheck.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:56:37 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/lessThanCheck.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_SIGNED
+# -- Compiling entity lessThanCheck
+# -- Compiling architecture dataflow of lessThanCheck
+# End time: 13:56:37 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/mem.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:56:37 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/mem.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity mem
+# -- Compiling architecture rtl of mem
+# End time: 13:56:37 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/MIPS_processor.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:56:37 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/MIPS_processor.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity MIPS_processor
+# -- Compiling architecture structure of MIPS_processor
+# End time: 13:56:37 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/Multiplier.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:56:37 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/Multiplier.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Multiplier
+# -- Compiling architecture behavior of Multiplier
+# End time: 13:56:37 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/mux2t1_N.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:56:37 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/mux2t1_N.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux2t1_N
+# -- Compiling architecture structural of mux2t1_N
+# End time: 13:56:37 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/mux2t_1.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:56:37 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/mux2t_1.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux2t1
+# -- Compiling architecture dataflow of mux2t1
+# End time: 13:56:37 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/mux2to1.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:56:37 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/mux2to1.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux2to1
+# -- Compiling architecture mixed of mux2to1
+# End time: 13:56:37 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/mux8t1_32.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:56:37 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/mux8t1_32.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux8t1_32
+# -- Compiling architecture structural of mux8t1_32
+# End time: 13:56:37 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/mux16t1_32.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:56:37 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/mux16t1_32.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux16t1_32
+# -- Compiling architecture structural of mux16t1_32
+# End time: 13:56:37 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/mux32t1.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:56:37 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/mux32t1.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package mypack
+# -- Loading package mypack
+# -- Compiling entity mux32t1
+# -- Compiling architecture behavior of mux32t1
+# End time: 13:56:37 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/N_bitRegister.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:56:37 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/N_bitRegister.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity N_bitRegister
+# -- Compiling architecture mixed of N_bitRegister
+# End time: 13:56:37 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/onesComp.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:56:37 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/onesComp.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity onesComp
+# -- Compiling architecture structure of onesComp
+# End time: 13:56:37 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/onesComp_N.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:56:37 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/onesComp_N.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity onesComp_N
+# -- Compiling architecture structural of onesComp_N
+# End time: 13:56:38 on Oct 25,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/org2.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:56:38 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/org2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity org2
+# -- Compiling architecture dataflow of org2
+# End time: 13:56:38 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/Reg.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:56:38 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/Reg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Reg
+# -- Compiling architecture behavior of Reg
+# End time: 13:56:38 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/regfile.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:56:38 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/regfile.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package mypack
+# -- Compiling entity regfile
+# -- Compiling architecture structural of regfile
+# End time: 13:56:38 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/register.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:56:38 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/register.vhd 
+# -- Loading package STANDARD
+# ** Error (suppressible): /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/register.vhd(1): (vcom-1491) Empty source files.
+# End time: 13:56:38 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/RegLd.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:56:38 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/RegLd.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity RegLd
+# -- Compiling architecture behavior of RegLd
+# End time: 13:56:38 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/tb_ALU.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:56:38 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/tb_ALU.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity tb_alu
+# -- Compiling architecture test of tb_alu
+# End time: 13:56:38 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/tb_barrelShifter.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:56:38 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/tb_barrelShifter.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity tb_barrelShifter
+# -- Compiling architecture behavior of tb_barrelShifter
+# End time: 13:56:38 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/tb_control.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:56:38 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/tb_control.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity tb_control
+# -- Compiling architecture behavior of tb_control
+# End time: 13:56:38 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/tb_datapathv2.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:56:38 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/tb_datapathv2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity tb_datapathv2
+# -- Compiling architecture behavior of tb_datapathv2
+# End time: 13:56:38 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/tb_dmem.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:56:38 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/tb_dmem.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity tb_dmem
+# -- Compiling architecture behavior of tb_dmem
+# End time: 13:56:38 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/tb_extender.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:56:38 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/tb_extender.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity tb_extender
+# -- Compiling architecture behavior of tb_extender
+# End time: 13:56:38 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/xorg2.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:56:38 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/xorg2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity xorg2
+# -- Compiling architecture dataflow of xorg2
+# End time: 13:56:38 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/equalitymodule.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:58:35 on Oct 25,2024
+# vcom -reportprogress 300 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/equalitymodule.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity equalityModule
+# -- Compiling architecture dataflow of equalityModule
+# End time: 13:58:35 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/equalitymodule.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 14:04:31 on Oct 25,2024
+# vcom -reportprogress 300 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/equalitymodule.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity equalityModule
+# -- Compiling architecture dataflow of equalityModule
+# End time: 14:04:31 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.alu
+# vsim work.alu 
+# Start time: 14:04:48 on Oct 25,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_signed(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading ieee.numeric_std(body)
+# Loading work.alu(structural)#1
+# Loading work.mux2t1_n(structural)#1
+# Loading work.fulladder_n(structural)#1
+# Loading work.mux16t1_32(structural)#1
+# Loading work.mux2t1_n(structural)#2
+add wave -position insertpoint sim:/alu/*
+force -freeze sim:/alu/i_A 32'h1 0
+force -freeze sim:/alu/i_B 32'h2 0
+force -freeze sim:/alu/i_aluOp 4'h0 0
+force -freeze sim:/alu/i_shamt 5'h0 0
+run 100
+quit -sim
+# End time: 14:06:02 on Oct 25,2024, Elapsed time: 0:01:14
+# Errors: 0, Warnings: 0
+vsim work.alu -voptargs=+acc
+# vsim work.alu -voptargs="+acc" 
+# Start time: 14:06:10 on Oct 25,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.alu(structural)#1
+# Loading work.invg_n(structural)#1
+# Loading work.invg(dataflow)#1
+# Loading work.equalitymodule(dataflow)#1
+# Loading work.equality_check(dataflow)#1
+# Loading work.mux2t1_n(structural)#1
+# Loading work.mux2to1(mixed)#1
+# Loading work.andg2(dataflow)#1
+# Loading work.org2(dataflow)#1
+# Loading work.add_sub_n(structural)#1
+# Loading work.invg_n(structural)#2
+# Loading work.fulladder_n(structural)#1
+# Loading work.fulladder(mixed)#1
+# Loading work.xorg2(dataflow)#1
+# Loading work.onescomp_n(structural)#1
+# Loading work.onescomp(structure)#1
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_signed(body)
+# Loading work.lessthancheck(dataflow)#1
+# Loading ieee.std_logic_unsigned(body)
+# Loading ieee.numeric_std(body)
+# Loading work.barrelshifter_32(mixed)#1
+# Loading work.mux16t1_32(structural)#1
+# Loading work.mux8t1_32(structural)#1
+# Loading work.mux2t1_n(structural)#2
+# Loading work.mux8t1_32(structural)#2
+add wave -position insertpoint sim:/alu/*
+force -freeze sim:/alu/i_A 32'h1 0
+force -freeze sim:/alu/i_B 32'h3 0
+force -freeze sim:/alu/i_aluOp 4'h0 0
+force -freeze sim:/alu/i_shamt 5'h0 0
+run 100
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /alu/sltModule
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /alu/sltModule
+force -freeze sim:/alu/i_aluOp 4'h1 0
+run 100
+force -freeze sim:/alu/i_aluOp 4'h2 0
+run 100
+force -freeze sim:/alu/i_aluOp 4'h3 0
+run 100
+force -freeze sim:/alu/i_aluOp 4'h6 0
+run 100
+force -freeze sim:/alu/i_aluOp 4'h7 0
+run 100
+force -freeze sim:/alu/i_shamt 5'h04 0
+run 100
+force -freeze sim:/alu/i_A 32'h01000001 0
+force -freeze sim:/alu/i_A 32'hF0000001 0
+force -freeze sim:/alu/i_aluOp 4'h8 0
+run 100
+force -freeze sim:/alu/i_aluOp 4'h9 0
+run 100
+force -freeze sim:/alu/i_aluOp 4'hC 0
+run 100
+force -freeze sim:/alu/i_aluOp 4'hE 0
+run 100
+force -freeze sim:/alu/i_A 32'h5 0
+run 100
+quit -sim
+# End time: 14:13:44 on Oct 25,2024, Elapsed time: 0:07:34
+# Errors: 0, Warnings: 3
+vcom -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/alu.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 14:16:51 on Oct 25,2024
+# vcom -reportprogress 300 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/alu.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity alu
+# -- Compiling architecture structural of alu
+# End time: 14:16:51 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Optimization canceled
+vsim -voptargs=+acc work.alu
+# vsim -voptargs="+acc" work.alu 
+# Start time: 14:16:58 on Oct 25,2024
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.alu(structural)#1
+# Loading work.invg_n(structural)#1
+# Loading work.invg(dataflow)#1
+# Loading work.equalitymodule(dataflow)#1
+# Loading work.equality_check(dataflow)#1
+# Loading work.mux2t1_n(structural)#1
+# Loading work.mux2to1(mixed)#1
+# Loading work.andg2(dataflow)#1
+# Loading work.org2(dataflow)#1
+# Loading work.add_sub_n(structural)#1
+# Loading work.invg_n(structural)#2
+# Loading work.fulladder_n(structural)#1
+# Loading work.fulladder(mixed)#1
+# Loading work.xorg2(dataflow)#1
+# Loading work.onescomp_n(structural)#1
+# Loading work.onescomp(structure)#1
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_signed(body)
+# Loading work.lessthancheck(dataflow)#1
+# Loading ieee.std_logic_unsigned(body)
+# Loading ieee.numeric_std(body)
+# Loading work.barrelshifter_32(mixed)#1
+# Loading work.mux16t1_32(structural)#1
+# Loading work.mux8t1_32(structural)#1
+# Loading work.mux2t1_n(structural)#2
+# Loading work.mux8t1_32(structural)#2
+add wave -position insertpoint sim:/alu/*
+force -freeze sim:/alu/i_A 32'h5 0
+force -freeze sim:/alu/i_B 32'h3 0
+force -freeze sim:/alu/i_aluOp 4'h6 0
+force -freeze sim:/alu/i_shamt 5'h0 0
+run 1009
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /alu/sltModule
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /alu/sltModule
+force -freeze sim:/alu/i_aluOp 4'hE 0
+run 1000
+quit -sim
+# End time: 14:26:04 on Oct 25,2024, Elapsed time: 0:09:06
+# Errors: 0, Warnings: 3
+dataset reload -f
+# Dataset not found: 
+vcom -reportprogress 300 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/Add_Sub_N.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 14:28:07 on Oct 25,2024
+# vcom -reportprogress 300 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/Add_Sub_N.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Add_Sub_N
+# -- Compiling architecture structural of Add_Sub_N
+# End time: 14:28:07 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/Adder.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 14:28:07 on Oct 25,2024
+# vcom -reportprogress 300 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/Adder.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Adder
+# -- Compiling architecture behavior of Adder
+# End time: 14:28:07 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/addersubtractor.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 14:28:07 on Oct 25,2024
+# vcom -reportprogress 300 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/addersubtractor.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity addersubtractor
+# -- Compiling architecture structural of addersubtractor
+# End time: 14:28:07 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/alu.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 14:28:07 on Oct 25,2024
+# vcom -reportprogress 300 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/alu.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity alu
+# -- Compiling architecture structural of alu
+# End time: 14:28:07 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/alu_addersubtractor.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 14:28:07 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/alu_addersubtractor.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity alu_addersubtractor
+# -- Compiling architecture structural of alu_addersubtractor
+# End time: 14:28:07 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/and2_N.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 14:28:07 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/and2_N.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity and2_N
+# -- Compiling architecture structural of and2_N
+# End time: 14:28:07 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/andg2.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 14:28:07 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/andg2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity andg2
+# -- Compiling architecture dataflow of andg2
+# End time: 14:28:07 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/barrelshifter_32.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 14:28:07 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/barrelshifter_32.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity barrelshifter_32
+# -- Compiling architecture mixed of barrelshifter_32
+# End time: 14:28:07 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/beq.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 14:28:07 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/beq.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity beq
+# -- Compiling architecture dataflow of beq
+# End time: 14:28:07 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/beq_bne.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 14:28:07 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/beq_bne.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity beq_bne
+# -- Compiling architecture structural of beq_bne
+# End time: 14:28:07 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/cla_adder.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 14:28:07 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/cla_adder.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity cla_adder
+# -- Compiling architecture mixed of cla_adder
+# End time: 14:28:07 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/control.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 14:28:07 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/control.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity control
+# -- Compiling architecture behavior of control
+# End time: 14:28:07 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/datapathv2.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 14:28:07 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/datapathv2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package mypack
+# -- Compiling entity datapathv2
+# -- Compiling architecture structural of datapathv2
+# End time: 14:28:07 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/decoder5t32.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 14:28:07 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/decoder5t32.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity decoder5t32
+# -- Compiling architecture behavior of decoder5t32
+# End time: 14:28:07 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/dfmux.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 14:28:07 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/dfmux.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity dfmux
+# -- Compiling architecture dataflow of dfmux
+# End time: 14:28:07 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/equalitymodule.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 14:28:07 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/equalitymodule.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity equalityModule
+# -- Compiling architecture dataflow of equalityModule
+# End time: 14:28:08 on Oct 25,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/equalityMuxModule.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 14:28:08 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/equalityMuxModule.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity slt_equality_check
+# -- Compiling architecture dataflow of slt_equality_check
+# End time: 14:28:08 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/extender.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 14:28:08 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/extender.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity extender
+# -- Compiling architecture behavior of extender
+# End time: 14:28:08 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/fetchLogic.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 14:28:08 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/fetchLogic.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity fetchLogic
+# -- Compiling architecture mixed of fetchLogic
+# End time: 14:28:08 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/FullAdder.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 14:28:08 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/FullAdder.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity FullAdder
+# -- Compiling architecture mixed of FullAdder
+# End time: 14:28:08 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/FullAdder_N.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 14:28:08 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/FullAdder_N.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity FullAdder_N
+# -- Compiling architecture structural of FullAdder_N
+# End time: 14:28:08 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/invg.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 14:28:08 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/invg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity invg
+# -- Compiling architecture dataflow of invg
+# End time: 14:28:08 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/invg_N.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 14:28:08 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/invg_N.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity invg_N
+# -- Compiling architecture structural of invg_N
+# End time: 14:28:08 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/lessThanCheck.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 14:28:08 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/lessThanCheck.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_SIGNED
+# -- Compiling entity lessThanCheck
+# -- Compiling architecture dataflow of lessThanCheck
+# End time: 14:28:08 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/mem.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 14:28:08 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/mem.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity mem
+# -- Compiling architecture rtl of mem
+# End time: 14:28:08 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/MIPS_processor.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 14:28:08 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/MIPS_processor.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity MIPS_processor
+# -- Compiling architecture structure of MIPS_processor
+# End time: 14:28:08 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/Multiplier.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 14:28:08 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/Multiplier.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Multiplier
+# -- Compiling architecture behavior of Multiplier
+# End time: 14:28:08 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/mux2t1_N.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 14:28:08 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/mux2t1_N.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux2t1_N
+# -- Compiling architecture structural of mux2t1_N
+# End time: 14:28:08 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/mux2t_1.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 14:28:08 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/mux2t_1.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux2t1
+# -- Compiling architecture dataflow of mux2t1
+# End time: 14:28:08 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/mux2to1.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 14:28:08 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/mux2to1.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux2to1
+# -- Compiling architecture mixed of mux2to1
+# End time: 14:28:08 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/mux8t1_32.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 14:28:08 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/mux8t1_32.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux8t1_32
+# -- Compiling architecture structural of mux8t1_32
+# End time: 14:28:08 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/mux16t1_32.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 14:28:08 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/mux16t1_32.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux16t1_32
+# -- Compiling architecture structural of mux16t1_32
+# End time: 14:28:08 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/mux32t1.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 14:28:08 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/mux32t1.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package mypack
+# -- Loading package mypack
+# -- Compiling entity mux32t1
+# -- Compiling architecture behavior of mux32t1
+# End time: 14:28:08 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/N_bitRegister.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 14:28:08 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/N_bitRegister.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity N_bitRegister
+# -- Compiling architecture mixed of N_bitRegister
+# End time: 14:28:08 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/onesComp.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 14:28:08 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/onesComp.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity onesComp
+# -- Compiling architecture structure of onesComp
+# End time: 14:28:08 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/onesComp_N.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 14:28:08 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/onesComp_N.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity onesComp_N
+# -- Compiling architecture structural of onesComp_N
+# End time: 14:28:08 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/org2.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 14:28:08 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/org2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity org2
+# -- Compiling architecture dataflow of org2
+# End time: 14:28:08 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/Reg.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 14:28:08 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/Reg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Reg
+# -- Compiling architecture behavior of Reg
+# End time: 14:28:08 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/regfile.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 14:28:08 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/regfile.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package mypack
+# -- Compiling entity regfile
+# -- Compiling architecture structural of regfile
+# End time: 14:28:09 on Oct 25,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/register.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 14:28:09 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/register.vhd 
+# -- Loading package STANDARD
+# ** Error (suppressible): /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/register.vhd(1): (vcom-1491) Empty source files.
+# End time: 14:28:09 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/RegLd.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 14:28:09 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/RegLd.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity RegLd
+# -- Compiling architecture behavior of RegLd
+# End time: 14:28:09 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/slt_equality_check.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 14:28:09 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/slt_equality_check.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity equality_check
+# -- Compiling architecture dataflow of equality_check
+# End time: 14:28:09 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/tb_ALU.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 14:28:09 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/tb_ALU.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity tb_alu
+# -- Compiling architecture test of tb_alu
+# End time: 14:28:09 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/tb_barrelShifter.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 14:28:09 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/tb_barrelShifter.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity tb_barrelShifter
+# -- Compiling architecture behavior of tb_barrelShifter
+# End time: 14:28:09 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/tb_control.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 14:28:09 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/tb_control.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity tb_control
+# -- Compiling architecture behavior of tb_control
+# End time: 14:28:09 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/tb_datapathv2.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 14:28:09 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/tb_datapathv2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity tb_datapathv2
+# -- Compiling architecture behavior of tb_datapathv2
+# End time: 14:28:09 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/tb_dmem.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 14:28:09 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/tb_dmem.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity tb_dmem
+# -- Compiling architecture behavior of tb_dmem
+# End time: 14:28:09 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/tb_extender.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 14:28:09 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/tb_extender.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity tb_extender
+# -- Compiling architecture behavior of tb_extender
+# End time: 14:28:09 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/xorg2.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 14:28:09 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/xorg2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity xorg2
+# -- Compiling architecture dataflow of xorg2
+# End time: 14:28:09 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/alu.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 14:35:04 on Oct 25,2024
+# vcom -reportprogress 300 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/alu.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity alu
+# -- Compiling architecture structural of alu
+# ** Error: /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/alu.vhd(172): Signal "s_maybezero" is type ieee.std_logic_1164.STD_LOGIC_VECTOR; expecting type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/alu.vhd(173): Signal "s_invertedzero" is type ieee.std_logic_1164.STD_LOGIC_VECTOR; expecting type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/alu.vhd(178): Signal "s_maybezero" is type ieee.std_logic_1164.STD_LOGIC_VECTOR; expecting type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/alu.vhd(179): Signal "s_invertedzero" is type ieee.std_logic_1164.STD_LOGIC_VECTOR; expecting type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/alu.vhd(195): Signal "s_maybezero" is type ieee.std_logic_1164.STD_LOGIC_VECTOR; expecting type ieee.std_logic_1164.STD_LOGIC.
+# ** Note: /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/alu.vhd(345): VHDL Compiler exiting
+# End time: 14:35:04 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 5, Warnings: 0
+# /usr/local/mentor/questasim/linux_x86_64/vcom failed.
+vcom -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/alu.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 14:36:01 on Oct 25,2024
+# vcom -reportprogress 300 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/alu.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity alu
+# -- Compiling architecture structural of alu
+# End time: 14:36:01 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -voptargs=+acc work.alu
+# vsim -voptargs="+acc" work.alu 
+# Start time: 14:36:14 on Oct 25,2024
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.alu(structural)#1
+# Loading work.invg(dataflow)#1
+# Loading work.mux2t1(dataflow)#1
+# Loading work.invg_n(structural)#1
+# Loading work.equalitymodule(dataflow)#1
+# Loading work.slt_equality_check(dataflow)#1
+# Loading work.mux2t1_n(structural)#1
+# Loading work.mux2to1(mixed)#1
+# Loading work.andg2(dataflow)#1
+# Loading work.org2(dataflow)#1
+# Loading work.add_sub_n(structural)#1
+# Loading work.invg_n(structural)#2
+# Loading work.fulladder_n(structural)#1
+# Loading work.fulladder(mixed)#1
+# Loading work.xorg2(dataflow)#1
+# Loading work.onescomp_n(structural)#1
+# Loading work.onescomp(structure)#1
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_signed(body)
+# Loading work.lessthancheck(dataflow)#1
+# Loading ieee.std_logic_unsigned(body)
+# Loading ieee.numeric_std(body)
+# Loading work.barrelshifter_32(mixed)#1
+# Loading work.mux16t1_32(structural)#1
+# Loading work.mux8t1_32(structural)#1
+# Loading work.mux2t1_n(structural)#2
+# Loading work.mux8t1_32(structural)#2
+add wave -position insertpoint sim:/alu/*
+force -freeze sim:/alu/i_A 32'h1 0
+force -freeze sim:/alu/i_B 32'h1 0
+force -freeze sim:/alu/i_aluOp 4'hE 0
+force -freeze sim:/alu/i_shamt 5'h0 0
+run 100
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /alu/sltModule
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /alu/sltModule
+force -freeze sim:/alu/i_aluOp 1100 0
+run 100
+force -freeze sim:/alu/i_aluOp 4'hC 0
+run 100
+quit -sim
+# End time: 14:38:01 on Oct 25,2024, Elapsed time: 0:01:47
+# Errors: 0, Warnings: 3
+vcom -reportprogress 300 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/Add_Sub_N.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 14:38:06 on Oct 25,2024
+# vcom -reportprogress 300 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/Add_Sub_N.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Add_Sub_N
+# -- Compiling architecture structural of Add_Sub_N
+# End time: 14:38:06 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/Adder.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 14:38:06 on Oct 25,2024
+# vcom -reportprogress 300 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/Adder.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Adder
+# -- Compiling architecture behavior of Adder
+# End time: 14:38:06 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/addersubtractor.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 14:38:06 on Oct 25,2024
+# vcom -reportprogress 300 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/addersubtractor.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity addersubtractor
+# -- Compiling architecture structural of addersubtractor
+# End time: 14:38:06 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/alu.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 14:38:06 on Oct 25,2024
+# vcom -reportprogress 300 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/alu.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity alu
+# -- Compiling architecture structural of alu
+# End time: 14:38:06 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/alu_addersubtractor.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 14:38:06 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/alu_addersubtractor.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity alu_addersubtractor
+# -- Compiling architecture structural of alu_addersubtractor
+# End time: 14:38:06 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/and2_N.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 14:38:06 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/and2_N.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity and2_N
+# -- Compiling architecture structural of and2_N
+# End time: 14:38:06 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/andg2.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 14:38:06 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/andg2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity andg2
+# -- Compiling architecture dataflow of andg2
+# End time: 14:38:06 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/barrelshifter_32.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 14:38:06 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/barrelshifter_32.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity barrelshifter_32
+# -- Compiling architecture mixed of barrelshifter_32
+# End time: 14:38:06 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/beq.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 14:38:06 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/beq.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity beq
+# -- Compiling architecture dataflow of beq
+# End time: 14:38:06 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/beq_bne.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 14:38:06 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/beq_bne.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity beq_bne
+# -- Compiling architecture structural of beq_bne
+# End time: 14:38:06 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/cla_adder.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 14:38:06 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/cla_adder.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity cla_adder
+# -- Compiling architecture mixed of cla_adder
+# End time: 14:38:06 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/control.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 14:38:06 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/control.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity control
+# -- Compiling architecture behavior of control
+# End time: 14:38:06 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/datapathv2.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 14:38:06 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/datapathv2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package mypack
+# -- Compiling entity datapathv2
+# -- Compiling architecture structural of datapathv2
+# End time: 14:38:06 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/decoder5t32.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 14:38:06 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/decoder5t32.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity decoder5t32
+# -- Compiling architecture behavior of decoder5t32
+# End time: 14:38:06 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/dfmux.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 14:38:06 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/dfmux.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity dfmux
+# -- Compiling architecture dataflow of dfmux
+# End time: 14:38:06 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/equalitymodule.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 14:38:06 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/equalitymodule.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity equalityModule
+# -- Compiling architecture dataflow of equalityModule
+# End time: 14:38:06 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/equalityMuxModule.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 14:38:06 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/equalityMuxModule.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity slt_equality_check
+# -- Compiling architecture dataflow of slt_equality_check
+# End time: 14:38:06 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/extender.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 14:38:06 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/extender.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity extender
+# -- Compiling architecture behavior of extender
+# End time: 14:38:06 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/fetchLogic.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 14:38:06 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/fetchLogic.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity fetchLogic
+# -- Compiling architecture mixed of fetchLogic
+# End time: 14:38:06 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/FullAdder.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 14:38:06 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/FullAdder.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity FullAdder
+# -- Compiling architecture mixed of FullAdder
+# End time: 14:38:06 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/FullAdder_N.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 14:38:07 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/FullAdder_N.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity FullAdder_N
+# -- Compiling architecture structural of FullAdder_N
+# End time: 14:38:07 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/invg.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 14:38:07 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/invg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity invg
+# -- Compiling architecture dataflow of invg
+# End time: 14:38:07 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/invg_N.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 14:38:07 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/invg_N.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity invg_N
+# -- Compiling architecture structural of invg_N
+# End time: 14:38:07 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/lessThanCheck.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 14:38:07 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/lessThanCheck.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_SIGNED
+# -- Compiling entity lessThanCheck
+# -- Compiling architecture dataflow of lessThanCheck
+# End time: 14:38:07 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/mem.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 14:38:07 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/mem.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity mem
+# -- Compiling architecture rtl of mem
+# End time: 14:38:07 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/MIPS_processor.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 14:38:07 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/MIPS_processor.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity MIPS_processor
+# -- Compiling architecture structure of MIPS_processor
+# End time: 14:38:07 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/Multiplier.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 14:38:07 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/Multiplier.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Multiplier
+# -- Compiling architecture behavior of Multiplier
+# End time: 14:38:07 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/mux2t1_N.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 14:38:07 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/mux2t1_N.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux2t1_N
+# -- Compiling architecture structural of mux2t1_N
+# End time: 14:38:07 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/mux2t_1.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 14:38:07 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/mux2t_1.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux2t1
+# -- Compiling architecture dataflow of mux2t1
+# End time: 14:38:07 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/mux2to1.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 14:38:07 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/mux2to1.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux2to1
+# -- Compiling architecture mixed of mux2to1
+# End time: 14:38:07 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/mux8t1_32.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 14:38:07 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/mux8t1_32.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux8t1_32
+# -- Compiling architecture structural of mux8t1_32
+# End time: 14:38:07 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/mux16t1_32.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 14:38:07 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/mux16t1_32.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux16t1_32
+# -- Compiling architecture structural of mux16t1_32
+# End time: 14:38:07 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/mux32t1.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 14:38:07 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/mux32t1.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package mypack
+# -- Loading package mypack
+# -- Compiling entity mux32t1
+# -- Compiling architecture behavior of mux32t1
+# End time: 14:38:07 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/N_bitRegister.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 14:38:07 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/N_bitRegister.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity N_bitRegister
+# -- Compiling architecture mixed of N_bitRegister
+# End time: 14:38:07 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/onesComp.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 14:38:07 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/onesComp.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity onesComp
+# -- Compiling architecture structure of onesComp
+# End time: 14:38:07 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/onesComp_N.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 14:38:07 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/onesComp_N.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity onesComp_N
+# -- Compiling architecture structural of onesComp_N
+# End time: 14:38:07 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/org2.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 14:38:07 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/org2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity org2
+# -- Compiling architecture dataflow of org2
+# End time: 14:38:07 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/Reg.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 14:38:07 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/Reg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Reg
+# -- Compiling architecture behavior of Reg
+# End time: 14:38:07 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/regfile.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 14:38:07 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/regfile.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package mypack
+# -- Compiling entity regfile
+# -- Compiling architecture structural of regfile
+# End time: 14:38:07 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/register.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 14:38:07 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/register.vhd 
+# -- Loading package STANDARD
+# ** Error (suppressible): /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/register.vhd(1): (vcom-1491) Empty source files.
+# End time: 14:38:08 on Oct 25,2024, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/RegLd.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 14:38:08 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/RegLd.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity RegLd
+# -- Compiling architecture behavior of RegLd
+# End time: 14:38:08 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/slt_equality_check.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 14:38:08 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/slt_equality_check.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity equality_check
+# -- Compiling architecture dataflow of equality_check
+# End time: 14:38:08 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/tb_ALU.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 14:38:08 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/tb_ALU.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity tb_alu
+# -- Compiling architecture test of tb_alu
+# End time: 14:38:08 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/tb_barrelShifter.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 14:38:08 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/tb_barrelShifter.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity tb_barrelShifter
+# -- Compiling architecture behavior of tb_barrelShifter
+# End time: 14:38:08 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/tb_control.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 14:38:08 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/tb_control.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity tb_control
+# -- Compiling architecture behavior of tb_control
+# End time: 14:38:08 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/tb_datapathv2.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 14:38:08 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/tb_datapathv2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity tb_datapathv2
+# -- Compiling architecture behavior of tb_datapathv2
+# End time: 14:38:08 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/tb_dmem.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 14:38:08 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/tb_dmem.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity tb_dmem
+# -- Compiling architecture behavior of tb_dmem
+# End time: 14:38:08 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/tb_extender.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 14:38:08 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/tb_extender.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity tb_extender
+# -- Compiling architecture behavior of tb_extender
+# End time: 14:38:08 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 30 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/xorg2.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 14:38:08 on Oct 25,2024
+# vcom -reportprogress 30 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/xorg2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity xorg2
+# -- Compiling architecture dataflow of xorg2
+# End time: 14:38:08 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -voptargs=+acc work.alu
+# vsim -voptargs="+acc" work.alu 
+# Start time: 14:38:14 on Oct 25,2024
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.alu(structural)#1
+# Loading work.invg(dataflow)#1
+# Loading work.mux2t1(dataflow)#1
+# Loading work.invg_n(structural)#1
+# Loading work.equalitymodule(dataflow)#1
+# Loading work.slt_equality_check(dataflow)#1
+# Loading work.mux2t1_n(structural)#1
+# Loading work.mux2to1(mixed)#1
+# Loading work.andg2(dataflow)#1
+# Loading work.org2(dataflow)#1
+# Loading work.add_sub_n(structural)#1
+# Loading work.invg_n(structural)#2
+# Loading work.fulladder_n(structural)#1
+# Loading work.fulladder(mixed)#1
+# Loading work.xorg2(dataflow)#1
+# Loading work.onescomp_n(structural)#1
+# Loading work.onescomp(structure)#1
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_signed(body)
+# Loading work.lessthancheck(dataflow)#1
+# Loading ieee.std_logic_unsigned(body)
+# Loading ieee.numeric_std(body)
+# Loading work.barrelshifter_32(mixed)#1
+# Loading work.mux16t1_32(structural)#1
+# Loading work.mux8t1_32(structural)#1
+# Loading work.mux2t1_n(structural)#2
+# Loading work.mux8t1_32(structural)#2
+add wave -position insertpoint sim:/alu/*
+force -freeze sim:/alu/i_A 32'h3 0
+force -freeze sim:/alu/i_B 32'h3 0
+force -freeze sim:/alu/i_aluOp 4'hC 0
+force -freeze sim:/alu/i_shamt 5'h0 0
+run 100
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /alu/sltModule
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /alu/sltModule
+force -freeze sim:/alu/i_aluOp 4'hE 0
+run 100
+quit -sim
+# End time: 14:39:30 on Oct 25,2024, Elapsed time: 0:01:16
+# Errors: 0, Warnings: 3
+vcom -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/alu.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 14:43:00 on Oct 25,2024
+# vcom -reportprogress 300 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/alu.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity alu
+# -- Compiling architecture structural of alu
+# End time: 14:43:00 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -voptargs=+acc work.alu
+# vsim -voptargs="+acc" work.alu 
+# Start time: 14:43:05 on Oct 25,2024
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.alu(structural)#1
+# Loading work.invg(dataflow)#1
+# Loading work.mux2t1(dataflow)#1
+# Loading work.invg_n(structural)#1
+# Loading work.equalitymodule(dataflow)#1
+# Loading work.slt_equality_check(dataflow)#1
+# Loading work.mux2t1_n(structural)#1
+# Loading work.mux2to1(mixed)#1
+# Loading work.andg2(dataflow)#1
+# Loading work.org2(dataflow)#1
+# Loading work.add_sub_n(structural)#1
+# Loading work.invg_n(structural)#2
+# Loading work.fulladder_n(structural)#1
+# Loading work.fulladder(mixed)#1
+# Loading work.xorg2(dataflow)#1
+# Loading work.onescomp_n(structural)#1
+# Loading work.onescomp(structure)#1
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_signed(body)
+# Loading work.lessthancheck(dataflow)#1
+# Loading ieee.std_logic_unsigned(body)
+# Loading ieee.numeric_std(body)
+# Loading work.barrelshifter_32(mixed)#1
+# Loading work.mux16t1_32(structural)#1
+# Loading work.mux8t1_32(structural)#1
+# Loading work.mux2t1_n(structural)#2
+# Loading work.mux8t1_32(structural)#2
+add wave -position insertpoint sim:/alu/*
+force -freeze sim:/alu/i_A 32'h3 0
+force -freeze sim:/alu/i_B 32'h4 0
+force -freeze sim:/alu/i_aluOp 4'hF 0
+force -freeze sim:/alu/i_shamt 5'h0 0
+run 100
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /alu/sltModule
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /alu/sltModule
+force -freeze sim:/alu/i_A 32'h00000004 0
+run 100
+force -freeze sim:/alu/i_A 32'h00000005 0
+run 100
+quit -sim
+# End time: 14:44:39 on Oct 25,2024, Elapsed time: 0:01:34
+# Errors: 0, Warnings: 3
+vcom -reportprogress 300 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/luishift.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 14:48:13 on Oct 25,2024
+# vcom -reportprogress 300 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/luishift.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity luishift
+# ** Error: /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/luishift.vhd(8): (vcom-1353) Element constraint at depth 1 cannot apply to non-composite type (ieee.std_logic_1164.STD_LOGIC).
+# ** Error: /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/luishift.vhd(10): near "end": (vcom-1576) expecting IDENTIFIER.
+# ** Note: /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/luishift.vhd(10): VHDL Compiler exiting
+# End time: 14:48:14 on Oct 25,2024, Elapsed time: 0:00:01
+# Errors: 2, Warnings: 0
+vcom -reportprogress 300 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/luishift.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 14:48:39 on Oct 25,2024
+# vcom -reportprogress 300 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/luishift.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity luishift
+# ** Error: /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/luishift.vhd(10): near "end": (vcom-1576) expecting IDENTIFIER.
+# ** Note: /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/luishift.vhd(10): VHDL Compiler exiting
+# End time: 14:48:39 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/luishift.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 14:49:16 on Oct 25,2024
+# vcom -reportprogress 300 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/luishift.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity luishift
+# -- Compiling architecture dataflow of luishift
+# End time: 14:49:16 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/alu.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 14:52:42 on Oct 25,2024
+# vcom -reportprogress 300 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/alu.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity alu
+# -- Compiling architecture structural of alu
+# ** Error: /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/alu.vhd(163): near "entity": (vcom-1576) expecting BEGIN.
+# ** Note: /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/alu.vhd(163): VHDL Compiler exiting
+# End time: 14:52:42 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# /usr/local/mentor/questasim/linux_x86_64/vcom failed.
+vcom -work work {/home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/alu.vhd}
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 14:53:20 on Oct 25,2024
+# vcom -reportprogress 300 -work work /home/spencero/Desktop/ALUTesting/blevake Project01 blevake-alu proj1(3)/alu.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity alu
+# -- Compiling architecture structural of alu
+# End time: 14:53:20 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -voptargs=+acc work.alu
+# vsim -voptargs="+acc" work.alu 
+# Start time: 14:53:25 on Oct 25,2024
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.alu(structural)#1
+# Loading ieee.numeric_std(body)
+# Loading work.luishift(dataflow)#1
+# Loading work.invg(dataflow)#1
+# Loading work.mux2t1(dataflow)#1
+# Loading work.invg_n(structural)#1
+# Loading work.equalitymodule(dataflow)#1
+# Loading work.slt_equality_check(dataflow)#1
+# Loading work.mux2t1_n(structural)#1
+# Loading work.mux2to1(mixed)#1
+# Loading work.andg2(dataflow)#1
+# Loading work.org2(dataflow)#1
+# Loading work.add_sub_n(structural)#1
+# Loading work.invg_n(structural)#2
+# Loading work.fulladder_n(structural)#1
+# Loading work.fulladder(mixed)#1
+# Loading work.xorg2(dataflow)#1
+# Loading work.onescomp_n(structural)#1
+# Loading work.onescomp(structure)#1
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_signed(body)
+# Loading work.lessthancheck(dataflow)#1
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.barrelshifter_32(mixed)#1
+# Loading work.mux16t1_32(structural)#1
+# Loading work.mux8t1_32(structural)#1
+# Loading work.mux2t1_n(structural)#2
+# Loading work.mux8t1_32(structural)#2
+add wave -position insertpoint sim:/alu/*
+force -freeze sim:/alu/i_A 32'h0 0
+force -freeze sim:/alu/i_B 32'h123 0
+force -freeze sim:/alu/i_aluOp 4'hB 0
+force -freeze sim:/alu/i_shamt 5'h0 0
+run 100
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /alu/sltModule
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /alu/sltModule
+quit -sim
+# End time: 14:54:26 on Oct 25,2024, Elapsed time: 0:01:01
+# Errors: 0, Warnings: 3

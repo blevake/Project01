@@ -1,0 +1,113 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+use IEEE.numeric_std.all;  -- For std_logic_vector arithmetic
+
+entity tb_alu is
+end tb_alu;
+
+architecture testbench of tb_alu is
+
+  -- Signals to connect to the ALU
+  signal tb_i_A         : std_logic_vector(31 downto 0);
+  signal tb_i_B         : std_logic_vector(31 downto 0);
+  signal tb_i_aluOp     : std_logic_vector(3 downto 0);
+  signal tb_i_shamt     : std_logic_vector(4 downto 0);
+  signal tb_o_F         : std_logic_vector(31 downto 0);
+  signal tb_o_C         : std_logic;
+  signal tb_overFlow    : std_logic;
+  signal tb_zero        : std_logic;
+
+  -- Clock period for simulation
+  constant clk_period : time := 10 ns;
+
+begin
+
+  -- Instantiate the ALU
+  uut: entity work.alu
+    port map(
+      i_A      => tb_i_A,
+      i_B      => tb_i_B,
+      i_aluOp  => tb_i_aluOp,
+      i_shamt  => tb_i_shamt,
+      o_F      => tb_o_F,
+      o_C      => tb_o_C,
+      overFlow => tb_overFlow,
+      zero     => tb_zero
+    );
+
+  -- Stimulus process
+  stimulus_process: process
+  begin
+    -- Test 1: Add (ALU operation 0001)
+    tb_i_A <= x"00000010";  -- 2
+    tb_i_B <= x"00000003";  -- 3
+    tb_i_aluOp <= "0001";   -- Add
+    tb_i_shamt <= "00000";  -- Shift amount (not used in add)
+    wait for clk_period;
+    
+    assert tb_o_F = x"00000005" report "Addition failed" severity error;
+    assert tb_overFlow = '0' report "Unexpected overflow" severity error;
+    assert tb_zero = '0' report "Unexpected zero flag" severity error;
+
+    -- Test 2: Subtract (ALU operation 0001 with subtract control bit)
+    tb_i_A <= x"00000005";  -- 5
+    tb_i_B <= x"00000003";  -- 3
+    tb_i_aluOp <= "0011";   -- Subtract
+    wait for clk_period;
+
+    assert tb_o_F = x"00000002" report "Subtraction failed" severity error;
+
+    -- Test 3: Bitwise AND (ALU operation 0111)
+    tb_i_A <= x"0F0F0F0F";  -- Pattern
+    tb_i_B <= x"00FF00FF";  -- Pattern
+    tb_i_aluOp <= "0111";   -- AND
+    wait for clk_period;
+
+    assert tb_o_F = x"000F000F" report "AND operation failed" severity error;
+
+    -- Test 4: Bitwise OR (ALU operation 0010)
+    tb_i_A <= x"0F0F0F0F";  -- Pattern
+    tb_i_B <= x"00FF00FF";  -- Pattern
+    tb_i_aluOp <= "0010";   -- OR
+    wait for clk_period;
+
+    assert tb_o_F = x"0FFF0FFF" report "OR operation failed" severity error;
+
+    -- Test 5: XOR (ALU operation 0100)
+    tb_i_A <= x"0F0F0F0F";  -- Pattern
+    tb_i_B <= x"00FF00FF";  -- Pattern
+    tb_i_aluOp <= "0100";   -- XOR
+    wait for clk_period;
+
+    assert tb_o_F = x"0FF00FF0" report "XOR operation failed" severity error;
+
+    -- Test 6: Shift Left Logical (ALU operation for shift)
+    tb_i_A <= x"00000001";  -- Input data
+    tb_i_B <= x"00000001";  -- Shift amount
+    tb_i_aluOp <= "1010";   -- Shift Left Logical (Assumed opcode)
+    tb_i_shamt <= "00001";  -- Shift by 1
+    wait for clk_period;
+
+    assert tb_o_F = x"00000002" report "Shift left failed" severity error;
+
+    -- Test 7: Overflow condition in addition
+    tb_i_A <= x"7FFFFFFF";  -- Largest positive number
+    tb_i_B <= x"00000001";  -- 1
+    tb_i_aluOp <= "0001";   -- Add
+    wait for clk_period;
+
+    assert tb_overFlow = '1' report "Overflow condition failed" severity error;
+
+    -- Test 8: Zero flag condition
+    tb_i_A <= x"00000003";
+    tb_i_B <= x"00000003";
+    tb_i_aluOp <= "0011";   -- Subtract
+    wait for clk_period;
+
+    assert tb_zero = '1' report "Zero flag condition failed" severity error;
+
+    -- Simulation end
+    wait;
+  end process;
+
+end testbench;
