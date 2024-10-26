@@ -41,6 +41,7 @@ ARCHITECTURE structural OF alu IS
 	SIGNAL s_invertedzero : std_logic;
 	SIGNAL s_invAluOp : std_logic_vector(3 DOWNTO 0);
 	SIGNAL s_luiOut : std_logic_vector(31 DOWNTO 0);
+	SIGNAL s_luiShift : std_logic_vector(31 DOWNTO 0);
 
 	COMPONENT Add_Sub_N IS
 		PORT (
@@ -54,8 +55,8 @@ ARCHITECTURE structural OF alu IS
 
 	COMPONENT invg_N IS
 		PORT (
-			i_I : IN std_logic_vector(3 DOWNTO 0);
-			o_O : OUT std_logic_vector(3 DOWNTO 0)
+			i_I : IN std_logic_vector(31 DOWNTO 0);
+			o_O : OUT std_logic_vector(31 DOWNTO 0)
 		);
 	END COMPONENT;
 
@@ -102,8 +103,8 @@ ARCHITECTURE structural OF alu IS
 
 	COMPONENT onesComp_N IS
 		PORT (
-			i_I : IN std_logic_vector(31 DOWNTO 0);
-			o_O : OUT std_logic_vector(31 DOWNTO 0)
+			i_I : IN std_logic_vector(3 DOWNTO 0);
+			o_O : OUT std_logic_vector(3 DOWNTO 0)
 		);
 	END COMPONENT;
 
@@ -141,14 +142,6 @@ ARCHITECTURE structural OF alu IS
 	END COMPONENT;
 
 	COMPONENT lessThanCheck IS
-		PORT (
-			i_A : IN std_logic_vector(31 DOWNTO 0);
-			i_B : IN std_logic_vector(31 DOWNTO 0);
-			o_F : OUT std_logic_vector(31 DOWNTO 0)
-		);
-	END COMPONENT;
-
-	COMPONENT slt_equality_check IS
 		PORT (
 			i_A : IN std_logic_vector(31 DOWNTO 0);
 			i_B : IN std_logic_vector(31 DOWNTO 0);
@@ -200,8 +193,13 @@ BEGIN
 	lui : luishift
 	PORT MAP(
 		i_A => i_B, 
-		o_F => s_luiOut
+		o_F => s_luiShift
 	);
+	
+	process (s_luiShift) is
+		begin
+			s_luiOut <= s_luiShift(31 downto 16) & i_A(15 downto 0);
+		end process;
 
 	invzero : invg
 	PORT MAP(
@@ -217,7 +215,7 @@ BEGIN
 		o_O => o_zero
 	);
 
-	invforshift : invg_N
+	invforshift : onesComp_N
 	PORT MAP(
 		i_I => i_AluOp, 
 		o_O => s_invAluOp
@@ -269,7 +267,7 @@ BEGIN
 	END GENERATE;
 
 	-- NOR operation using one's complement
-	onesComp : onesComp_N
+	invertComp : invg_N
 	PORT MAP(
 		i_I => orOutput, 
 		o_O => norOutput
