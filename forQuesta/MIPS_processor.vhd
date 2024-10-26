@@ -113,8 +113,8 @@ architecture structure of MIPS_Processor is
             i_aluOp   : in std_logic_vector(3 downto 0);   -- ALU operation control signal
             i_shamt   : in std_logic_vector(4 downto 0);   -- Shift amount
             o_F       : out std_logic_vector(31 downto 0); -- ALU result
-            overFlow  : out std_logic;                     -- Overflow flag
-            zero      : out std_logic                      -- Zero flag
+            o_overFlow  : out std_logic;                     -- Overflow flag
+            o_zero      : out std_logic                      -- Zero flag
         );
     end component;
 
@@ -242,8 +242,8 @@ begin
 		i_aluOp		=> s_aluCtl,
 		i_shamt		=> s_Inst(10 downto 6),
 		o_F		=> s_aluResult, 
-		overFlow	=> s_Ovfl,
-		zero		=> s_zero 
+		o_overFlow	=> s_Ovfl,
+		o_zero		=> s_zero 
 		);
 
 g_FETCHLOGIC : fetchLogic port map(
