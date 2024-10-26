@@ -2,7 +2,7 @@ Library IEEE;
 Use IEEE.std_logic_1164.All;
 
 Entity onesComp_N Is
-	Generic (N : Integer := 32); -- Generic for input/output data width, default is 32 bits.
+	Generic (N : Integer := 4); -- Generic for input/output data width, default is 32 bits.
 	Port (
 		i_I : In std_logic_vector(N - 1 Downto 0); -- Input vector (N bits)
 		o_O : Out std_logic_vector(N - 1 Downto 0) -- Output vector (N bits), one's complement of input
