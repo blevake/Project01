@@ -75,8 +75,8 @@ architecture structure of MIPS_Processor is
             oJ        : out std_logic;                      -- Jump control signal
             oSE       : out std_logic;                      -- Sign extension enable
             oJR       : out std_logic;
-            oRegDst   : out std_logic                       -- Register destination selection
-);
+            oRegDst   : out std_logic;                       -- Register destination selection
+	    halt      : out std_logic);
 
     end component;
 
@@ -156,6 +156,8 @@ end component;
 	i_JumpInstrImm	:	in std_logic_vector(25 downto 0);	--will be shifted left, then take top 4 bits from PC
 	i_BranchInstrImm:	in std_logic_vector(N-1 downto 0);	--will be shifted left then added to PC, already sign extended
 	i_RSInput	:	in std_logic_vector(N-1 downto 0);
+	i_Clk		: 	in std_logic;	
+	i_Rst		: 	in std_logic;	
 	o_PC4		:	out std_logic_vector(N-1 downto 0);
 	o_PC		:	out std_logic_vector(N-1 downto 0)	--output program counter
 );
@@ -230,7 +232,8 @@ begin
             oJ        => s_j,
             oSE       => s_signExtSel,
 	    oJR       => s_jr,
-            oRegDst   => s_regDst
+            oRegDst   => s_regDst,
+	    halt      => s_Halt
 		);
 
   g_ALU : alu port map(
@@ -252,6 +255,8 @@ g_FETCHLOGIC : fetchLogic port map(
 	i_JumpInstrImm  	=> s_Inst(25 downto 0),
 	i_BranchInstrImm    	=> s_imm, 
 	i_RSInput    		=> s_RF_rd1, 
+   	i_Clk                   => iCLK,
+	I_Rst			=> iRST,
         o_PC4			=> s_PC4,
 	o_PC    		=> s_NextInstAddr
 );

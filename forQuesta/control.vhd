@@ -14,11 +14,13 @@ entity control is
        oJ                    : out std_logic;
        oSE                   : out std_logic;	-- sign extension
        oJR                   : out std_logic;
-       oRegDst               : out std_logic);
+       oRegDst               : out std_logic;
+       halt 		     : out std_logic);
 
 end control;
 
 architecture behavior of control is
+signal s_halt : std_logic := '0';
 
 begin
 
@@ -326,6 +328,18 @@ begin
 		oJ        <= '1';
                 oSE       <= '0';
                 oJR       <= '0';
+	when "010100" =>	-- halt
+		oALUSrc   <= '0';
+		oALUCtl   <= x"0";
+		oMemtoReg <= '0';
+                oDMemWr   <= '0';
+                oRegWr    <= '1';
+                oRegDst   <= '0';
+                oBr       <= '0';
+		oJ        <= '1';
+                oSE       <= '0';
+                oJR       <= '0';
+		s_halt	  <= '1';
 	when others => 	-- OTHER no writing
 		oALUSrc   <= '0';
 		oALUCtl   <= x"0";
@@ -339,6 +353,6 @@ begin
                 oJR       <= '0';
     end case;
 end process;
-
+halt <= s_halt;
 
 end behavior;
