@@ -1,0 +1,919 @@
+# //  Questa Sim-64
+# //  Version 2024.2 linux_x86_64 May 20 2024
+# //
+# // Unpublished work. Copyright 2024 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+vlib work
+vcom -reportprogress 300 -work work /home/blevake/cpre381/Proj1/cwScr/Add_Sub_N.vhd /home/blevake/cpre381/Proj1/cwScr/Adder.vhd /home/blevake/cpre381/Proj1/cwScr/addersubtractor.vhd /home/blevake/cpre381/Proj1/cwScr/alu.vhd /home/blevake/cpre381/Proj1/cwScr/alu_addersubtractor.vhd /home/blevake/cpre381/Proj1/cwScr/and2_N.vhd /home/blevake/cpre381/Proj1/cwScr/andg2.vhd /home/blevake/cpre381/Proj1/cwScr/barrelshifter_32.vhd /home/blevake/cpre381/Proj1/cwScr/beq.vhd /home/blevake/cpre381/Proj1/cwScr/beq_bne.vhd /home/blevake/cpre381/Proj1/cwScr/cla_adder.vhd /home/blevake/cpre381/Proj1/cwScr/control.vhd /home/blevake/cpre381/Proj1/cwScr/datapathv2.vhd /home/blevake/cpre381/Proj1/cwScr/decoder5t32.vhd /home/blevake/cpre381/Proj1/cwScr/dfmux.vhd /home/blevake/cpre381/Proj1/cwScr/equalitymodule.vhd /home/blevake/cpre381/Proj1/cwScr/equalityMuxModule.vhd /home/blevake/cpre381/Proj1/cwScr/extender.vhd /home/blevake/cpre381/Proj1/cwScr/fetchLogic.vhd /home/blevake/cpre381/Proj1/cwScr/FullAdder.vhd /home/blevake/cpre381/Proj1/cwScr/FullAdder_N.vhd /home/blevake/cpre381/Proj1/cwScr/invg.vhd /home/blevake/cpre381/Proj1/cwScr/invg_N.vhd /home/blevake/cpre381/Proj1/cwScr/lessThanCheck.vhd /home/blevake/cpre381/Proj1/cwScr/luishift.vhd /home/blevake/cpre381/Proj1/cwScr/mem.vhd /home/blevake/cpre381/Proj1/cwScr/MIPS_processor.vhd /home/blevake/cpre381/Proj1/cwScr/MIPS_types.vhd /home/blevake/cpre381/Proj1/cwScr/Multiplier.vhd /home/blevake/cpre381/Proj1/cwScr/mux2t1_5.vhd /home/blevake/cpre381/Proj1/cwScr/mux2t1_N.vhd /home/blevake/cpre381/Proj1/cwScr/mux2t_1.vhd /home/blevake/cpre381/Proj1/cwScr/mux2to1.vhd /home/blevake/cpre381/Proj1/cwScr/mux8t1_32.vhd /home/blevake/cpre381/Proj1/cwScr/mux16t1_32.vhd /home/blevake/cpre381/Proj1/cwScr/mux32t1.vhd /home/blevake/cpre381/Proj1/cwScr/N_bitRegister.vhd /home/blevake/cpre381/Proj1/cwScr/onesComp.vhd /home/blevake/cpre381/Proj1/cwScr/onesComp_N.vhd /home/blevake/cpre381/Proj1/cwScr/org2.vhd /home/blevake/cpre381/Proj1/cwScr/Reg.vhd /home/blevake/cpre381/Proj1/cwScr/regfile.vhd /home/blevake/cpre381/Proj1/cwScr/register.vhd /home/blevake/cpre381/Proj1/cwScr/RegLd.vhd /home/blevake/cpre381/Proj1/cwScr/slt_equality_check.vhd /home/blevake/cpre381/Proj1/cwScr/tb_ALU.vhd /home/blevake/cpre381/Proj1/cwScr/tb_barrelShifter.vhd /home/blevake/cpre381/Proj1/cwScr/tb_control.vhd /home/blevake/cpre381/Proj1/cwScr/tb_datapathv2.vhd /home/blevake/cpre381/Proj1/cwScr/tb_dmem.vhd /home/blevake/cpre381/Proj1/cwScr/tb_extender.vhd /home/blevake/cpre381/Proj1/cwScr/xorg2.vhd
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:25:02 on Oct 26,2024
+# vcom -reportprogress 300 -work work /home/blevake/cpre381/Proj1/cwScr/Add_Sub_N.vhd /home/blevake/cpre381/Proj1/cwScr/Adder.vhd /home/blevake/cpre381/Proj1/cwScr/addersubtractor.vhd /home/blevake/cpre381/Proj1/cwScr/alu.vhd /home/blevake/cpre381/Proj1/cwScr/alu_addersubtractor.vhd /home/blevake/cpre381/Proj1/cwScr/and2_N.vhd /home/blevake/cpre381/Proj1/cwScr/andg2.vhd /home/blevake/cpre381/Proj1/cwScr/barrelshifter_32.vhd /home/blevake/cpre381/Proj1/cwScr/beq.vhd /home/blevake/cpre381/Proj1/cwScr/beq_bne.vhd /home/blevake/cpre381/Proj1/cwScr/cla_adder.vhd /home/blevake/cpre381/Proj1/cwScr/control.vhd /home/blevake/cpre381/Proj1/cwScr/datapathv2.vhd /home/blevake/cpre381/Proj1/cwScr/decoder5t32.vhd /home/blevake/cpre381/Proj1/cwScr/dfmux.vhd /home/blevake/cpre381/Proj1/cwScr/equalitymodule.vhd /home/blevake/cpre381/Proj1/cwScr/equalityMuxModule.vhd /home/blevake/cpre381/Proj1/cwScr/extender.vhd /home/blevake/cpre381/Proj1/cwScr/fetchLogic.vhd /home/blevake/cpre381/Proj1/cwScr/FullAdder.vhd /home/blevake/cpre381/Proj1/cwScr/FullAdder_N.vhd /home/blevake/cpre381/Proj1/cwScr/invg.vhd /home/blevake/cpre381/Proj1/cwScr/invg_N.vhd /home/blevake/cpre381/Proj1/cwScr/lessThanCheck.vhd /home/blevake/cpre381/Proj1/cwScr/luishift.vhd /home/blevake/cpre381/Proj1/cwScr/mem.vhd /home/blevake/cpre381/Proj1/cwScr/MIPS_processor.vhd /home/blevake/cpre381/Proj1/cwScr/MIPS_types.vhd /home/blevake/cpre381/Proj1/cwScr/Multiplier.vhd /home/blevake/cpre381/Proj1/cwScr/mux2t1_5.vhd /home/blevake/cpre381/Proj1/cwScr/mux2t1_N.vhd /home/blevake/cpre381/Proj1/cwScr/mux2t_1.vhd /home/blevake/cpre381/Proj1/cwScr/mux2to1.vhd /home/blevake/cpre381/Proj1/cwScr/mux8t1_32.vhd /home/blevake/cpre381/Proj1/cwScr/mux16t1_32.vhd /home/blevake/cpre381/Proj1/cwScr/mux32t1.vhd /home/blevake/cpre381/Proj1/cwScr/N_bitRegister.vhd /home/blevake/cpre381/Proj1/cwScr/onesComp.vhd /home/blevake/cpre381/Proj1/cwScr/onesComp_N.vhd /home/blevake/cpre381/Proj1/cwScr/org2.vhd /home/blevake/cpre381/Proj1/cwScr/Reg.vhd /home/blevake/cpre381/Proj1/cwScr/regfile.vhd /home/blevake/cpre381/Proj1/cwScr/register.vhd /home/blevake/cpre381/Proj1/cwScr/RegLd.vhd /home/blevake/cpre381/Proj1/cwScr/slt_equality_check.vhd /home/blevake/cpre381/Proj1/cwScr/tb_ALU.vhd /home/blevake/cpre381/Proj1/cwScr/tb_barrelShifter.vhd /home/blevake/cpre381/Proj1/cwScr/tb_control.vhd /home/blevake/cpre381/Proj1/cwScr/tb_datapathv2.vhd /home/blevake/cpre381/Proj1/cwScr/tb_dmem.vhd /home/blevake/cpre381/Proj1/cwScr/tb_extender.vhd /home/blevake/cpre381/Proj1/cwScr/xorg2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Add_Sub_N
+# -- Compiling architecture structural of Add_Sub_N
+# -- Compiling entity Adder
+# -- Compiling architecture behavior of Adder
+# -- Compiling entity addersubtractor
+# -- Compiling architecture structural of addersubtractor
+# -- Compiling entity alu
+# -- Compiling architecture structural of alu
+# -- Compiling entity alu_addersubtractor
+# -- Compiling architecture structural of alu_addersubtractor
+# -- Compiling entity and2_N
+# -- Compiling architecture structural of and2_N
+# -- Compiling entity andg2
+# -- Compiling architecture dataflow of andg2
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity barrelshifter_32
+# -- Compiling architecture mixed of barrelshifter_32
+# -- Compiling entity beq
+# -- Compiling architecture dataflow of beq
+# -- Compiling entity beq_bne
+# -- Compiling architecture structural of beq_bne
+# -- Compiling entity cla_adder
+# -- Compiling architecture mixed of cla_adder
+# -- Compiling entity control
+# -- Compiling architecture behavior of control
+# ** Error: (vcom-11) Could not find work.mypack.
+# ** Error (suppressible): /home/blevake/cpre381/Proj1/cwScr/datapathv2.vhd(3): (vcom-1195) Cannot find expanded name "work.mypack".
+# ** Error: /home/blevake/cpre381/Proj1/cwScr/datapathv2.vhd(3): Unknown expanded name.
+# ** Note: /home/blevake/cpre381/Proj1/cwScr/datapathv2.vhd(5): VHDL Compiler exiting
+# End time: 13:25:02 on Oct 26,2024, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+vcom -reportprogress 300 -work work /home/blevake/cpre381/Proj1/cwScr/mux32t1.vhd
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:25:07 on Oct 26,2024
+# vcom -reportprogress 300 -work work /home/blevake/cpre381/Proj1/cwScr/mux32t1.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package mypack
+# -- Loading package mypack
+# -- Compiling entity mux32t1
+# -- Compiling architecture behavior of mux32t1
+# End time: 13:25:07 on Oct 26,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/blevake/cpre381/Proj1/cwScr/mux16t1_32.vhd
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:25:08 on Oct 26,2024
+# vcom -reportprogress 300 -work work /home/blevake/cpre381/Proj1/cwScr/mux16t1_32.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux16t1_32
+# -- Compiling architecture structural of mux16t1_32
+# End time: 13:25:08 on Oct 26,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/blevake/cpre381/Proj1/cwScr/Add_Sub_N.vhd /home/blevake/cpre381/Proj1/cwScr/Adder.vhd /home/blevake/cpre381/Proj1/cwScr/addersubtractor.vhd /home/blevake/cpre381/Proj1/cwScr/alu.vhd /home/blevake/cpre381/Proj1/cwScr/alu_addersubtractor.vhd /home/blevake/cpre381/Proj1/cwScr/and2_N.vhd /home/blevake/cpre381/Proj1/cwScr/andg2.vhd /home/blevake/cpre381/Proj1/cwScr/barrelshifter_32.vhd /home/blevake/cpre381/Proj1/cwScr/beq.vhd /home/blevake/cpre381/Proj1/cwScr/beq_bne.vhd /home/blevake/cpre381/Proj1/cwScr/cla_adder.vhd /home/blevake/cpre381/Proj1/cwScr/control.vhd /home/blevake/cpre381/Proj1/cwScr/datapathv2.vhd /home/blevake/cpre381/Proj1/cwScr/decoder5t32.vhd /home/blevake/cpre381/Proj1/cwScr/dfmux.vhd /home/blevake/cpre381/Proj1/cwScr/equalitymodule.vhd /home/blevake/cpre381/Proj1/cwScr/equalityMuxModule.vhd /home/blevake/cpre381/Proj1/cwScr/extender.vhd /home/blevake/cpre381/Proj1/cwScr/fetchLogic.vhd /home/blevake/cpre381/Proj1/cwScr/FullAdder.vhd /home/blevake/cpre381/Proj1/cwScr/FullAdder_N.vhd /home/blevake/cpre381/Proj1/cwScr/invg.vhd /home/blevake/cpre381/Proj1/cwScr/invg_N.vhd /home/blevake/cpre381/Proj1/cwScr/lessThanCheck.vhd /home/blevake/cpre381/Proj1/cwScr/luishift.vhd /home/blevake/cpre381/Proj1/cwScr/mem.vhd /home/blevake/cpre381/Proj1/cwScr/MIPS_processor.vhd /home/blevake/cpre381/Proj1/cwScr/MIPS_types.vhd /home/blevake/cpre381/Proj1/cwScr/Multiplier.vhd /home/blevake/cpre381/Proj1/cwScr/mux2t1_5.vhd /home/blevake/cpre381/Proj1/cwScr/mux2t1_N.vhd /home/blevake/cpre381/Proj1/cwScr/mux2t_1.vhd /home/blevake/cpre381/Proj1/cwScr/mux2to1.vhd /home/blevake/cpre381/Proj1/cwScr/mux8t1_32.vhd /home/blevake/cpre381/Proj1/cwScr/mux16t1_32.vhd /home/blevake/cpre381/Proj1/cwScr/mux32t1.vhd /home/blevake/cpre381/Proj1/cwScr/N_bitRegister.vhd /home/blevake/cpre381/Proj1/cwScr/onesComp.vhd /home/blevake/cpre381/Proj1/cwScr/onesComp_N.vhd /home/blevake/cpre381/Proj1/cwScr/org2.vhd /home/blevake/cpre381/Proj1/cwScr/Reg.vhd /home/blevake/cpre381/Proj1/cwScr/regfile.vhd /home/blevake/cpre381/Proj1/cwScr/register.vhd /home/blevake/cpre381/Proj1/cwScr/RegLd.vhd /home/blevake/cpre381/Proj1/cwScr/slt_equality_check.vhd /home/blevake/cpre381/Proj1/cwScr/tb_ALU.vhd /home/blevake/cpre381/Proj1/cwScr/tb_barrelShifter.vhd /home/blevake/cpre381/Proj1/cwScr/tb_control.vhd /home/blevake/cpre381/Proj1/cwScr/tb_datapathv2.vhd /home/blevake/cpre381/Proj1/cwScr/tb_dmem.vhd /home/blevake/cpre381/Proj1/cwScr/tb_extender.vhd /home/blevake/cpre381/Proj1/cwScr/xorg2.vhd
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:25:13 on Oct 26,2024
+# vcom -reportprogress 300 -work work /home/blevake/cpre381/Proj1/cwScr/Add_Sub_N.vhd /home/blevake/cpre381/Proj1/cwScr/Adder.vhd /home/blevake/cpre381/Proj1/cwScr/addersubtractor.vhd /home/blevake/cpre381/Proj1/cwScr/alu.vhd /home/blevake/cpre381/Proj1/cwScr/alu_addersubtractor.vhd /home/blevake/cpre381/Proj1/cwScr/and2_N.vhd /home/blevake/cpre381/Proj1/cwScr/andg2.vhd /home/blevake/cpre381/Proj1/cwScr/barrelshifter_32.vhd /home/blevake/cpre381/Proj1/cwScr/beq.vhd /home/blevake/cpre381/Proj1/cwScr/beq_bne.vhd /home/blevake/cpre381/Proj1/cwScr/cla_adder.vhd /home/blevake/cpre381/Proj1/cwScr/control.vhd /home/blevake/cpre381/Proj1/cwScr/datapathv2.vhd /home/blevake/cpre381/Proj1/cwScr/decoder5t32.vhd /home/blevake/cpre381/Proj1/cwScr/dfmux.vhd /home/blevake/cpre381/Proj1/cwScr/equalitymodule.vhd /home/blevake/cpre381/Proj1/cwScr/equalityMuxModule.vhd /home/blevake/cpre381/Proj1/cwScr/extender.vhd /home/blevake/cpre381/Proj1/cwScr/fetchLogic.vhd /home/blevake/cpre381/Proj1/cwScr/FullAdder.vhd /home/blevake/cpre381/Proj1/cwScr/FullAdder_N.vhd /home/blevake/cpre381/Proj1/cwScr/invg.vhd /home/blevake/cpre381/Proj1/cwScr/invg_N.vhd /home/blevake/cpre381/Proj1/cwScr/lessThanCheck.vhd /home/blevake/cpre381/Proj1/cwScr/luishift.vhd /home/blevake/cpre381/Proj1/cwScr/mem.vhd /home/blevake/cpre381/Proj1/cwScr/MIPS_processor.vhd /home/blevake/cpre381/Proj1/cwScr/MIPS_types.vhd /home/blevake/cpre381/Proj1/cwScr/Multiplier.vhd /home/blevake/cpre381/Proj1/cwScr/mux2t1_5.vhd /home/blevake/cpre381/Proj1/cwScr/mux2t1_N.vhd /home/blevake/cpre381/Proj1/cwScr/mux2t_1.vhd /home/blevake/cpre381/Proj1/cwScr/mux2to1.vhd /home/blevake/cpre381/Proj1/cwScr/mux8t1_32.vhd /home/blevake/cpre381/Proj1/cwScr/mux16t1_32.vhd /home/blevake/cpre381/Proj1/cwScr/mux32t1.vhd /home/blevake/cpre381/Proj1/cwScr/N_bitRegister.vhd /home/blevake/cpre381/Proj1/cwScr/onesComp.vhd /home/blevake/cpre381/Proj1/cwScr/onesComp_N.vhd /home/blevake/cpre381/Proj1/cwScr/org2.vhd /home/blevake/cpre381/Proj1/cwScr/Reg.vhd /home/blevake/cpre381/Proj1/cwScr/regfile.vhd /home/blevake/cpre381/Proj1/cwScr/register.vhd /home/blevake/cpre381/Proj1/cwScr/RegLd.vhd /home/blevake/cpre381/Proj1/cwScr/slt_equality_check.vhd /home/blevake/cpre381/Proj1/cwScr/tb_ALU.vhd /home/blevake/cpre381/Proj1/cwScr/tb_barrelShifter.vhd /home/blevake/cpre381/Proj1/cwScr/tb_control.vhd /home/blevake/cpre381/Proj1/cwScr/tb_datapathv2.vhd /home/blevake/cpre381/Proj1/cwScr/tb_dmem.vhd /home/blevake/cpre381/Proj1/cwScr/tb_extender.vhd /home/blevake/cpre381/Proj1/cwScr/xorg2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Add_Sub_N
+# -- Compiling architecture structural of Add_Sub_N
+# -- Compiling entity Adder
+# -- Compiling architecture behavior of Adder
+# -- Compiling entity addersubtractor
+# -- Compiling architecture structural of addersubtractor
+# -- Compiling entity alu
+# -- Compiling architecture structural of alu
+# -- Compiling entity alu_addersubtractor
+# -- Compiling architecture structural of alu_addersubtractor
+# -- Compiling entity and2_N
+# -- Compiling architecture structural of and2_N
+# -- Compiling entity andg2
+# -- Compiling architecture dataflow of andg2
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity barrelshifter_32
+# -- Compiling architecture mixed of barrelshifter_32
+# -- Compiling entity beq
+# -- Compiling architecture dataflow of beq
+# -- Compiling entity beq_bne
+# -- Compiling architecture structural of beq_bne
+# -- Compiling entity cla_adder
+# -- Compiling architecture mixed of cla_adder
+# -- Compiling entity control
+# -- Compiling architecture behavior of control
+# -- Loading package mypack
+# -- Compiling entity datapathv2
+# -- Compiling architecture structural of datapathv2
+# -- Compiling entity decoder5t32
+# -- Compiling architecture behavior of decoder5t32
+# -- Compiling entity dfmux
+# -- Compiling architecture dataflow of dfmux
+# -- Compiling entity equalityModule
+# -- Compiling architecture dataflow of equalityModule
+# -- Compiling entity slt_equality_check
+# -- Compiling architecture dataflow of slt_equality_check
+# -- Compiling entity extender
+# -- Compiling architecture behavior of extender
+# -- Compiling entity fetchLogic
+# -- Compiling architecture mixed of fetchLogic
+# -- Compiling entity FullAdder
+# -- Compiling architecture mixed of FullAdder
+# -- Compiling entity FullAdder_N
+# -- Compiling architecture structural of FullAdder_N
+# -- Compiling entity invg
+# -- Compiling architecture dataflow of invg
+# -- Compiling entity invg_N
+# -- Compiling architecture structural of invg_N
+# -- Loading package STD_LOGIC_SIGNED
+# -- Compiling entity lessThanCheck
+# -- Compiling architecture dataflow of lessThanCheck
+# -- Compiling entity luishift
+# -- Compiling architecture dataflow of luishift
+# -- Compiling entity mem
+# -- Compiling architecture rtl of mem
+# ** Error: (vcom-11) Could not find work.mips_types.
+# ** Error (suppressible): /home/blevake/cpre381/Proj1/cwScr/MIPS_processor.vhd(7): (vcom-1195) Cannot find expanded name "work.MIPS_types".
+# ** Error: /home/blevake/cpre381/Proj1/cwScr/MIPS_processor.vhd(7): Unknown expanded name.
+# ** Note: /home/blevake/cpre381/Proj1/cwScr/MIPS_processor.vhd(10): VHDL Compiler exiting
+# End time: 13:25:13 on Oct 26,2024, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+vcom -reportprogress 300 -work work /home/blevake/cpre381/Proj1/cwScr/mux32t1.vhd
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:25:18 on Oct 26,2024
+# vcom -reportprogress 300 -work work /home/blevake/cpre381/Proj1/cwScr/mux32t1.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package mypack
+# -- Loading package mypack
+# -- Compiling entity mux32t1
+# -- Compiling architecture behavior of mux32t1
+# End time: 13:25:18 on Oct 26,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/blevake/cpre381/Proj1/cwScr/mux8t1_32.vhd
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:25:18 on Oct 26,2024
+# vcom -reportprogress 300 -work work /home/blevake/cpre381/Proj1/cwScr/mux8t1_32.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux8t1_32
+# -- Compiling architecture structural of mux8t1_32
+# End time: 13:25:18 on Oct 26,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/blevake/cpre381/Proj1/cwScr/mux32t1.vhd
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:26:58 on Oct 26,2024
+# vcom -reportprogress 300 -work work /home/blevake/cpre381/Proj1/cwScr/mux32t1.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package mypack
+# -- Loading package mypack
+# -- Compiling entity mux32t1
+# -- Compiling architecture behavior of mux32t1
+# End time: 13:26:58 on Oct 26,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/blevake/cpre381/Proj1/cwScr/mux16t1_32.vhd
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:26:59 on Oct 26,2024
+# vcom -reportprogress 300 -work work /home/blevake/cpre381/Proj1/cwScr/mux16t1_32.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux16t1_32
+# -- Compiling architecture structural of mux16t1_32
+# End time: 13:26:59 on Oct 26,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/blevake/cpre381/Proj1/cwScr/mux8t1_32.vhd
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:26:59 on Oct 26,2024
+# vcom -reportprogress 300 -work work /home/blevake/cpre381/Proj1/cwScr/mux8t1_32.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux8t1_32
+# -- Compiling architecture structural of mux8t1_32
+# End time: 13:26:59 on Oct 26,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/blevake/cpre381/Proj1/cwScr/Add_Sub_N.vhd /home/blevake/cpre381/Proj1/cwScr/Adder.vhd /home/blevake/cpre381/Proj1/cwScr/addersubtractor.vhd /home/blevake/cpre381/Proj1/cwScr/alu.vhd /home/blevake/cpre381/Proj1/cwScr/alu_addersubtractor.vhd /home/blevake/cpre381/Proj1/cwScr/and2_N.vhd /home/blevake/cpre381/Proj1/cwScr/andg2.vhd /home/blevake/cpre381/Proj1/cwScr/barrelshifter_32.vhd /home/blevake/cpre381/Proj1/cwScr/beq.vhd /home/blevake/cpre381/Proj1/cwScr/beq_bne.vhd /home/blevake/cpre381/Proj1/cwScr/cla_adder.vhd /home/blevake/cpre381/Proj1/cwScr/control.vhd /home/blevake/cpre381/Proj1/cwScr/datapathv2.vhd /home/blevake/cpre381/Proj1/cwScr/decoder5t32.vhd /home/blevake/cpre381/Proj1/cwScr/dfmux.vhd /home/blevake/cpre381/Proj1/cwScr/equalitymodule.vhd /home/blevake/cpre381/Proj1/cwScr/equalityMuxModule.vhd /home/blevake/cpre381/Proj1/cwScr/extender.vhd /home/blevake/cpre381/Proj1/cwScr/fetchLogic.vhd /home/blevake/cpre381/Proj1/cwScr/FullAdder.vhd /home/blevake/cpre381/Proj1/cwScr/FullAdder_N.vhd /home/blevake/cpre381/Proj1/cwScr/invg.vhd /home/blevake/cpre381/Proj1/cwScr/invg_N.vhd /home/blevake/cpre381/Proj1/cwScr/lessThanCheck.vhd /home/blevake/cpre381/Proj1/cwScr/luishift.vhd /home/blevake/cpre381/Proj1/cwScr/mem.vhd /home/blevake/cpre381/Proj1/cwScr/MIPS_processor.vhd /home/blevake/cpre381/Proj1/cwScr/MIPS_types.vhd /home/blevake/cpre381/Proj1/cwScr/Multiplier.vhd /home/blevake/cpre381/Proj1/cwScr/mux2t1_5.vhd /home/blevake/cpre381/Proj1/cwScr/mux2t1_N.vhd /home/blevake/cpre381/Proj1/cwScr/mux2t_1.vhd /home/blevake/cpre381/Proj1/cwScr/mux2to1.vhd /home/blevake/cpre381/Proj1/cwScr/mux8t1_32.vhd /home/blevake/cpre381/Proj1/cwScr/mux16t1_32.vhd /home/blevake/cpre381/Proj1/cwScr/mux32t1.vhd /home/blevake/cpre381/Proj1/cwScr/N_bitRegister.vhd /home/blevake/cpre381/Proj1/cwScr/onesComp.vhd /home/blevake/cpre381/Proj1/cwScr/onesComp_N.vhd /home/blevake/cpre381/Proj1/cwScr/org2.vhd /home/blevake/cpre381/Proj1/cwScr/Reg.vhd /home/blevake/cpre381/Proj1/cwScr/regfile.vhd /home/blevake/cpre381/Proj1/cwScr/register.vhd /home/blevake/cpre381/Proj1/cwScr/RegLd.vhd /home/blevake/cpre381/Proj1/cwScr/slt_equality_check.vhd /home/blevake/cpre381/Proj1/cwScr/tb_ALU.vhd /home/blevake/cpre381/Proj1/cwScr/tb_barrelShifter.vhd /home/blevake/cpre381/Proj1/cwScr/tb_control.vhd /home/blevake/cpre381/Proj1/cwScr/tb_datapathv2.vhd /home/blevake/cpre381/Proj1/cwScr/tb_dmem.vhd /home/blevake/cpre381/Proj1/cwScr/tb_extender.vhd /home/blevake/cpre381/Proj1/cwScr/xorg2.vhd
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:27:04 on Oct 26,2024
+# vcom -reportprogress 300 -work work /home/blevake/cpre381/Proj1/cwScr/Add_Sub_N.vhd /home/blevake/cpre381/Proj1/cwScr/Adder.vhd /home/blevake/cpre381/Proj1/cwScr/addersubtractor.vhd /home/blevake/cpre381/Proj1/cwScr/alu.vhd /home/blevake/cpre381/Proj1/cwScr/alu_addersubtractor.vhd /home/blevake/cpre381/Proj1/cwScr/and2_N.vhd /home/blevake/cpre381/Proj1/cwScr/andg2.vhd /home/blevake/cpre381/Proj1/cwScr/barrelshifter_32.vhd /home/blevake/cpre381/Proj1/cwScr/beq.vhd /home/blevake/cpre381/Proj1/cwScr/beq_bne.vhd /home/blevake/cpre381/Proj1/cwScr/cla_adder.vhd /home/blevake/cpre381/Proj1/cwScr/control.vhd /home/blevake/cpre381/Proj1/cwScr/datapathv2.vhd /home/blevake/cpre381/Proj1/cwScr/decoder5t32.vhd /home/blevake/cpre381/Proj1/cwScr/dfmux.vhd /home/blevake/cpre381/Proj1/cwScr/equalitymodule.vhd /home/blevake/cpre381/Proj1/cwScr/equalityMuxModule.vhd /home/blevake/cpre381/Proj1/cwScr/extender.vhd /home/blevake/cpre381/Proj1/cwScr/fetchLogic.vhd /home/blevake/cpre381/Proj1/cwScr/FullAdder.vhd /home/blevake/cpre381/Proj1/cwScr/FullAdder_N.vhd /home/blevake/cpre381/Proj1/cwScr/invg.vhd /home/blevake/cpre381/Proj1/cwScr/invg_N.vhd /home/blevake/cpre381/Proj1/cwScr/lessThanCheck.vhd /home/blevake/cpre381/Proj1/cwScr/luishift.vhd /home/blevake/cpre381/Proj1/cwScr/mem.vhd /home/blevake/cpre381/Proj1/cwScr/MIPS_processor.vhd /home/blevake/cpre381/Proj1/cwScr/MIPS_types.vhd /home/blevake/cpre381/Proj1/cwScr/Multiplier.vhd /home/blevake/cpre381/Proj1/cwScr/mux2t1_5.vhd /home/blevake/cpre381/Proj1/cwScr/mux2t1_N.vhd /home/blevake/cpre381/Proj1/cwScr/mux2t_1.vhd /home/blevake/cpre381/Proj1/cwScr/mux2to1.vhd /home/blevake/cpre381/Proj1/cwScr/mux8t1_32.vhd /home/blevake/cpre381/Proj1/cwScr/mux16t1_32.vhd /home/blevake/cpre381/Proj1/cwScr/mux32t1.vhd /home/blevake/cpre381/Proj1/cwScr/N_bitRegister.vhd /home/blevake/cpre381/Proj1/cwScr/onesComp.vhd /home/blevake/cpre381/Proj1/cwScr/onesComp_N.vhd /home/blevake/cpre381/Proj1/cwScr/org2.vhd /home/blevake/cpre381/Proj1/cwScr/Reg.vhd /home/blevake/cpre381/Proj1/cwScr/regfile.vhd /home/blevake/cpre381/Proj1/cwScr/register.vhd /home/blevake/cpre381/Proj1/cwScr/RegLd.vhd /home/blevake/cpre381/Proj1/cwScr/slt_equality_check.vhd /home/blevake/cpre381/Proj1/cwScr/tb_ALU.vhd /home/blevake/cpre381/Proj1/cwScr/tb_barrelShifter.vhd /home/blevake/cpre381/Proj1/cwScr/tb_control.vhd /home/blevake/cpre381/Proj1/cwScr/tb_datapathv2.vhd /home/blevake/cpre381/Proj1/cwScr/tb_dmem.vhd /home/blevake/cpre381/Proj1/cwScr/tb_extender.vhd /home/blevake/cpre381/Proj1/cwScr/xorg2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Add_Sub_N
+# -- Compiling architecture structural of Add_Sub_N
+# -- Compiling entity Adder
+# -- Compiling architecture behavior of Adder
+# -- Compiling entity addersubtractor
+# -- Compiling architecture structural of addersubtractor
+# -- Compiling entity alu
+# -- Compiling architecture structural of alu
+# -- Compiling entity alu_addersubtractor
+# -- Compiling architecture structural of alu_addersubtractor
+# -- Compiling entity and2_N
+# -- Compiling architecture structural of and2_N
+# -- Compiling entity andg2
+# -- Compiling architecture dataflow of andg2
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity barrelshifter_32
+# -- Compiling architecture mixed of barrelshifter_32
+# -- Compiling entity beq
+# -- Compiling architecture dataflow of beq
+# -- Compiling entity beq_bne
+# -- Compiling architecture structural of beq_bne
+# -- Compiling entity cla_adder
+# -- Compiling architecture mixed of cla_adder
+# -- Compiling entity control
+# -- Compiling architecture behavior of control
+# -- Loading package mypack
+# -- Compiling entity datapathv2
+# -- Compiling architecture structural of datapathv2
+# -- Compiling entity decoder5t32
+# -- Compiling architecture behavior of decoder5t32
+# -- Compiling entity dfmux
+# -- Compiling architecture dataflow of dfmux
+# -- Compiling entity equalityModule
+# -- Compiling architecture dataflow of equalityModule
+# -- Compiling entity slt_equality_check
+# -- Compiling architecture dataflow of slt_equality_check
+# -- Compiling entity extender
+# -- Compiling architecture behavior of extender
+# -- Compiling entity fetchLogic
+# -- Compiling architecture mixed of fetchLogic
+# -- Compiling entity FullAdder
+# -- Compiling architecture mixed of FullAdder
+# -- Compiling entity FullAdder_N
+# -- Compiling architecture structural of FullAdder_N
+# -- Compiling entity invg
+# -- Compiling architecture dataflow of invg
+# -- Compiling entity invg_N
+# -- Compiling architecture structural of invg_N
+# -- Loading package STD_LOGIC_SIGNED
+# -- Compiling entity lessThanCheck
+# -- Compiling architecture dataflow of lessThanCheck
+# -- Compiling entity luishift
+# -- Compiling architecture dataflow of luishift
+# -- Compiling entity mem
+# -- Compiling architecture rtl of mem
+# ** Error: (vcom-11) Could not find work.mips_types.
+# ** Error (suppressible): /home/blevake/cpre381/Proj1/cwScr/MIPS_processor.vhd(7): (vcom-1195) Cannot find expanded name "work.MIPS_types".
+# ** Error: /home/blevake/cpre381/Proj1/cwScr/MIPS_processor.vhd(7): Unknown expanded name.
+# ** Note: /home/blevake/cpre381/Proj1/cwScr/MIPS_processor.vhd(10): VHDL Compiler exiting
+# End time: 13:27:04 on Oct 26,2024, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+vcom -reportprogress 300 -work work /home/blevake/cpre381/Proj1/cwScr/Add_Sub_N.vhd /home/blevake/cpre381/Proj1/cwScr/Adder.vhd /home/blevake/cpre381/Proj1/cwScr/addersubtractor.vhd /home/blevake/cpre381/Proj1/cwScr/alu.vhd /home/blevake/cpre381/Proj1/cwScr/alu_addersubtractor.vhd /home/blevake/cpre381/Proj1/cwScr/and2_N.vhd /home/blevake/cpre381/Proj1/cwScr/andg2.vhd /home/blevake/cpre381/Proj1/cwScr/beq.vhd /home/blevake/cpre381/Proj1/cwScr/beq_bne.vhd /home/blevake/cpre381/Proj1/cwScr/cla_adder.vhd /home/blevake/cpre381/Proj1/cwScr/control.vhd /home/blevake/cpre381/Proj1/cwScr/datapathv2.vhd /home/blevake/cpre381/Proj1/cwScr/decoder5t32.vhd /home/blevake/cpre381/Proj1/cwScr/dfmux.vhd /home/blevake/cpre381/Proj1/cwScr/barrelshifter_32.vhd
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:27:19 on Oct 26,2024
+# vcom -reportprogress 300 -work work /home/blevake/cpre381/Proj1/cwScr/Add_Sub_N.vhd /home/blevake/cpre381/Proj1/cwScr/Adder.vhd /home/blevake/cpre381/Proj1/cwScr/addersubtractor.vhd /home/blevake/cpre381/Proj1/cwScr/alu.vhd /home/blevake/cpre381/Proj1/cwScr/alu_addersubtractor.vhd /home/blevake/cpre381/Proj1/cwScr/and2_N.vhd /home/blevake/cpre381/Proj1/cwScr/andg2.vhd /home/blevake/cpre381/Proj1/cwScr/beq.vhd /home/blevake/cpre381/Proj1/cwScr/beq_bne.vhd /home/blevake/cpre381/Proj1/cwScr/cla_adder.vhd /home/blevake/cpre381/Proj1/cwScr/control.vhd /home/blevake/cpre381/Proj1/cwScr/datapathv2.vhd /home/blevake/cpre381/Proj1/cwScr/decoder5t32.vhd /home/blevake/cpre381/Proj1/cwScr/dfmux.vhd /home/blevake/cpre381/Proj1/cwScr/barrelshifter_32.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Add_Sub_N
+# -- Compiling architecture structural of Add_Sub_N
+# -- Compiling entity Adder
+# -- Compiling architecture behavior of Adder
+# -- Compiling entity addersubtractor
+# -- Compiling architecture structural of addersubtractor
+# -- Compiling entity alu
+# -- Compiling architecture structural of alu
+# -- Compiling entity alu_addersubtractor
+# -- Compiling architecture structural of alu_addersubtractor
+# -- Compiling entity and2_N
+# -- Compiling architecture structural of and2_N
+# -- Compiling entity andg2
+# -- Compiling architecture dataflow of andg2
+# -- Compiling entity beq
+# -- Compiling architecture dataflow of beq
+# -- Compiling entity beq_bne
+# -- Compiling architecture structural of beq_bne
+# -- Compiling entity cla_adder
+# -- Compiling architecture mixed of cla_adder
+# -- Compiling entity control
+# -- Compiling architecture behavior of control
+# -- Loading package mypack
+# -- Compiling entity datapathv2
+# -- Compiling architecture structural of datapathv2
+# -- Compiling entity decoder5t32
+# -- Compiling architecture behavior of decoder5t32
+# -- Compiling entity dfmux
+# -- Compiling architecture dataflow of dfmux
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity barrelshifter_32
+# -- Compiling architecture mixed of barrelshifter_32
+# End time: 13:27:19 on Oct 26,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/blevake/cpre381/Proj1/cwScr/equalitymodule.vhd /home/blevake/cpre381/Proj1/cwScr/equalityMuxModule.vhd /home/blevake/cpre381/Proj1/cwScr/extender.vhd /home/blevake/cpre381/Proj1/cwScr/fetchLogic.vhd /home/blevake/cpre381/Proj1/cwScr/FullAdder.vhd /home/blevake/cpre381/Proj1/cwScr/FullAdder_N.vhd /home/blevake/cpre381/Proj1/cwScr/invg.vhd /home/blevake/cpre381/Proj1/cwScr/invg_N.vhd /home/blevake/cpre381/Proj1/cwScr/lessThanCheck.vhd /home/blevake/cpre381/Proj1/cwScr/luishift.vhd /home/blevake/cpre381/Proj1/cwScr/mem.vhd /home/blevake/cpre381/Proj1/cwScr/MIPS_processor.vhd /home/blevake/cpre381/Proj1/cwScr/MIPS_types.vhd /home/blevake/cpre381/Proj1/cwScr/Multiplier.vhd /home/blevake/cpre381/Proj1/cwScr/mux2t1_5.vhd /home/blevake/cpre381/Proj1/cwScr/mux2t1_N.vhd /home/blevake/cpre381/Proj1/cwScr/MIPS_types.vhd /home/blevake/cpre381/Proj1/cwScr/MIPS_processor.vhd /home/blevake/cpre381/Proj1/cwScr/MIPS_types.vhd /home/blevake/cpre381/Proj1/cwScr/MIPS_processor.vhd /home/blevake/cpre381/Proj1/cwScr/MIPS_processor.vhd /home/blevake/cpre381/Proj1/cwScr/MIPS_processor.vhd /home/blevake/cpre381/Proj1/cwScr/MIPS_processor.vhd /home/blevake/cpre381/Proj1/cwScr/MIPS_types.vhd
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:27:27 on Oct 26,2024
+# vcom -reportprogress 300 -work work /home/blevake/cpre381/Proj1/cwScr/equalitymodule.vhd /home/blevake/cpre381/Proj1/cwScr/equalityMuxModule.vhd /home/blevake/cpre381/Proj1/cwScr/extender.vhd /home/blevake/cpre381/Proj1/cwScr/fetchLogic.vhd /home/blevake/cpre381/Proj1/cwScr/FullAdder.vhd /home/blevake/cpre381/Proj1/cwScr/FullAdder_N.vhd /home/blevake/cpre381/Proj1/cwScr/invg.vhd /home/blevake/cpre381/Proj1/cwScr/invg_N.vhd /home/blevake/cpre381/Proj1/cwScr/lessThanCheck.vhd /home/blevake/cpre381/Proj1/cwScr/luishift.vhd /home/blevake/cpre381/Proj1/cwScr/mem.vhd /home/blevake/cpre381/Proj1/cwScr/MIPS_processor.vhd /home/blevake/cpre381/Proj1/cwScr/MIPS_types.vhd /home/blevake/cpre381/Proj1/cwScr/Multiplier.vhd /home/blevake/cpre381/Proj1/cwScr/mux2t1_5.vhd /home/blevake/cpre381/Proj1/cwScr/mux2t1_N.vhd /home/blevake/cpre381/Proj1/cwScr/MIPS_types.vhd /home/blevake/cpre381/Proj1/cwScr/MIPS_processor.vhd /home/blevake/cpre381/Proj1/cwScr/MIPS_types.vhd /home/blevake/cpre381/Proj1/cwScr/MIPS_processor.vhd /home/blevake/cpre381/Proj1/cwScr/MIPS_processor.vhd /home/blevake/cpre381/Proj1/cwScr/MIPS_processor.vhd /home/blevake/cpre381/Proj1/cwScr/MIPS_processor.vhd /home/blevake/cpre381/Proj1/cwScr/MIPS_types.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity equalityModule
+# -- Compiling architecture dataflow of equalityModule
+# -- Compiling entity slt_equality_check
+# -- Compiling architecture dataflow of slt_equality_check
+# -- Compiling entity extender
+# -- Compiling architecture behavior of extender
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity fetchLogic
+# -- Compiling architecture mixed of fetchLogic
+# -- Compiling entity FullAdder
+# -- Compiling architecture mixed of FullAdder
+# -- Compiling entity FullAdder_N
+# -- Compiling architecture structural of FullAdder_N
+# -- Compiling entity invg
+# -- Compiling architecture dataflow of invg
+# -- Compiling entity invg_N
+# -- Compiling architecture structural of invg_N
+# -- Loading package STD_LOGIC_SIGNED
+# -- Compiling entity lessThanCheck
+# -- Compiling architecture dataflow of lessThanCheck
+# -- Compiling entity luishift
+# -- Compiling architecture dataflow of luishift
+# -- Compiling entity mem
+# -- Compiling architecture rtl of mem
+# ** Error: (vcom-11) Could not find work.mips_types.
+# ** Error (suppressible): /home/blevake/cpre381/Proj1/cwScr/MIPS_processor.vhd(7): (vcom-1195) Cannot find expanded name "work.MIPS_types".
+# ** Error: /home/blevake/cpre381/Proj1/cwScr/MIPS_processor.vhd(7): Unknown expanded name.
+# ** Note: /home/blevake/cpre381/Proj1/cwScr/MIPS_processor.vhd(10): VHDL Compiler exiting
+# End time: 13:27:27 on Oct 26,2024, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+vcom -reportprogress 300 -work work /home/blevake/cpre381/Proj1/cwScr/equalitymodule.vhd /home/blevake/cpre381/Proj1/cwScr/equalityMuxModule.vhd /home/blevake/cpre381/Proj1/cwScr/extender.vhd /home/blevake/cpre381/Proj1/cwScr/fetchLogic.vhd /home/blevake/cpre381/Proj1/cwScr/FullAdder.vhd /home/blevake/cpre381/Proj1/cwScr/FullAdder_N.vhd /home/blevake/cpre381/Proj1/cwScr/invg.vhd /home/blevake/cpre381/Proj1/cwScr/invg_N.vhd
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:27:30 on Oct 26,2024
+# vcom -reportprogress 300 -work work /home/blevake/cpre381/Proj1/cwScr/equalitymodule.vhd /home/blevake/cpre381/Proj1/cwScr/equalityMuxModule.vhd /home/blevake/cpre381/Proj1/cwScr/extender.vhd /home/blevake/cpre381/Proj1/cwScr/fetchLogic.vhd /home/blevake/cpre381/Proj1/cwScr/FullAdder.vhd /home/blevake/cpre381/Proj1/cwScr/FullAdder_N.vhd /home/blevake/cpre381/Proj1/cwScr/invg.vhd /home/blevake/cpre381/Proj1/cwScr/invg_N.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity equalityModule
+# -- Compiling architecture dataflow of equalityModule
+# -- Compiling entity slt_equality_check
+# -- Compiling architecture dataflow of slt_equality_check
+# -- Compiling entity extender
+# -- Compiling architecture behavior of extender
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity fetchLogic
+# -- Compiling architecture mixed of fetchLogic
+# -- Compiling entity FullAdder
+# -- Compiling architecture mixed of FullAdder
+# -- Compiling entity FullAdder_N
+# -- Compiling architecture structural of FullAdder_N
+# -- Compiling entity invg
+# -- Compiling architecture dataflow of invg
+# -- Compiling entity invg_N
+# -- Compiling architecture structural of invg_N
+# End time: 13:27:30 on Oct 26,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/blevake/cpre381/Proj1/cwScr/Multiplier.vhd /home/blevake/cpre381/Proj1/cwScr/mux2t1_5.vhd /home/blevake/cpre381/Proj1/cwScr/mux2t1_N.vhd
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:27:31 on Oct 26,2024
+# vcom -reportprogress 300 -work work /home/blevake/cpre381/Proj1/cwScr/Multiplier.vhd /home/blevake/cpre381/Proj1/cwScr/mux2t1_5.vhd /home/blevake/cpre381/Proj1/cwScr/mux2t1_N.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Multiplier
+# -- Compiling architecture behavior of Multiplier
+# -- Compiling entity mux2t1_5
+# -- Compiling architecture structural of mux2t1_5
+# -- Compiling entity mux2t1_N
+# -- Compiling architecture structural of mux2t1_N
+# End time: 13:27:31 on Oct 26,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/blevake/cpre381/Proj1/cwScr/lessThanCheck.vhd /home/blevake/cpre381/Proj1/cwScr/luishift.vhd /home/blevake/cpre381/Proj1/cwScr/mem.vhd
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:27:33 on Oct 26,2024
+# vcom -reportprogress 300 -work work /home/blevake/cpre381/Proj1/cwScr/lessThanCheck.vhd /home/blevake/cpre381/Proj1/cwScr/luishift.vhd /home/blevake/cpre381/Proj1/cwScr/mem.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_SIGNED
+# -- Compiling entity lessThanCheck
+# -- Compiling architecture dataflow of lessThanCheck
+# -- Loading package NUMERIC_STD
+# -- Compiling entity luishift
+# -- Compiling architecture dataflow of luishift
+# -- Compiling entity mem
+# -- Compiling architecture rtl of mem
+# End time: 13:27:33 on Oct 26,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/blevake/cpre381/Proj1/cwScr/mux2t_1.vhd /home/blevake/cpre381/Proj1/cwScr/mux2to1.vhd /home/blevake/cpre381/Proj1/cwScr/mux8t1_32.vhd /home/blevake/cpre381/Proj1/cwScr/mux16t1_32.vhd /home/blevake/cpre381/Proj1/cwScr/mux32t1.vhd /home/blevake/cpre381/Proj1/cwScr/org2.vhd /home/blevake/cpre381/Proj1/cwScr/Reg.vhd /home/blevake/cpre381/Proj1/cwScr/regfile.vhd /home/blevake/cpre381/Proj1/cwScr/register.vhd /home/blevake/cpre381/Proj1/cwScr/RegLd.vhd /home/blevake/cpre381/Proj1/cwScr/tb_control.vhd /home/blevake/cpre381/Proj1/cwScr/tb_datapathv2.vhd /home/blevake/cpre381/Proj1/cwScr/tb_dmem.vhd /home/blevake/cpre381/Proj1/cwScr/tb_extender.vhd /home/blevake/cpre381/Proj1/cwScr/xorg2.vhd /home/blevake/cpre381/Proj1/cwScr/N_bitRegister.vhd /home/blevake/cpre381/Proj1/cwScr/onesComp.vhd /home/blevake/cpre381/Proj1/cwScr/onesComp_N.vhd /home/blevake/cpre381/Proj1/cwScr/tb_barrelShifter.vhd /home/blevake/cpre381/Proj1/cwScr/tb_ALU.vhd /home/blevake/cpre381/Proj1/cwScr/slt_equality_check.vhd
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:27:38 on Oct 26,2024
+# vcom -reportprogress 300 -work work /home/blevake/cpre381/Proj1/cwScr/mux2t_1.vhd /home/blevake/cpre381/Proj1/cwScr/mux2to1.vhd /home/blevake/cpre381/Proj1/cwScr/mux8t1_32.vhd /home/blevake/cpre381/Proj1/cwScr/mux16t1_32.vhd /home/blevake/cpre381/Proj1/cwScr/mux32t1.vhd /home/blevake/cpre381/Proj1/cwScr/org2.vhd /home/blevake/cpre381/Proj1/cwScr/Reg.vhd /home/blevake/cpre381/Proj1/cwScr/regfile.vhd /home/blevake/cpre381/Proj1/cwScr/register.vhd /home/blevake/cpre381/Proj1/cwScr/RegLd.vhd /home/blevake/cpre381/Proj1/cwScr/tb_control.vhd /home/blevake/cpre381/Proj1/cwScr/tb_datapathv2.vhd /home/blevake/cpre381/Proj1/cwScr/tb_dmem.vhd /home/blevake/cpre381/Proj1/cwScr/tb_extender.vhd /home/blevake/cpre381/Proj1/cwScr/xorg2.vhd /home/blevake/cpre381/Proj1/cwScr/N_bitRegister.vhd /home/blevake/cpre381/Proj1/cwScr/onesComp.vhd /home/blevake/cpre381/Proj1/cwScr/onesComp_N.vhd /home/blevake/cpre381/Proj1/cwScr/tb_barrelShifter.vhd /home/blevake/cpre381/Proj1/cwScr/tb_ALU.vhd /home/blevake/cpre381/Proj1/cwScr/slt_equality_check.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux2t1
+# -- Compiling architecture dataflow of mux2t1
+# -- Compiling entity mux2to1
+# -- Compiling architecture mixed of mux2to1
+# -- Compiling entity mux8t1_32
+# -- Compiling architecture structural of mux8t1_32
+# -- Compiling entity mux16t1_32
+# -- Compiling architecture structural of mux16t1_32
+# -- Compiling package mypack
+# -- Loading package mypack
+# -- Compiling entity mux32t1
+# -- Compiling architecture behavior of mux32t1
+# -- Compiling entity org2
+# -- Compiling architecture dataflow of org2
+# -- Compiling entity Reg
+# -- Compiling architecture behavior of Reg
+# -- Compiling entity regfile
+# -- Compiling architecture structural of regfile
+# -- Compiling entity RegLd
+# -- Compiling architecture behavior of RegLd
+# -- Loading package NUMERIC_STD
+# -- Compiling entity tb_control
+# -- Compiling architecture behavior of tb_control
+# -- Compiling entity tb_datapathv2
+# -- Compiling architecture behavior of tb_datapathv2
+# -- Compiling entity tb_dmem
+# -- Compiling architecture behavior of tb_dmem
+# -- Compiling entity tb_extender
+# -- Compiling architecture behavior of tb_extender
+# -- Compiling entity xorg2
+# -- Compiling architecture dataflow of xorg2
+# -- Compiling entity N_bitRegister
+# -- Compiling architecture mixed of N_bitRegister
+# -- Compiling entity onesComp
+# -- Compiling architecture structure of onesComp
+# -- Compiling entity onesComp_N
+# -- Compiling architecture structural of onesComp_N
+# -- Compiling entity tb_barrelShifter
+# -- Compiling architecture behavior of tb_barrelShifter
+# -- Compiling entity tb_alu
+# -- Compiling architecture test of tb_alu
+# -- Compiling entity equality_check
+# -- Compiling architecture dataflow of equality_check
+# End time: 13:27:38 on Oct 26,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/blevake/cpre381/Proj1/cwScr/Add_Sub_N.vhd /home/blevake/cpre381/Proj1/cwScr/Adder.vhd /home/blevake/cpre381/Proj1/cwScr/addersubtractor.vhd /home/blevake/cpre381/Proj1/cwScr/alu.vhd /home/blevake/cpre381/Proj1/cwScr/alu_addersubtractor.vhd /home/blevake/cpre381/Proj1/cwScr/and2_N.vhd /home/blevake/cpre381/Proj1/cwScr/andg2.vhd /home/blevake/cpre381/Proj1/cwScr/barrelshifter_32.vhd /home/blevake/cpre381/Proj1/cwScr/beq.vhd /home/blevake/cpre381/Proj1/cwScr/beq_bne.vhd /home/blevake/cpre381/Proj1/cwScr/cla_adder.vhd /home/blevake/cpre381/Proj1/cwScr/control.vhd /home/blevake/cpre381/Proj1/cwScr/datapathv2.vhd /home/blevake/cpre381/Proj1/cwScr/decoder5t32.vhd /home/blevake/cpre381/Proj1/cwScr/dffg.vhd /home/blevake/cpre381/Proj1/cwScr/dfmux.vhd /home/blevake/cpre381/Proj1/cwScr/equalitymodule.vhd /home/blevake/cpre381/Proj1/cwScr/equalityMuxModule.vhd /home/blevake/cpre381/Proj1/cwScr/extender.vhd /home/blevake/cpre381/Proj1/cwScr/fetchLogic.vhd /home/blevake/cpre381/Proj1/cwScr/FullAdder.vhd /home/blevake/cpre381/Proj1/cwScr/FullAdder_N.vhd /home/blevake/cpre381/Proj1/cwScr/invg.vhd
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:46:12 on Oct 26,2024
+# vcom -reportprogress 300 -work work /home/blevake/cpre381/Proj1/cwScr/Add_Sub_N.vhd /home/blevake/cpre381/Proj1/cwScr/Adder.vhd /home/blevake/cpre381/Proj1/cwScr/addersubtractor.vhd /home/blevake/cpre381/Proj1/cwScr/alu.vhd /home/blevake/cpre381/Proj1/cwScr/alu_addersubtractor.vhd /home/blevake/cpre381/Proj1/cwScr/and2_N.vhd /home/blevake/cpre381/Proj1/cwScr/andg2.vhd /home/blevake/cpre381/Proj1/cwScr/barrelshifter_32.vhd /home/blevake/cpre381/Proj1/cwScr/beq.vhd /home/blevake/cpre381/Proj1/cwScr/beq_bne.vhd /home/blevake/cpre381/Proj1/cwScr/cla_adder.vhd /home/blevake/cpre381/Proj1/cwScr/control.vhd /home/blevake/cpre381/Proj1/cwScr/datapathv2.vhd /home/blevake/cpre381/Proj1/cwScr/decoder5t32.vhd /home/blevake/cpre381/Proj1/cwScr/dffg.vhd /home/blevake/cpre381/Proj1/cwScr/dfmux.vhd /home/blevake/cpre381/Proj1/cwScr/equalitymodule.vhd /home/blevake/cpre381/Proj1/cwScr/equalityMuxModule.vhd /home/blevake/cpre381/Proj1/cwScr/extender.vhd /home/blevake/cpre381/Proj1/cwScr/fetchLogic.vhd /home/blevake/cpre381/Proj1/cwScr/FullAdder.vhd /home/blevake/cpre381/Proj1/cwScr/FullAdder_N.vhd /home/blevake/cpre381/Proj1/cwScr/invg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Add_Sub_N
+# -- Compiling architecture structural of Add_Sub_N
+# -- Compiling entity Adder
+# -- Compiling architecture behavior of Adder
+# -- Compiling entity addersubtractor
+# -- Compiling architecture structural of addersubtractor
+# -- Compiling entity alu
+# -- Compiling architecture structural of alu
+# -- Compiling entity alu_addersubtractor
+# -- Compiling architecture structural of alu_addersubtractor
+# -- Compiling entity and2_N
+# -- Compiling architecture structural of and2_N
+# -- Compiling entity andg2
+# -- Compiling architecture dataflow of andg2
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity barrelshifter_32
+# -- Compiling architecture mixed of barrelshifter_32
+# -- Compiling entity beq
+# -- Compiling architecture dataflow of beq
+# -- Compiling entity beq_bne
+# -- Compiling architecture structural of beq_bne
+# -- Compiling entity cla_adder
+# -- Compiling architecture mixed of cla_adder
+# -- Compiling entity control
+# -- Compiling architecture behavior of control
+# -- Loading package mypack
+# -- Compiling entity datapathv2
+# -- Compiling architecture structural of datapathv2
+# -- Compiling entity decoder5t32
+# -- Compiling architecture Dataflow of decoder5t32
+# -- Compiling entity dffg
+# -- Compiling architecture mixed of dffg
+# -- Compiling entity dfmux
+# -- Compiling architecture dataflow of dfmux
+# -- Compiling entity equalityModule
+# -- Compiling architecture dataflow of equalityModule
+# -- Compiling entity slt_equality_check
+# -- Compiling architecture dataflow of slt_equality_check
+# -- Compiling entity extender
+# -- Compiling architecture behavior of extender
+# -- Compiling entity fetchLogic
+# -- Compiling architecture mixed of fetchLogic
+# -- Compiling entity FullAdder
+# -- Compiling architecture mixed of FullAdder
+# -- Compiling entity FullAdder_N
+# -- Compiling architecture structural of FullAdder_N
+# -- Compiling entity invg
+# -- Compiling architecture dataflow of invg
+# End time: 13:46:12 on Oct 26,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/blevake/cpre381/Proj1/cwScr/invg_N.vhd /home/blevake/cpre381/Proj1/cwScr/lessThanCheck.vhd /home/blevake/cpre381/Proj1/cwScr/luishift.vhd /home/blevake/cpre381/Proj1/cwScr/mem.vhd /home/blevake/cpre381/Proj1/cwScr/MIPS_processor.vhd /home/blevake/cpre381/Proj1/cwScr/MIPS_types.vhd /home/blevake/cpre381/Proj1/cwScr/Multiplier.vhd /home/blevake/cpre381/Proj1/cwScr/mux2t1_5.vhd /home/blevake/cpre381/Proj1/cwScr/mux2t1_N.vhd /home/blevake/cpre381/Proj1/cwScr/mux2t_1.vhd /home/blevake/cpre381/Proj1/cwScr/mux2to1.vhd /home/blevake/cpre381/Proj1/cwScr/mux8t1_32.vhd /home/blevake/cpre381/Proj1/cwScr/mux16t1_32.vhd /home/blevake/cpre381/Proj1/cwScr/mux32t1.vhd /home/blevake/cpre381/Proj1/cwScr/N_bitRegister.vhd /home/blevake/cpre381/Proj1/cwScr/onesComp.vhd /home/blevake/cpre381/Proj1/cwScr/onesComp_N.vhd /home/blevake/cpre381/Proj1/cwScr/org2.vhd /home/blevake/cpre381/Proj1/cwScr/Reg.vhd /home/blevake/cpre381/Proj1/cwScr/Reg32.vhd /home/blevake/cpre381/Proj1/cwScr/regfile.vhd /home/blevake/cpre381/Proj1/cwScr/register.vhd /home/blevake/cpre381/Proj1/cwScr/RegLd.vhd /home/blevake/cpre381/Proj1/cwScr/slt_equality_check.vhd /home/blevake/cpre381/Proj1/cwScr/tb_ALU.vhd /home/blevake/cpre381/Proj1/cwScr/tb_barrelShifter.vhd /home/blevake/cpre381/Proj1/cwScr/tb_control.vhd /home/blevake/cpre381/Proj1/cwScr/tb_datapathv2.vhd /home/blevake/cpre381/Proj1/cwScr/tb_dmem.vhd /home/blevake/cpre381/Proj1/cwScr/tb_extender.vhd /home/blevake/cpre381/Proj1/cwScr/xorg2.vhd
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:46:19 on Oct 26,2024
+# vcom -reportprogress 300 -work work /home/blevake/cpre381/Proj1/cwScr/invg_N.vhd /home/blevake/cpre381/Proj1/cwScr/lessThanCheck.vhd /home/blevake/cpre381/Proj1/cwScr/luishift.vhd /home/blevake/cpre381/Proj1/cwScr/mem.vhd /home/blevake/cpre381/Proj1/cwScr/MIPS_processor.vhd /home/blevake/cpre381/Proj1/cwScr/MIPS_types.vhd /home/blevake/cpre381/Proj1/cwScr/Multiplier.vhd /home/blevake/cpre381/Proj1/cwScr/mux2t1_5.vhd /home/blevake/cpre381/Proj1/cwScr/mux2t1_N.vhd /home/blevake/cpre381/Proj1/cwScr/mux2t_1.vhd /home/blevake/cpre381/Proj1/cwScr/mux2to1.vhd /home/blevake/cpre381/Proj1/cwScr/mux8t1_32.vhd /home/blevake/cpre381/Proj1/cwScr/mux16t1_32.vhd /home/blevake/cpre381/Proj1/cwScr/mux32t1.vhd /home/blevake/cpre381/Proj1/cwScr/N_bitRegister.vhd /home/blevake/cpre381/Proj1/cwScr/onesComp.vhd /home/blevake/cpre381/Proj1/cwScr/onesComp_N.vhd /home/blevake/cpre381/Proj1/cwScr/org2.vhd /home/blevake/cpre381/Proj1/cwScr/Reg.vhd /home/blevake/cpre381/Proj1/cwScr/Reg32.vhd /home/blevake/cpre381/Proj1/cwScr/regfile.vhd /home/blevake/cpre381/Proj1/cwScr/register.vhd /home/blevake/cpre381/Proj1/cwScr/RegLd.vhd /home/blevake/cpre381/Proj1/cwScr/slt_equality_check.vhd /home/blevake/cpre381/Proj1/cwScr/tb_ALU.vhd /home/blevake/cpre381/Proj1/cwScr/tb_barrelShifter.vhd /home/blevake/cpre381/Proj1/cwScr/tb_control.vhd /home/blevake/cpre381/Proj1/cwScr/tb_datapathv2.vhd /home/blevake/cpre381/Proj1/cwScr/tb_dmem.vhd /home/blevake/cpre381/Proj1/cwScr/tb_extender.vhd /home/blevake/cpre381/Proj1/cwScr/xorg2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity invg_N
+# -- Compiling architecture structural of invg_N
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_SIGNED
+# -- Compiling entity lessThanCheck
+# -- Compiling architecture dataflow of lessThanCheck
+# -- Loading package NUMERIC_STD
+# -- Compiling entity luishift
+# -- Compiling architecture dataflow of luishift
+# -- Compiling entity mem
+# -- Compiling architecture rtl of mem
+# ** Error: (vcom-11) Could not find work.mips_types.
+# ** Error (suppressible): /home/blevake/cpre381/Proj1/cwScr/MIPS_processor.vhd(7): (vcom-1195) Cannot find expanded name "work.MIPS_types".
+# ** Error: /home/blevake/cpre381/Proj1/cwScr/MIPS_processor.vhd(7): Unknown expanded name.
+# ** Note: /home/blevake/cpre381/Proj1/cwScr/MIPS_processor.vhd(10): VHDL Compiler exiting
+# End time: 13:46:19 on Oct 26,2024, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+vcom -reportprogress 300 -work work /home/blevake/cpre381/Proj1/cwScr/MIPS_types.vhd
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:46:28 on Oct 26,2024
+# vcom -reportprogress 300 -work work /home/blevake/cpre381/Proj1/cwScr/MIPS_types.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package MIPS_types
+# -- Compiling package body MIPS_types
+# -- Loading package MIPS_types
+# End time: 13:46:28 on Oct 26,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/blevake/cpre381/Proj1/cwScr/barrelshifter_32.vhd /home/blevake/cpre381/Proj1/cwScr/beq.vhd /home/blevake/cpre381/Proj1/cwScr/beq_bne.vhd /home/blevake/cpre381/Proj1/cwScr/cla_adder.vhd /home/blevake/cpre381/Proj1/cwScr/control.vhd /home/blevake/cpre381/Proj1/cwScr/datapathv2.vhd /home/blevake/cpre381/Proj1/cwScr/decoder5t32.vhd /home/blevake/cpre381/Proj1/cwScr/dffg.vhd /home/blevake/cpre381/Proj1/cwScr/dfmux.vhd /home/blevake/cpre381/Proj1/cwScr/equalitymodule.vhd /home/blevake/cpre381/Proj1/cwScr/equalityMuxModule.vhd /home/blevake/cpre381/Proj1/cwScr/extender.vhd /home/blevake/cpre381/Proj1/cwScr/fetchLogic.vhd /home/blevake/cpre381/Proj1/cwScr/FullAdder.vhd /home/blevake/cpre381/Proj1/cwScr/FullAdder_N.vhd /home/blevake/cpre381/Proj1/cwScr/invg.vhd /home/blevake/cpre381/Proj1/cwScr/invg_N.vhd /home/blevake/cpre381/Proj1/cwScr/lessThanCheck.vhd /home/blevake/cpre381/Proj1/cwScr/luishift.vhd /home/blevake/cpre381/Proj1/cwScr/mem.vhd /home/blevake/cpre381/Proj1/cwScr/MIPS_processor.vhd /home/blevake/cpre381/Proj1/cwScr/MIPS_types.vhd /home/blevake/cpre381/Proj1/cwScr/Multiplier.vhd /home/blevake/cpre381/Proj1/cwScr/mux2t1_5.vhd /home/blevake/cpre381/Proj1/cwScr/mux2t1_N.vhd /home/blevake/cpre381/Proj1/cwScr/mux2t_1.vhd /home/blevake/cpre381/Proj1/cwScr/mux2to1.vhd /home/blevake/cpre381/Proj1/cwScr/mux8t1_32.vhd /home/blevake/cpre381/Proj1/cwScr/mux16t1_32.vhd /home/blevake/cpre381/Proj1/cwScr/mux32t1.vhd /home/blevake/cpre381/Proj1/cwScr/N_bitRegister.vhd /home/blevake/cpre381/Proj1/cwScr/onesComp.vhd /home/blevake/cpre381/Proj1/cwScr/onesComp_N.vhd /home/blevake/cpre381/Proj1/cwScr/org2.vhd /home/blevake/cpre381/Proj1/cwScr/Reg.vhd /home/blevake/cpre381/Proj1/cwScr/Reg32.vhd /home/blevake/cpre381/Proj1/cwScr/regfile.vhd /home/blevake/cpre381/Proj1/cwScr/register.vhd /home/blevake/cpre381/Proj1/cwScr/RegLd.vhd /home/blevake/cpre381/Proj1/cwScr/slt_equality_check.vhd /home/blevake/cpre381/Proj1/cwScr/tb_ALU.vhd /home/blevake/cpre381/Proj1/cwScr/tb_barrelShifter.vhd /home/blevake/cpre381/Proj1/cwScr/tb_control.vhd /home/blevake/cpre381/Proj1/cwScr/tb_datapathv2.vhd /home/blevake/cpre381/Proj1/cwScr/tb_dmem.vhd /home/blevake/cpre381/Proj1/cwScr/tb_extender.vhd /home/blevake/cpre381/Proj1/cwScr/xorg2.vhd
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:46:33 on Oct 26,2024
+# vcom -reportprogress 300 -work work /home/blevake/cpre381/Proj1/cwScr/barrelshifter_32.vhd /home/blevake/cpre381/Proj1/cwScr/beq.vhd /home/blevake/cpre381/Proj1/cwScr/beq_bne.vhd /home/blevake/cpre381/Proj1/cwScr/cla_adder.vhd /home/blevake/cpre381/Proj1/cwScr/control.vhd /home/blevake/cpre381/Proj1/cwScr/datapathv2.vhd /home/blevake/cpre381/Proj1/cwScr/decoder5t32.vhd /home/blevake/cpre381/Proj1/cwScr/dffg.vhd /home/blevake/cpre381/Proj1/cwScr/dfmux.vhd /home/blevake/cpre381/Proj1/cwScr/equalitymodule.vhd /home/blevake/cpre381/Proj1/cwScr/equalityMuxModule.vhd /home/blevake/cpre381/Proj1/cwScr/extender.vhd /home/blevake/cpre381/Proj1/cwScr/fetchLogic.vhd /home/blevake/cpre381/Proj1/cwScr/FullAdder.vhd /home/blevake/cpre381/Proj1/cwScr/FullAdder_N.vhd /home/blevake/cpre381/Proj1/cwScr/invg.vhd /home/blevake/cpre381/Proj1/cwScr/invg_N.vhd /home/blevake/cpre381/Proj1/cwScr/lessThanCheck.vhd /home/blevake/cpre381/Proj1/cwScr/luishift.vhd /home/blevake/cpre381/Proj1/cwScr/mem.vhd /home/blevake/cpre381/Proj1/cwScr/MIPS_processor.vhd /home/blevake/cpre381/Proj1/cwScr/MIPS_types.vhd /home/blevake/cpre381/Proj1/cwScr/Multiplier.vhd /home/blevake/cpre381/Proj1/cwScr/mux2t1_5.vhd /home/blevake/cpre381/Proj1/cwScr/mux2t1_N.vhd /home/blevake/cpre381/Proj1/cwScr/mux2t_1.vhd /home/blevake/cpre381/Proj1/cwScr/mux2to1.vhd /home/blevake/cpre381/Proj1/cwScr/mux8t1_32.vhd /home/blevake/cpre381/Proj1/cwScr/mux16t1_32.vhd /home/blevake/cpre381/Proj1/cwScr/mux32t1.vhd /home/blevake/cpre381/Proj1/cwScr/N_bitRegister.vhd /home/blevake/cpre381/Proj1/cwScr/onesComp.vhd /home/blevake/cpre381/Proj1/cwScr/onesComp_N.vhd /home/blevake/cpre381/Proj1/cwScr/org2.vhd /home/blevake/cpre381/Proj1/cwScr/Reg.vhd /home/blevake/cpre381/Proj1/cwScr/Reg32.vhd /home/blevake/cpre381/Proj1/cwScr/regfile.vhd /home/blevake/cpre381/Proj1/cwScr/register.vhd /home/blevake/cpre381/Proj1/cwScr/RegLd.vhd /home/blevake/cpre381/Proj1/cwScr/slt_equality_check.vhd /home/blevake/cpre381/Proj1/cwScr/tb_ALU.vhd /home/blevake/cpre381/Proj1/cwScr/tb_barrelShifter.vhd /home/blevake/cpre381/Proj1/cwScr/tb_control.vhd /home/blevake/cpre381/Proj1/cwScr/tb_datapathv2.vhd /home/blevake/cpre381/Proj1/cwScr/tb_dmem.vhd /home/blevake/cpre381/Proj1/cwScr/tb_extender.vhd /home/blevake/cpre381/Proj1/cwScr/xorg2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity barrelshifter_32
+# -- Compiling architecture mixed of barrelshifter_32
+# -- Compiling entity beq
+# -- Compiling architecture dataflow of beq
+# -- Compiling entity beq_bne
+# -- Compiling architecture structural of beq_bne
+# -- Compiling entity cla_adder
+# -- Compiling architecture mixed of cla_adder
+# -- Compiling entity control
+# -- Compiling architecture behavior of control
+# -- Loading package mypack
+# -- Compiling entity datapathv2
+# -- Compiling architecture structural of datapathv2
+# -- Compiling entity decoder5t32
+# -- Compiling architecture Dataflow of decoder5t32
+# -- Compiling entity dffg
+# -- Compiling architecture mixed of dffg
+# -- Compiling entity dfmux
+# -- Compiling architecture dataflow of dfmux
+# -- Compiling entity equalityModule
+# -- Compiling architecture dataflow of equalityModule
+# -- Compiling entity slt_equality_check
+# -- Compiling architecture dataflow of slt_equality_check
+# -- Compiling entity extender
+# -- Compiling architecture behavior of extender
+# -- Compiling entity fetchLogic
+# -- Compiling architecture mixed of fetchLogic
+# -- Compiling entity FullAdder
+# -- Compiling architecture mixed of FullAdder
+# -- Compiling entity FullAdder_N
+# -- Compiling architecture structural of FullAdder_N
+# -- Compiling entity invg
+# -- Compiling architecture dataflow of invg
+# -- Compiling entity invg_N
+# -- Compiling architecture structural of invg_N
+# -- Loading package STD_LOGIC_SIGNED
+# -- Compiling entity lessThanCheck
+# -- Compiling architecture dataflow of lessThanCheck
+# -- Compiling entity luishift
+# -- Compiling architecture dataflow of luishift
+# -- Compiling entity mem
+# -- Compiling architecture rtl of mem
+# -- Loading package MIPS_types
+# -- Compiling entity MIPS_Processor
+# -- Compiling architecture structure of MIPS_Processor
+# ** Error: /home/blevake/cpre381/Proj1/cwScr/MIPS_processor.vhd(95): near ")": (vcom-1576) expecting END.
+# ** Note: /home/blevake/cpre381/Proj1/cwScr/MIPS_processor.vhd(96): VHDL Compiler exiting
+# End time: 13:46:33 on Oct 26,2024, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work /home/blevake/cpre381/Proj1/cwScr/MIPS_processor.vhd
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:46:48 on Oct 26,2024
+# vcom -reportprogress 300 -work work /home/blevake/cpre381/Proj1/cwScr/MIPS_processor.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package MIPS_types
+# -- Compiling entity MIPS_Processor
+# -- Compiling architecture structure of MIPS_Processor
+# End time: 13:46:48 on Oct 26,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/blevake/cpre381/Proj1/cwScr/Add_Sub_N.vhd /home/blevake/cpre381/Proj1/cwScr/Adder.vhd /home/blevake/cpre381/Proj1/cwScr/addersubtractor.vhd /home/blevake/cpre381/Proj1/cwScr/alu.vhd /home/blevake/cpre381/Proj1/cwScr/alu_addersubtractor.vhd /home/blevake/cpre381/Proj1/cwScr/and2_N.vhd /home/blevake/cpre381/Proj1/cwScr/andg2.vhd /home/blevake/cpre381/Proj1/cwScr/barrelshifter_32.vhd /home/blevake/cpre381/Proj1/cwScr/beq.vhd /home/blevake/cpre381/Proj1/cwScr/beq_bne.vhd /home/blevake/cpre381/Proj1/cwScr/cla_adder.vhd /home/blevake/cpre381/Proj1/cwScr/control.vhd /home/blevake/cpre381/Proj1/cwScr/datapathv2.vhd /home/blevake/cpre381/Proj1/cwScr/decoder5t32.vhd /home/blevake/cpre381/Proj1/cwScr/dffg.vhd /home/blevake/cpre381/Proj1/cwScr/dfmux.vhd /home/blevake/cpre381/Proj1/cwScr/equalitymodule.vhd /home/blevake/cpre381/Proj1/cwScr/equalityMuxModule.vhd /home/blevake/cpre381/Proj1/cwScr/extender.vhd /home/blevake/cpre381/Proj1/cwScr/fetchLogic.vhd /home/blevake/cpre381/Proj1/cwScr/FullAdder.vhd /home/blevake/cpre381/Proj1/cwScr/FullAdder_N.vhd /home/blevake/cpre381/Proj1/cwScr/invg.vhd /home/blevake/cpre381/Proj1/cwScr/invg_N.vhd /home/blevake/cpre381/Proj1/cwScr/lessThanCheck.vhd /home/blevake/cpre381/Proj1/cwScr/luishift.vhd /home/blevake/cpre381/Proj1/cwScr/mem.vhd /home/blevake/cpre381/Proj1/cwScr/MIPS_processor.vhd /home/blevake/cpre381/Proj1/cwScr/MIPS_types.vhd /home/blevake/cpre381/Proj1/cwScr/Multiplier.vhd /home/blevake/cpre381/Proj1/cwScr/mux2t1_5.vhd /home/blevake/cpre381/Proj1/cwScr/mux2t1_N.vhd /home/blevake/cpre381/Proj1/cwScr/mux2t_1.vhd /home/blevake/cpre381/Proj1/cwScr/mux2to1.vhd /home/blevake/cpre381/Proj1/cwScr/mux8t1_32.vhd /home/blevake/cpre381/Proj1/cwScr/mux16t1_32.vhd /home/blevake/cpre381/Proj1/cwScr/mux32t1.vhd /home/blevake/cpre381/Proj1/cwScr/N_bitRegister.vhd /home/blevake/cpre381/Proj1/cwScr/onesComp.vhd /home/blevake/cpre381/Proj1/cwScr/onesComp_N.vhd /home/blevake/cpre381/Proj1/cwScr/org2.vhd /home/blevake/cpre381/Proj1/cwScr/Reg.vhd /home/blevake/cpre381/Proj1/cwScr/Reg32.vhd /home/blevake/cpre381/Proj1/cwScr/regfile.vhd /home/blevake/cpre381/Proj1/cwScr/register.vhd /home/blevake/cpre381/Proj1/cwScr/RegLd.vhd /home/blevake/cpre381/Proj1/cwScr/slt_equality_check.vhd /home/blevake/cpre381/Proj1/cwScr/tb_ALU.vhd /home/blevake/cpre381/Proj1/cwScr/tb_barrelShifter.vhd /home/blevake/cpre381/Proj1/cwScr/tb_control.vhd /home/blevake/cpre381/Proj1/cwScr/tb_datapathv2.vhd /home/blevake/cpre381/Proj1/cwScr/tb_dmem.vhd /home/blevake/cpre381/Proj1/cwScr/tb_extender.vhd /home/blevake/cpre381/Proj1/cwScr/xorg2.vhd
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:46:53 on Oct 26,2024
+# vcom -reportprogress 300 -work work /home/blevake/cpre381/Proj1/cwScr/Add_Sub_N.vhd /home/blevake/cpre381/Proj1/cwScr/Adder.vhd /home/blevake/cpre381/Proj1/cwScr/addersubtractor.vhd /home/blevake/cpre381/Proj1/cwScr/alu.vhd /home/blevake/cpre381/Proj1/cwScr/alu_addersubtractor.vhd /home/blevake/cpre381/Proj1/cwScr/and2_N.vhd /home/blevake/cpre381/Proj1/cwScr/andg2.vhd /home/blevake/cpre381/Proj1/cwScr/barrelshifter_32.vhd /home/blevake/cpre381/Proj1/cwScr/beq.vhd /home/blevake/cpre381/Proj1/cwScr/beq_bne.vhd /home/blevake/cpre381/Proj1/cwScr/cla_adder.vhd /home/blevake/cpre381/Proj1/cwScr/control.vhd /home/blevake/cpre381/Proj1/cwScr/datapathv2.vhd /home/blevake/cpre381/Proj1/cwScr/decoder5t32.vhd /home/blevake/cpre381/Proj1/cwScr/dffg.vhd /home/blevake/cpre381/Proj1/cwScr/dfmux.vhd /home/blevake/cpre381/Proj1/cwScr/equalitymodule.vhd /home/blevake/cpre381/Proj1/cwScr/equalityMuxModule.vhd /home/blevake/cpre381/Proj1/cwScr/extender.vhd /home/blevake/cpre381/Proj1/cwScr/fetchLogic.vhd /home/blevake/cpre381/Proj1/cwScr/FullAdder.vhd /home/blevake/cpre381/Proj1/cwScr/FullAdder_N.vhd /home/blevake/cpre381/Proj1/cwScr/invg.vhd /home/blevake/cpre381/Proj1/cwScr/invg_N.vhd /home/blevake/cpre381/Proj1/cwScr/lessThanCheck.vhd /home/blevake/cpre381/Proj1/cwScr/luishift.vhd /home/blevake/cpre381/Proj1/cwScr/mem.vhd /home/blevake/cpre381/Proj1/cwScr/MIPS_processor.vhd /home/blevake/cpre381/Proj1/cwScr/MIPS_types.vhd /home/blevake/cpre381/Proj1/cwScr/Multiplier.vhd /home/blevake/cpre381/Proj1/cwScr/mux2t1_5.vhd /home/blevake/cpre381/Proj1/cwScr/mux2t1_N.vhd /home/blevake/cpre381/Proj1/cwScr/mux2t_1.vhd /home/blevake/cpre381/Proj1/cwScr/mux2to1.vhd /home/blevake/cpre381/Proj1/cwScr/mux8t1_32.vhd /home/blevake/cpre381/Proj1/cwScr/mux16t1_32.vhd /home/blevake/cpre381/Proj1/cwScr/mux32t1.vhd /home/blevake/cpre381/Proj1/cwScr/N_bitRegister.vhd /home/blevake/cpre381/Proj1/cwScr/onesComp.vhd /home/blevake/cpre381/Proj1/cwScr/onesComp_N.vhd /home/blevake/cpre381/Proj1/cwScr/org2.vhd /home/blevake/cpre381/Proj1/cwScr/Reg.vhd /home/blevake/cpre381/Proj1/cwScr/Reg32.vhd /home/blevake/cpre381/Proj1/cwScr/regfile.vhd /home/blevake/cpre381/Proj1/cwScr/register.vhd /home/blevake/cpre381/Proj1/cwScr/RegLd.vhd /home/blevake/cpre381/Proj1/cwScr/slt_equality_check.vhd /home/blevake/cpre381/Proj1/cwScr/tb_ALU.vhd /home/blevake/cpre381/Proj1/cwScr/tb_barrelShifter.vhd /home/blevake/cpre381/Proj1/cwScr/tb_control.vhd /home/blevake/cpre381/Proj1/cwScr/tb_datapathv2.vhd /home/blevake/cpre381/Proj1/cwScr/tb_dmem.vhd /home/blevake/cpre381/Proj1/cwScr/tb_extender.vhd /home/blevake/cpre381/Proj1/cwScr/xorg2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Add_Sub_N
+# -- Compiling architecture structural of Add_Sub_N
+# -- Compiling entity Adder
+# -- Compiling architecture behavior of Adder
+# -- Compiling entity addersubtractor
+# -- Compiling architecture structural of addersubtractor
+# -- Compiling entity alu
+# -- Compiling architecture structural of alu
+# -- Compiling entity alu_addersubtractor
+# -- Compiling architecture structural of alu_addersubtractor
+# -- Compiling entity and2_N
+# -- Compiling architecture structural of and2_N
+# -- Compiling entity andg2
+# -- Compiling architecture dataflow of andg2
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity barrelshifter_32
+# -- Compiling architecture mixed of barrelshifter_32
+# -- Compiling entity beq
+# -- Compiling architecture dataflow of beq
+# -- Compiling entity beq_bne
+# -- Compiling architecture structural of beq_bne
+# -- Compiling entity cla_adder
+# -- Compiling architecture mixed of cla_adder
+# -- Compiling entity control
+# -- Compiling architecture behavior of control
+# -- Loading package mypack
+# -- Compiling entity datapathv2
+# -- Compiling architecture structural of datapathv2
+# -- Compiling entity decoder5t32
+# -- Compiling architecture Dataflow of decoder5t32
+# -- Compiling entity dffg
+# -- Compiling architecture mixed of dffg
+# -- Compiling entity dfmux
+# -- Compiling architecture dataflow of dfmux
+# -- Compiling entity equalityModule
+# -- Compiling architecture dataflow of equalityModule
+# -- Compiling entity slt_equality_check
+# -- Compiling architecture dataflow of slt_equality_check
+# -- Compiling entity extender
+# -- Compiling architecture behavior of extender
+# -- Compiling entity fetchLogic
+# -- Compiling architecture mixed of fetchLogic
+# -- Compiling entity FullAdder
+# -- Compiling architecture mixed of FullAdder
+# -- Compiling entity FullAdder_N
+# -- Compiling architecture structural of FullAdder_N
+# -- Compiling entity invg
+# -- Compiling architecture dataflow of invg
+# -- Compiling entity invg_N
+# -- Compiling architecture structural of invg_N
+# -- Loading package STD_LOGIC_SIGNED
+# -- Compiling entity lessThanCheck
+# -- Compiling architecture dataflow of lessThanCheck
+# -- Compiling entity luishift
+# -- Compiling architecture dataflow of luishift
+# -- Compiling entity mem
+# -- Compiling architecture rtl of mem
+# -- Loading package MIPS_types
+# -- Compiling entity MIPS_Processor
+# -- Compiling architecture structure of MIPS_Processor
+# -- Compiling package MIPS_types
+# -- Compiling package body MIPS_types
+# -- Loading package MIPS_types
+# -- Compiling entity Multiplier
+# -- Compiling architecture behavior of Multiplier
+# -- Compiling entity mux2t1_5
+# -- Compiling architecture structural of mux2t1_5
+# -- Compiling entity mux2t1_N
+# -- Compiling architecture structural of mux2t1_N
+# -- Compiling entity mux2t1
+# -- Compiling architecture dataflow of mux2t1
+# -- Compiling entity mux2to1
+# -- Compiling architecture mixed of mux2to1
+# -- Compiling entity mux8t1_32
+# -- Compiling architecture structural of mux8t1_32
+# -- Compiling entity mux16t1_32
+# -- Compiling architecture structural of mux16t1_32
+# -- Compiling entity mux32t1
+# -- Compiling architecture structural of mux32t1
+# -- Compiling entity N_bitRegister
+# -- Compiling architecture mixed of N_bitRegister
+# -- Compiling entity onesComp
+# -- Compiling architecture structure of onesComp
+# -- Compiling entity onesComp_N
+# -- Compiling architecture structural of onesComp_N
+# -- Compiling entity org2
+# -- Compiling architecture dataflow of org2
+# -- Compiling entity Reg
+# -- Compiling architecture behavior of Reg
+# -- Compiling entity Reg32
+# -- Compiling architecture structural of Reg32
+# -- Compiling entity RegFile
+# -- Compiling architecture structural of RegFile
+# -- Compiling entity RegLd
+# -- Compiling architecture behavior of RegLd
+# -- Compiling entity equality_check
+# -- Compiling architecture dataflow of equality_check
+# -- Compiling entity tb_alu
+# -- Compiling architecture test of tb_alu
+# -- Compiling entity tb_barrelShifter
+# -- Compiling architecture behavior of tb_barrelShifter
+# -- Compiling entity tb_control
+# -- Compiling architecture behavior of tb_control
+# -- Compiling entity tb_datapathv2
+# -- Compiling architecture behavior of tb_datapathv2
+# -- Compiling entity tb_dmem
+# -- Compiling architecture behavior of tb_dmem
+# -- Compiling entity tb_extender
+# -- Compiling architecture behavior of tb_extender
+# -- Compiling entity xorg2
+# -- Compiling architecture dataflow of xorg2
+# End time: 13:46:53 on Oct 26,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.mips_processor
+# vsim work.mips_processor 
+# Start time: 13:46:59 on Oct 26,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: /home/blevake/cpre381/Proj1/cwScr/MIPS_processor.vhd(201): (vopt-3473) Component instance "g_SIGNEXT : sign_Ext" is not bound.
+#         Region: /MIPS_Processor
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.mips_types(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.mips_processor(structure)#1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /mips_processor/DMem File: /home/blevake/cpre381/Proj1/cwScr/mem.vhd
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /mips_processor/DMem
+# ** Warning: (vsim-3473) Component instance "g_SIGNEXT : sign_Ext" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /mips_processor File: /home/blevake/cpre381/Proj1/cwScr/MIPS_processor.vhd
+# Loading work.regfile(structural)#1
+# Loading work.reg32(structural)#1
+# Loading ieee.std_logic_signed(body)
+# Loading work.alu(structural)#1
+# Loading work.slt_equality_check(dataflow)#1
+# Loading work.mux2t1_n(structural)#1
+# Loading work.fulladder_n(structural)#1
+# Loading work.mux16t1_32(structural)#1
+# Loading work.mux2t1_n(structural)#2
+# Loading work.add_sub_n(structural)#1
+# ** Warning: (vsim-8683) Uninitialized out port /mips_processor/g_ALU/overFlow has no driver.
+# This port will contribute value (U) to the signal network.
+quit -sim
+# End time: 13:47:24 on Oct 26,2024, Elapsed time: 0:00:25
+# Errors: 0, Warnings: 5
+vcom -reportprogress 300 -work work /home/blevake/cpre381/Proj1/cwScr/Add_Sub_N.vhd /home/blevake/cpre381/Proj1/cwScr/Adder.vhd /home/blevake/cpre381/Proj1/cwScr/addersubtractor.vhd /home/blevake/cpre381/Proj1/cwScr/alu.vhd /home/blevake/cpre381/Proj1/cwScr/alu_addersubtractor.vhd /home/blevake/cpre381/Proj1/cwScr/and2_N.vhd /home/blevake/cpre381/Proj1/cwScr/andg2.vhd /home/blevake/cpre381/Proj1/cwScr/barrelshifter_32.vhd /home/blevake/cpre381/Proj1/cwScr/beq.vhd /home/blevake/cpre381/Proj1/cwScr/beq_bne.vhd /home/blevake/cpre381/Proj1/cwScr/cla_adder.vhd /home/blevake/cpre381/Proj1/cwScr/control.vhd /home/blevake/cpre381/Proj1/cwScr/datapathv2.vhd /home/blevake/cpre381/Proj1/cwScr/decoder5t32.vhd /home/blevake/cpre381/Proj1/cwScr/dffg.vhd /home/blevake/cpre381/Proj1/cwScr/dfmux.vhd /home/blevake/cpre381/Proj1/cwScr/equalitymodule.vhd /home/blevake/cpre381/Proj1/cwScr/equalityMuxModule.vhd /home/blevake/cpre381/Proj1/cwScr/extender.vhd /home/blevake/cpre381/Proj1/cwScr/fetchLogic.vhd /home/blevake/cpre381/Proj1/cwScr/FullAdder.vhd /home/blevake/cpre381/Proj1/cwScr/FullAdder_N.vhd /home/blevake/cpre381/Proj1/cwScr/invg.vhd /home/blevake/cpre381/Proj1/cwScr/invg_N.vhd /home/blevake/cpre381/Proj1/cwScr/lessThanCheck.vhd /home/blevake/cpre381/Proj1/cwScr/luishift.vhd /home/blevake/cpre381/Proj1/cwScr/mem.vhd /home/blevake/cpre381/Proj1/cwScr/MIPS_processor.vhd /home/blevake/cpre381/Proj1/cwScr/MIPS_types.vhd /home/blevake/cpre381/Proj1/cwScr/Multiplier.vhd /home/blevake/cpre381/Proj1/cwScr/mux2t1_5.vhd /home/blevake/cpre381/Proj1/cwScr/mux2t1_N.vhd /home/blevake/cpre381/Proj1/cwScr/mux2t_1.vhd /home/blevake/cpre381/Proj1/cwScr/mux2to1.vhd /home/blevake/cpre381/Proj1/cwScr/mux8t1_32.vhd /home/blevake/cpre381/Proj1/cwScr/mux16t1_32.vhd /home/blevake/cpre381/Proj1/cwScr/mux32t1.vhd /home/blevake/cpre381/Proj1/cwScr/N_bitRegister.vhd /home/blevake/cpre381/Proj1/cwScr/onesComp.vhd /home/blevake/cpre381/Proj1/cwScr/onesComp_N.vhd /home/blevake/cpre381/Proj1/cwScr/org2.vhd /home/blevake/cpre381/Proj1/cwScr/Reg.vhd /home/blevake/cpre381/Proj1/cwScr/Reg32.vhd /home/blevake/cpre381/Proj1/cwScr/regfile.vhd /home/blevake/cpre381/Proj1/cwScr/register.vhd /home/blevake/cpre381/Proj1/cwScr/RegLd.vhd /home/blevake/cpre381/Proj1/cwScr/slt_equality_check.vhd /home/blevake/cpre381/Proj1/cwScr/tb_ALU.vhd /home/blevake/cpre381/Proj1/cwScr/tb_barrelShifter.vhd /home/blevake/cpre381/Proj1/cwScr/tb_control.vhd /home/blevake/cpre381/Proj1/cwScr/tb_datapathv2.vhd /home/blevake/cpre381/Proj1/cwScr/tb_dmem.vhd /home/blevake/cpre381/Proj1/cwScr/tb_extender.vhd /home/blevake/cpre381/Proj1/cwScr/xorg2.vhd
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:49:42 on Oct 26,2024
+# vcom -reportprogress 300 -work work /home/blevake/cpre381/Proj1/cwScr/Add_Sub_N.vhd /home/blevake/cpre381/Proj1/cwScr/Adder.vhd /home/blevake/cpre381/Proj1/cwScr/addersubtractor.vhd /home/blevake/cpre381/Proj1/cwScr/alu.vhd /home/blevake/cpre381/Proj1/cwScr/alu_addersubtractor.vhd /home/blevake/cpre381/Proj1/cwScr/and2_N.vhd /home/blevake/cpre381/Proj1/cwScr/andg2.vhd /home/blevake/cpre381/Proj1/cwScr/barrelshifter_32.vhd /home/blevake/cpre381/Proj1/cwScr/beq.vhd /home/blevake/cpre381/Proj1/cwScr/beq_bne.vhd /home/blevake/cpre381/Proj1/cwScr/cla_adder.vhd /home/blevake/cpre381/Proj1/cwScr/control.vhd /home/blevake/cpre381/Proj1/cwScr/datapathv2.vhd /home/blevake/cpre381/Proj1/cwScr/decoder5t32.vhd /home/blevake/cpre381/Proj1/cwScr/dffg.vhd /home/blevake/cpre381/Proj1/cwScr/dfmux.vhd /home/blevake/cpre381/Proj1/cwScr/equalitymodule.vhd /home/blevake/cpre381/Proj1/cwScr/equalityMuxModule.vhd /home/blevake/cpre381/Proj1/cwScr/extender.vhd /home/blevake/cpre381/Proj1/cwScr/fetchLogic.vhd /home/blevake/cpre381/Proj1/cwScr/FullAdder.vhd /home/blevake/cpre381/Proj1/cwScr/FullAdder_N.vhd /home/blevake/cpre381/Proj1/cwScr/invg.vhd /home/blevake/cpre381/Proj1/cwScr/invg_N.vhd /home/blevake/cpre381/Proj1/cwScr/lessThanCheck.vhd /home/blevake/cpre381/Proj1/cwScr/luishift.vhd /home/blevake/cpre381/Proj1/cwScr/mem.vhd /home/blevake/cpre381/Proj1/cwScr/MIPS_processor.vhd /home/blevake/cpre381/Proj1/cwScr/MIPS_types.vhd /home/blevake/cpre381/Proj1/cwScr/Multiplier.vhd /home/blevake/cpre381/Proj1/cwScr/mux2t1_5.vhd /home/blevake/cpre381/Proj1/cwScr/mux2t1_N.vhd /home/blevake/cpre381/Proj1/cwScr/mux2t_1.vhd /home/blevake/cpre381/Proj1/cwScr/mux2to1.vhd /home/blevake/cpre381/Proj1/cwScr/mux8t1_32.vhd /home/blevake/cpre381/Proj1/cwScr/mux16t1_32.vhd /home/blevake/cpre381/Proj1/cwScr/mux32t1.vhd /home/blevake/cpre381/Proj1/cwScr/N_bitRegister.vhd /home/blevake/cpre381/Proj1/cwScr/onesComp.vhd /home/blevake/cpre381/Proj1/cwScr/onesComp_N.vhd /home/blevake/cpre381/Proj1/cwScr/org2.vhd /home/blevake/cpre381/Proj1/cwScr/Reg.vhd /home/blevake/cpre381/Proj1/cwScr/Reg32.vhd /home/blevake/cpre381/Proj1/cwScr/regfile.vhd /home/blevake/cpre381/Proj1/cwScr/register.vhd /home/blevake/cpre381/Proj1/cwScr/RegLd.vhd /home/blevake/cpre381/Proj1/cwScr/slt_equality_check.vhd /home/blevake/cpre381/Proj1/cwScr/tb_ALU.vhd /home/blevake/cpre381/Proj1/cwScr/tb_barrelShifter.vhd /home/blevake/cpre381/Proj1/cwScr/tb_control.vhd /home/blevake/cpre381/Proj1/cwScr/tb_datapathv2.vhd /home/blevake/cpre381/Proj1/cwScr/tb_dmem.vhd /home/blevake/cpre381/Proj1/cwScr/tb_extender.vhd /home/blevake/cpre381/Proj1/cwScr/xorg2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Add_Sub_N
+# -- Compiling architecture structural of Add_Sub_N
+# -- Compiling entity Adder
+# -- Compiling architecture behavior of Adder
+# -- Compiling entity addersubtractor
+# -- Compiling architecture structural of addersubtractor
+# -- Compiling entity alu
+# -- Compiling architecture structural of alu
+# -- Compiling entity alu_addersubtractor
+# -- Compiling architecture structural of alu_addersubtractor
+# -- Compiling entity and2_N
+# -- Compiling architecture structural of and2_N
+# -- Compiling entity andg2
+# -- Compiling architecture dataflow of andg2
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity barrelshifter_32
+# -- Compiling architecture mixed of barrelshifter_32
+# -- Compiling entity beq
+# -- Compiling architecture dataflow of beq
+# -- Compiling entity beq_bne
+# -- Compiling architecture structural of beq_bne
+# -- Compiling entity cla_adder
+# -- Compiling architecture mixed of cla_adder
+# -- Compiling entity control
+# -- Compiling architecture behavior of control
+# -- Loading package mypack
+# -- Compiling entity datapathv2
+# -- Compiling architecture structural of datapathv2
+# -- Compiling entity decoder5t32
+# -- Compiling architecture Dataflow of decoder5t32
+# -- Compiling entity dffg
+# -- Compiling architecture mixed of dffg
+# -- Compiling entity dfmux
+# -- Compiling architecture dataflow of dfmux
+# -- Compiling entity equalityModule
+# -- Compiling architecture dataflow of equalityModule
+# -- Compiling entity slt_equality_check
+# -- Compiling architecture dataflow of slt_equality_check
+# -- Compiling entity extender
+# -- Compiling architecture behavior of extender
+# -- Compiling entity fetchLogic
+# -- Compiling architecture mixed of fetchLogic
+# -- Compiling entity FullAdder
+# -- Compiling architecture mixed of FullAdder
+# -- Compiling entity FullAdder_N
+# -- Compiling architecture structural of FullAdder_N
+# -- Compiling entity invg
+# -- Compiling architecture dataflow of invg
+# -- Compiling entity invg_N
+# -- Compiling architecture structural of invg_N
+# -- Loading package STD_LOGIC_SIGNED
+# -- Compiling entity lessThanCheck
+# -- Compiling architecture dataflow of lessThanCheck
+# -- Compiling entity luishift
+# -- Compiling architecture dataflow of luishift
+# -- Compiling entity mem
+# -- Compiling architecture rtl of mem
+# -- Loading package MIPS_types
+# -- Compiling entity MIPS_Processor
+# -- Compiling architecture structure of MIPS_Processor
+# -- Compiling package MIPS_types
+# -- Compiling package body MIPS_types
+# -- Loading package MIPS_types
+# -- Compiling entity Multiplier
+# -- Compiling architecture behavior of Multiplier
+# -- Compiling entity mux2t1_5
+# -- Compiling architecture structural of mux2t1_5
+# -- Compiling entity mux2t1_N
+# -- Compiling architecture structural of mux2t1_N
+# -- Compiling entity mux2t1
+# -- Compiling architecture dataflow of mux2t1
+# -- Compiling entity mux2to1
+# -- Compiling architecture mixed of mux2to1
+# -- Compiling entity mux8t1_32
+# -- Compiling architecture structural of mux8t1_32
+# -- Compiling entity mux16t1_32
+# -- Compiling architecture structural of mux16t1_32
+# -- Compiling entity mux32t1
+# -- Compiling architecture structural of mux32t1
+# -- Compiling entity N_bitRegister
+# -- Compiling architecture mixed of N_bitRegister
+# -- Compiling entity onesComp
+# -- Compiling architecture structure of onesComp
+# -- Compiling entity onesComp_N
+# -- Compiling architecture structural of onesComp_N
+# -- Compiling entity org2
+# -- Compiling architecture dataflow of org2
+# -- Compiling entity Reg
+# -- Compiling architecture behavior of Reg
+# -- Compiling entity Reg32
+# -- Compiling architecture structural of Reg32
+# -- Compiling entity regfile
+# -- Compiling architecture structural of regfile
+# -- Compiling entity RegLd
+# -- Compiling architecture behavior of RegLd
+# -- Compiling entity equality_check
+# -- Compiling architecture dataflow of equality_check
+# -- Compiling entity tb_alu
+# -- Compiling architecture test of tb_alu
+# -- Compiling entity tb_barrelShifter
+# -- Compiling architecture behavior of tb_barrelShifter
+# -- Compiling entity tb_control
+# -- Compiling architecture behavior of tb_control
+# -- Compiling entity tb_datapathv2
+# -- Compiling architecture behavior of tb_datapathv2
+# -- Compiling entity tb_dmem
+# -- Compiling architecture behavior of tb_dmem
+# -- Compiling entity tb_extender
+# -- Compiling architecture behavior of tb_extender
+# -- Compiling entity xorg2
+# -- Compiling architecture dataflow of xorg2
+# End time: 13:49:42 on Oct 26,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
