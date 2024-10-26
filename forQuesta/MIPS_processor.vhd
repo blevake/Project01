@@ -118,6 +118,29 @@ architecture structure of MIPS_Processor is
         );
     end component;
 
+    component mux16t1_32 is
+        port(
+           	i_S : In std_logic_vector(3 Downto 0); 	--d signals are in octal
+		i_D00 : In std_logic_vector(31 Downto 0);
+		i_D01 : In std_logic_vector(31 Downto 0);
+		i_D02 : In std_logic_vector(31 Downto 0);
+		i_D03 : In std_logic_vector(31 Downto 0);
+		i_D04 : In std_logic_vector(31 Downto 0);
+		i_D05 : In std_logic_vector(31 Downto 0);
+		i_D06 : In std_logic_vector(31 Downto 0);
+		i_D07 : In std_logic_vector(31 Downto 0);
+		i_D10 : In std_logic_vector(31 Downto 0);
+		i_D11 : In std_logic_vector(31 Downto 0);
+		i_D12 : In std_logic_vector(31 Downto 0);
+		i_D13 : In std_logic_vector(31 Downto 0);
+		i_D14 : In std_logic_vector(31 Downto 0);
+		i_D15 : In std_logic_vector(31 Downto 0);
+		i_D16 : In std_logic_vector(31 Downto 0);
+		i_D17 : In std_logic_vector(31 Downto 0);
+		o_O : Out std_logic_vector(31 Downto 0)                   -- Zero flag
+        );
+    end component;
+
 
     component andg2 is
          port(i_A          : in std_logic;
@@ -134,17 +157,17 @@ generic(N : integer := 5); -- Generic of type integer for input/output data widt
 
 end component;
 
-    component sign_Ext is
-        generic(
-            INPUT_BIT_LENGTH : integer := 16;              -- Input bit width
-            OUTPUT_BIT_LENGTH : integer := 32              -- Output bit width
-        );
-        port(
-            i_signSel : in std_logic;                      -- Sign select: '1' for sign extension, '0' for zero extension
-            i_imm     : in std_logic_vector(INPUT_BIT_LENGTH-1 downto 0); -- Immediate input
-            o_imm     : out std_logic_vector(OUTPUT_BIT_LENGTH-1 downto 0) -- Extended output
-        );
-    end component;
+  component sign_Ext is
+  	generic(	
+		INPUT_BIT_LENGTH   : integer := 16;
+		OUTPUT_BIT_LENGTH  : integer := 32); 
+
+  	port(		
+		i_signSel : in std_logic;
+		i_imm 	: in std_logic_vector(INPUT_BIT_LENGTH-1 downto 0);
+		o_imm 	: out std_logic_vector(OUTPUT_BIT_LENGTH-1 downto 0)
+		);
+  end component;
 
     component fetchLogic is 
 	port (
@@ -164,7 +187,7 @@ end component;
 end component;
 
 
-signal s_RF_rd1, s_RF_rd2, s_aluResult, s_ialu2, s_aluWriteData, s_PC4, s_imm : std_logic_vector(31 downto 0);  
+signal s_RF_rd1, s_RF_rd2, s_aluResult, s_ialu2, s_aluWriteData, s_PC4, s_imm, s_rtrs : std_logic_vector(31 downto 0);  
 signal s_aluCtl : std_logic_vector(3 downto 0);
 signal s_aluScr, s_memToReg, s_j, s_jr, s_regDst, s_signExtSel, s_Br, s_zero, s_jal : std_logic;
 signal s_regjalMux, s_regjalMux2 : std_logic_vector(4 downto 0);
@@ -200,9 +223,9 @@ begin
 
   -- TODO: Implement the rest of your processor below this comment! 
 
-  g_SIGNEXT: sign_Ext port map(
+ g_SIGNEXT: sign_ext port map(
 		i_signSel 	=> s_signExtSel,
-		i_imm 		=> s_Inst, 
+		i_imm 		=> s_Inst(15 downto 0), 
 		o_imm 		=> s_imm 
 		);
 
@@ -237,7 +260,7 @@ begin
 		);
 
   g_ALU : alu port map(
-		i_A		=> s_RF_rd1,
+		i_A		=> s_rtrs,
 		i_B		=> s_ialu2, 
 		i_aluOp		=> s_aluCtl,
 		i_shamt		=> s_Inst(10 downto 6),
@@ -311,6 +334,27 @@ g_ALUI2_MUX: mux2t1_N port map (
 		i_D1 => s_imm,		
 		o_O => s_ialu2
 		);
+
+g_ALURTRS_MUX: mux16t1_32 port map (
+		i_S   => s_aluCtl,
+		i_D00 => s_RF_rd1,
+		i_D01 => s_RF_rd1,
+		i_D02 => s_RF_rd1,
+		i_D03 => s_RF_rd1,
+		i_D04 => s_RF_rd1,
+		i_D05 => s_RF_rd1,
+		i_D06 => s_RF_rd1,
+		i_D07 => s_RF_rd1,
+		i_D10 => s_RF_rd1,
+		i_D11 => s_RF_rd1,
+		i_D12 => s_RF_rd1,
+		i_D13 => s_RF_rd1,
+		i_D14 => s_RF_rd1,
+		i_D15 => s_RF_rd1,
+		i_D16 => s_RF_rd1,
+		i_D17 => s_RF_rd1,
+		o_O => s_rtrs
+);
 
 
 end structure;
