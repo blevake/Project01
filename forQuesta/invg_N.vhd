@@ -19,7 +19,7 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 
 entity invg_N is
-  generic(N : integer := 4); -- Generic of type integer for input/output data width. Default value is 32.
+  generic(N : integer := 32); -- Generic of type integer for input/output data width. Default value is 32.
   port(i_I          : in std_logic_vector(N-1 downto 0);
        o_O          : out std_logic_vector(N-1 downto 0));
 end invg_N;
