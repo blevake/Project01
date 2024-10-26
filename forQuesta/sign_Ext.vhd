@@ -4,8 +4,8 @@ use ieee.numeric_std.all;
 
 entity sign_Ext is
     port (
-        i_imm  : in  std_logic_vector(15 downto 0);
         i_signSel : in std_logic;  
+	i_imm  : in  std_logic_vector(15 downto 0);
         o_imm : out std_logic_vector(31 downto 0)
     );
 end sign_Ext;
