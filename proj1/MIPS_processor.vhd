@@ -119,13 +119,20 @@ architecture structure of MIPS_Processor is
     end component;
 
 
-    component and2_N is
-        port(
-            i_D0         : in std_logic_vector(N-1 downto 0);
-       		i_D1         : in std_logic_vector(N-1 downto 0);
-       		o_O          : out std_logic_vector(N-1 downto 0)
-        );
+    component andg2 is
+         port(i_A          : in std_logic;
+       i_B          : in std_logic;
+       o_F          : out std_logic);
     end component;
+
+component mux2t1_5 is 
+generic(N : integer := 5); -- Generic of type integer for input/output data width. Default value is 32.
+  port(i_S          : in std_logic;
+       i_D0         : in std_logic_vector(N-1 downto 0);
+       i_D1         : in std_logic_vector(N-1 downto 0);
+       o_O          : out std_logic_vector(N-1 downto 0));
+
+end component;
 
     component sign_Ext is
         generic(
@@ -140,7 +147,7 @@ architecture structure of MIPS_Processor is
     end component;
 
     component fetchLogic is 
-	generic(
+	port (
 	i_PC		:	in std_logic_vector(N-1 downto 0);	--input program counter
 	i_JumpReg	:	in std_logic;			
 	i_Jump		:	in std_logic;
@@ -155,10 +162,10 @@ architecture structure of MIPS_Processor is
 end component;
 
 
-signal s_RF_rd1, s_RF_rd2, s_aluResult, s_ialu2, s_aluWriteData. s_PC4 : std_logic_vector(31 downto 0);  
+signal s_RF_rd1, s_RF_rd2, s_aluResult, s_ialu2, s_aluWriteData, s_PC4, s_imm : std_logic_vector(31 downto 0);  
 signal s_aluCtl : std_logic_vector(3 downto 0);
-signal s_aluScr, s_memToReg, s_j, s_jr, s_regDst, s_signExtSel, s_Br, s_zero : std_logic;
-signal s_regjalMux, s_jal, s_regjalMux2, s_regWrMux : std_logic_vector(5 downto 0);
+signal s_aluScr, s_memToReg, s_j, s_jr, s_regDst, s_signExtSel, s_Br, s_zero, s_jal : std_logic;
+signal s_regjalMux, s_regjalMux2 : std_logic_vector(4 downto 0);
 
 
 begin
@@ -248,40 +255,34 @@ g_FETCHLOGIC : fetchLogic port map(
 	o_PC    		=> s_NextInstAddr
 );
 
-g_jal_AND: and2_n port map (
-	i_D0  =>      s_RegWr,
-       	i_D1    =>           s_j,
-       	o_O      =>      s_jal,   
+g_jal_AND: andg2 port map (
+	i_A  =>      s_RegWr,
+       	i_B    =>           s_j,
+       	o_F      =>      s_jal
 );
 
 
-g_Regjal_MUX: mux2t1_N port map (
+g_Regjal_MUX: mux2t1_5 port map (
 		i_S => s_jal,	
-		i_D0 => s_Inst(20 downto 16),  
+		i_D0(4 downto 0) => s_Inst(20 downto 16),  
 		i_D1 => s_regjalMux, 
 		o_O => s_regjalMux
 		);
 
-g_RegDst_MUX: mux2t1_N port map (
+g_RegDst_MUX: mux2t1_5 port map (
 		i_S => s_regDst,	
-		i_D0 => s_Inst(15 downto 11),  
+		i_D0(4 downto 0) => s_Inst(15 downto 11),  
 		i_D1 => s_regjalMux, 
 		o_O => s_regjalMux2
 		);
 
-g_Regjal2_MUX: mux2t1_N port map (
+g_Regjal2_MUX: mux2t1_5 port map (
 		i_S => s_jal,	
 		i_D0 => s_regjalMux2, 
 		i_D1 => "11111", 
-		o_O => s_RegWr
+		o_O => s_RegWrAddr
 		);
 
-g_Regjal2_MUX: mux2t1_N port map (
-		i_S => s_jal,	
-		i_D0 => s_regjalMux2, 
-		i_D1 => "11111", 
-		o_O => s_regWrMux
-		);
 
 g_RegWriteData1_MUX: mux2t1_N port map (
 		i_S => s_jal,	
@@ -296,6 +297,7 @@ g_RegWriteData2_MUX: mux2t1_N port map (
 		i_D1 => s_DMemOut,		
 		o_O => s_RegWrData
 		);
+
 
 g_ALUI2_MUX: mux2t1_N port map (
 		i_S => s_aluScr,	
