@@ -1,0 +1,83 @@
+/home/chwoodv/cpre381/Lab2/Lab2/Lab2/RegFile/RegFile.vhd {1 {vcom -work work -2008 -explicit -vopt -stats=none /home/chwoodv/cpre381/Lab2/Lab2/Lab2/RegFile/RegFile.vhd
+QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity RegFile
+-- Compiling architecture structural of RegFile
+
+} {} {}} /home/chwoodv/cpre381/Lab2/Lab2/Lab2/RegFile/mux2t1df.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/chwoodv/cpre381/Lab2/Lab2/Lab2/RegFile/mux2t1df.vhd
+QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity mux2t1df
+-- Compiling architecture Dataflow of mux2t1df
+
+} {} {}} /home/chwoodv/cpre381/Lab2/Lab2/Lab2/RegFile/decoder5_32.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/chwoodv/cpre381/Lab2/Lab2/Lab2/RegFile/decoder5_32.vhd
+QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity decoder5_32
+-- Compiling architecture Dataflow of decoder5_32
+
+} {} {}} /home/chwoodv/cpre381/Lab2/Lab2/Lab2/RegFile/dffg.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/chwoodv/cpre381/Lab2/Lab2/Lab2/RegFile/dffg.vhd
+QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity dffg
+-- Compiling architecture mixed of dffg
+
+} {} {}} /home/chwoodv/cpre381/Lab2/Lab2/Lab2/RegFile/Reg32.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/chwoodv/cpre381/Lab2/Lab2/Lab2/RegFile/Reg32.vhd
+QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity Reg32
+-- Compiling architecture structural of Reg32
+
+} {} {}} /home/chwoodv/cpre381/Lab2/Lab2/Lab2/RegFile/tb_decoder5_32.vhd {2 {vcom -work work -2002 -explicit -vopt -stats=none /home/chwoodv/cpre381/Lab2/Lab2/Lab2/RegFile/tb_decoder5_32.vhd
+QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_textio
+-- Loading package ENV
+** Warning: /home/chwoodv/cpre381/Lab2/Lab2/Lab2/RegFile/tb_decoder5_32.vhd(17): (vcom-1516) Package "STD.ENV" does not exist in this language version.
+-- Compiling entity tb_decoder5_32
+-- Compiling architecture mixed of tb_decoder5_32
+
+} {} {}} /home/chwoodv/cpre381/Lab2/Lab2/Lab2/RegFile/tb_Reg32.vhd {2 {vcom -work work -2002 -explicit -vopt -stats=none /home/chwoodv/cpre381/Lab2/Lab2/Lab2/RegFile/tb_Reg32.vhd
+QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_textio
+-- Loading package ENV
+** Warning: /home/chwoodv/cpre381/Lab2/Lab2/Lab2/RegFile/tb_Reg32.vhd(17): (vcom-1516) Package "STD.ENV" does not exist in this language version.
+-- Compiling entity tb_Reg32
+-- Compiling architecture mixed of tb_Reg32
+
+} {} {}} /home/chwoodv/cpre381/Lab2/Lab2/Lab2/RegFile/mux32t1.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/chwoodv/cpre381/Lab2/Lab2/Lab2/RegFile/mux32t1.vhd
+QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity mux32t1
+-- Compiling architecture structural of mux32t1
+
+} {} {}} /home/chwoodv/cpre381/Lab2/Lab2/Lab2/RegFile/tb_mux32t1.vhd {1 {vcom -work work -2008 -explicit -vopt -stats=none /home/chwoodv/cpre381/Lab2/Lab2/Lab2/RegFile/tb_mux32t1.vhd
+QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_textio
+-- Loading package ENV
+-- Compiling entity tb_mux32t1
+-- Compiling architecture mixed of tb_mux32t1
+
+} {} {}}
