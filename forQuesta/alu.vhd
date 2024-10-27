@@ -287,7 +287,7 @@ BEGIN
 		i_shifttype => i_AluOp(0), -- Type selection based on ALU control
 		i_shiftdir => i_AluOp(3), -- Direction control based on ALU control
 		i_shiftamt => i_shamt, 
-		i_d => i_A, 
+		i_d => i_B, 
 		o_d => barrelOutput --shift type 0 for logical, 1 for arithmetic, arithmetic for shift left does nothing
 	);
 
