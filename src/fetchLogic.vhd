@@ -86,14 +86,6 @@ signal s_PC		:	std_logic_vector(31 downto 0);
 begin
 
 
-process (i_JumpInstrImm, s_UpdatedPC) is
-	begin
-		o_PC4 <= s_UpdatedPC;
-		s_JRMux0(31 downto 28) <= s_UpdatedPC(31 downto 28);
-		s_JRMux0temp <= (others => '0');
-		s_JRMux0temp(25 downto 0) <= i_JumpInstrImm;
-		s_JRMux0(27 downto 0) <= std_logic_vector(shift_left(unsigned(s_JRMux0temp), 2));
-	end process;
 
 process (i_BranchInstrImm) is --sll branch immediate 2 spots
 	begin
@@ -116,7 +108,14 @@ PCDFFG : Reg32
        		i_CLK => i_Clk,
        		o_Q => s_oldPC);
 	
-
+jumper : mux2t1_N
+	port map(
+		i_S                => i_Jump,
+		i_D0               => x"00000000",
+		i_D1(31 downto 28) => s_UpdatedPC(31 downto 28),
+		i_D1(27 downto 2)  => i_JumpInstrImm,
+		i_D1(1 downto 0)   => "00",
+		o_O 		   => s_JRMux0);
 
 BranchAndZero:andg2
 	port map(
