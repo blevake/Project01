@@ -205,8 +205,8 @@ begin
     generic map(ADDR_WIDTH => ADDR_WIDTH,
                 DATA_WIDTH => N)
     port map(clk  => iCLK,
-             addr => s_aluResult(11 downto 2),
-             data => s_RF_rd2,
+             addr => S_DMemAddr(11 downto 2),
+             data => s_DMemData,
              we   => s_DMemWr,
              q    => s_DMemOut);
 
@@ -261,6 +261,8 @@ begin
 		o_zero		=> s_zero 
 		);
 oALUOut<=s_aluResult;
+s_DMemAddr <= oALUOut;
+s_DMemData <= s_RF_rd2;
 
 g_FETCHLOGIC : fetchLogic port map(
 	i_PC       		=> s_NextInstAddr, 
