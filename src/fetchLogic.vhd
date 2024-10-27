@@ -17,8 +17,6 @@ port (
 	i_JumpInstrImm	:	in std_logic_vector(25 downto 0);	--will be shifted left, then take top 4 bits from PC
 	i_BranchInstrImm:	in std_logic_vector(N-1 downto 0);	--will be shifted left then added to PC, already sign extended
 	i_RSInput	:	in std_logic_vector(N-1 downto 0);
-	i_Clk		:	in std_logic;
-	i_Rst		:	in std_logic;
 	o_PC4		:	out std_logic_vector(N-1 downto 0);
 	o_PC		:	out std_logic_vector(N-1 downto 0)	--output program counter
 );end fetchLogic;
@@ -62,16 +60,6 @@ component andg2 is
        	o_F          : out std_logic);
 end component;
 
-component Reg32 is	--will hold PC value
-  	port(
-	i_D          : in std_logic_vector(31 downto 0);
-       	i_RST        : in std_logic;
-       	i_WE         : in std_logic;
-       	i_CLK        : in std_logic;
-       	o_Q          : out std_logic_vector(31 downto 0));
-end component;
-
-
 signal s_BranchAndZero	:	std_logic;
 signal s_UpdatedPC	:	std_logic_vector(31 downto 0); --input PC + 4
 signal s_JRMux0		:	std_logic_vector(31 downto 0);
@@ -80,42 +68,23 @@ signal s_JumpMux0	:	std_logic_vector(31 downto 0);
 signal s_JumpMux1	:	std_logic_vector(31 downto 0);
 signal s_BranchAddertemp:	std_logic_vector(31 downto 0);
 signal s_BranchMux1	:	std_logic_vector(31 downto 0);
-signal s_oldPC		:	std_logic_vector(31 downto 0);
-signal s_test		:	std_logic_vector(31 downto 0);
-signal s_PC		:	std_logic_vector(31 downto 0);
+
 begin
 
-
-
-process (i_BranchInstrImm) is --sll branch immediate 2 spots
-	begin
-		s_BranchAddertemp <= std_logic_vector(shift_left(unsigned(i_BranchInstrImm), 2));
-	end process;
-
---  Diagram of fetch logic is uploaded to github
-
-ah:mux2t1_N
-	port map(
-		i_S => i_Rst,
-       		i_D0 => i_PC,
-       		i_D1 => x"003FFFFC",
-       		o_O => s_PC);
-PCDFFG : Reg32
-	port map(
-		i_D => s_PC,
-       		i_RST => '0',
-       		i_WE => '1',
-       		i_CLK => i_Clk,
-       		o_Q => s_oldPC);
-	
 jumper : mux2t1_N
 	port map(
 		i_S                => i_Jump,
 		i_D0               => x"00000000",
-		i_D1(31 downto 28) => s_UpdatedPC(31 downto 28),
-		i_D1(27 downto 2)  => i_JumpInstrImm,
+		i_D1(31 downto 26) => s_UpdatedPC(31 downto 26),
+		i_D1(25 downto 2)  => i_JumpInstrImm(23 downto 0),
 		i_D1(1 downto 0)   => "00",
 		o_O 		   => s_JRMux0);
+
+s_BranchAddertemp <= std_logic_vector(shift_left(unsigned(i_BranchInstrImm), 2));
+o_PC4 <= s_UpdatedPC;
+
+
+--  Diagram of fetch logic is uploaded to github
 
 BranchAndZero:andg2
 	port map(
@@ -126,7 +95,7 @@ BranchAndZero:andg2
 
 AddPCto4:add_sub_n
 	port map(
-		i_A     => s_oldPC,
+		i_A     => i_PC,
 		i_B     => X"00000004", --add 4 to PC
 		i_Add_Sub => '0', --will only add
 		o_O      => s_UpdatedPC);

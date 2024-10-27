@@ -175,6 +175,14 @@ QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
 -- Compiling entity RegLd
 -- Compiling architecture behavior of RegLd
 
+} {} {}} /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/control.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/control.vhd
+QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity control
+-- Compiling architecture behavior of control
+
 } {} {}} /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/TopLevel/extender.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/TopLevel/extender.vhd
 QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
 -- Loading package STANDARD
@@ -324,6 +332,14 @@ QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
 -- Compiling entity Add_Sub_N
 -- Compiling architecture structural of Add_Sub_N
 
+} {} {}} /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/alu.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/alu.vhd
+QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity alu
+-- Compiling architecture structural of alu
+
 } {} {}} /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/Reg32.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/Reg32.vhd
 QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
 -- Loading package STANDARD
@@ -360,14 +376,6 @@ QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
 -- Compiling package body MIPS_types
 -- Loading package MIPS_types
 
-} {} {}} /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/TopLevel/dfmux.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/TopLevel/dfmux.vhd
-QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Compiling entity dfmux
--- Compiling architecture dataflow of dfmux
-
 } {} {}} /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/mux2t1_N.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/mux2t1_N.vhd
 QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
 -- Loading package STANDARD
@@ -375,6 +383,14 @@ QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
 -- Loading package std_logic_1164
 -- Compiling entity mux2t1_N
 -- Compiling architecture structural of mux2t1_N
+
+} {} {}} /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/TopLevel/dfmux.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/TopLevel/dfmux.vhd
+QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity dfmux
+-- Compiling architecture dataflow of dfmux
 
 } {} {}} /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/Add_Sub_N.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/Add_Sub_N.vhd
 QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024

@@ -95,6 +95,15 @@ architecture structure of MIPS_Processor is
         );
     end component;
 
+component Reg32 is	--will hold PC value
+  	port(
+	i_D          : in std_logic_vector(31 downto 0);
+       	i_RST        : in std_logic;
+       	i_WE         : in std_logic;
+       	i_CLK        : in std_logic;
+       	o_Q          : out std_logic_vector(31 downto 0));
+end component;
+
 
     component mux2t1_N is
 	generic (N : integer := 16);
@@ -171,15 +180,13 @@ architecture structure of MIPS_Processor is
 	i_JumpInstrImm	:	in std_logic_vector(25 downto 0);	--will be shifted left, then take top 4 bits from PC
 	i_BranchInstrImm:	in std_logic_vector(N-1 downto 0);	--will be shifted left then added to PC, already sign extended
 	i_RSInput	:	in std_logic_vector(N-1 downto 0);
-	i_Clk		: 	in std_logic;	
-	i_Rst		: 	in std_logic;	
 	o_PC4		:	out std_logic_vector(N-1 downto 0);
 	o_PC		:	out std_logic_vector(N-1 downto 0)	--output program counter
 );
 end component;
 
 
-signal s_RF_rd1, s_RF_rd2, s_aluResult, s_ialu2, s_aluWriteData, s_PC4, s_imm, s_rtrs : std_logic_vector(31 downto 0);  
+signal s_RF_rd1, s_RF_rd2, s_aluResult, s_ialu2, s_aluWriteData, s_PC4, s_imm, s_rtrs, s_dffPC, s_PC0, s_PC1 : std_logic_vector(31 downto 0);  
 signal s_aluCtl : std_logic_vector(3 downto 0);
 signal s_aluScr, s_memToReg, s_j, s_jr, s_regDst, s_signExtSel, s_Br, s_zero, s_jal : std_logic;
 signal s_regjalMux, s_regjalMux2 : std_logic_vector(4 downto 0);
@@ -221,6 +228,22 @@ begin
 		o_imm 		=> s_imm 
 		);
 
+g_NextInstMux : mux2t1_N
+	generic map (32)
+	port map(
+		i_S => iRST,
+       		i_D0 => s_PC1,
+       		i_D1 => x"003FFFFC",
+       		o_O => s_PC0);
+
+g_PCDFFG : Reg32
+	port map(
+		i_D => s_PC0,
+       		i_RST => '0',
+       		i_WE => '1',
+       		i_CLK => iCLK,
+       		o_Q => s_NextInstAddr); 
+
 
   g_REGFILE: regfile port map(
 		i_D         => s_RegWrData,
@@ -261,7 +284,7 @@ begin
 		o_zero		=> s_zero 
 		);
 oALUOut<=s_aluResult;
-s_DMemAddr <= oALUOut;
+s_DMemAddr <= s_aluResult;
 s_DMemData <= s_RF_rd2;
 
 g_FETCHLOGIC : fetchLogic port map(
@@ -273,10 +296,8 @@ g_FETCHLOGIC : fetchLogic port map(
 	i_JumpInstrImm  	=> s_Inst(25 downto 0),
 	i_BranchInstrImm    	=> s_imm, 
 	i_RSInput    		=> s_RF_rd1, 
-   	i_Clk                   => iCLK,
-	i_Rst			=> iRST,
         o_PC4			=> s_PC4,
-	o_PC    		=> s_NextInstAddr
+	o_PC    		=> s_PC1
 );
 
 g_jal_AND: andg2 port map (

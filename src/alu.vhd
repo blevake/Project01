@@ -196,9 +196,10 @@ BEGIN
 		o_F => s_luiShift
 	);
 	
-	process (s_luiShift) is
+	process (s_luiShift, i_A, i_B) is
 		begin
-			s_luiOut <= s_luiShift(31 downto 16) & i_A(15 downto 0);
+			s_luiOut(31 downto 16) <= s_luiShift(31 downto 16);
+			s_luiOut(15 downto 0)  <= i_A(15 downto 0);
 		end process;
 
 	invzero : invg
