@@ -1,0 +1,1289 @@
+m255
+K4
+z2
+Z0 !s12c _opt
+Z1 !s99 nomlopt
+R0
+R1
+R0
+R1
+!s11e vcom 2024.2 2024.05, May 20 2024
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+d/home/chwoodv
+T_opt
+!s110 1729976827
+Vb9>]A;0XRcZ?BZRk0EVTJ0
+04 14 9 work mips_processor structure 1
+=1-7486e228ad28-671d59fb-15f00-8b8f
+R1
+!s12f OEM100
+!s12b OEM100
+!s124 OEM100
+!s135 nogc
+o-quiet -auto_acc_if_foreign -work work
+tCvgOpt 0
+n@_opt
+OL;O;2024.2;79
+Eadd_sub_n
+Z2 w1729970663
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 233
+Z5 d/home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src
+Z6 8/home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/Add_Sub_N.vhd
+Z7 F/home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/Add_Sub_N.vhd
+l0
+Z8 L21 1
+V^mGUi5zP<kzLa0ZoS?G8b1
+!s100 5:gEo9klEkEnnLBildelS1
+Z9 OL;C;2024.2;79
+32
+Z10 !s110 1729976818
+!i10b 1
+Z11 !s108 1729976818.000000
+Z12 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/Add_Sub_N.vhd|
+Z13 !s107 /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/Add_Sub_N.vhd|
+!i113 0
+Z14 o-work work -2002 -explicit
+Z15 tExplicit 1 CvgOpt 0
+Astructural
+R3
+R4
+DEx4 work 9 add_sub_n 0 22 ^mGUi5zP<kzLa0ZoS?G8b1
+!i122 233
+l64
+L31 63
+VIRSB@9F]aH3BgIL=3EedL0
+!s100 NachU`[ZO]nm4U0Bo:?FZ3
+R9
+32
+R10
+!i10b 1
+R11
+R12
+R13
+!i113 0
+R14
+R15
+Ealu
+Z16 w1729976189
+R3
+R4
+!i122 234
+R5
+Z17 8/home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/alu.vhd
+Z18 F/home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/alu.vhd
+l0
+L4 1
+VWz@LVKdZ]eg2R;8=[f0aK0
+!s100 TX=KOBZL^:?4;SUi1^;1?1
+R9
+32
+Z19 !s110 1729976819
+!i10b 1
+R11
+Z20 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/alu.vhd|
+Z21 !s107 /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/alu.vhd|
+!i113 0
+R14
+R15
+Astructural
+R3
+R4
+DEx4 work 3 alu 0 22 Wz@LVKdZ]eg2R;8=[f0aK0
+!i122 234
+l192
+L36 301
+VCQjJbC>>QlV=8H502_Z^80
+!s100 >f@KYYF^:k?XYg:c35;F;2
+R9
+32
+R19
+!i10b 1
+R11
+R20
+R21
+!i113 0
+R14
+R15
+Eandg2
+R2
+R3
+R4
+!i122 235
+R5
+Z22 8/home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/andg2.vhd
+Z23 F/home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/andg2.vhd
+l0
+Z24 L23 1
+VlRF1X2AR494<^2b5EczMG2
+!s100 YT?bGzEmcFo:DlnoC^B4_0
+R9
+32
+R19
+!i10b 1
+Z25 !s108 1729976819.000000
+Z26 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/andg2.vhd|
+Z27 !s107 /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/andg2.vhd|
+!i113 0
+R14
+R15
+Adataflow
+R3
+R4
+DEx4 work 5 andg2 0 22 lRF1X2AR494<^2b5EczMG2
+!i122 235
+l32
+Z28 L31 6
+V;W?oPbX<ObC2SkM60=NoE2
+!s100 I`@Z@UBObS]<7m8bPgKUS1
+R9
+32
+R19
+!i10b 1
+R25
+R26
+R27
+!i113 0
+R14
+R15
+Ebarrelshifter_32
+R2
+Z29 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z30 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z31 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+R3
+R4
+!i122 236
+R5
+Z32 8/home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/barrelshifter_32.vhd
+Z33 F/home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/barrelshifter_32.vhd
+l0
+L9 1
+VcgbK5UV0Dd=B?MCi6VA==3
+!s100 Clfh9hecfH6@QO@7bMzeX0
+R9
+32
+R19
+!i10b 1
+R25
+Z34 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/barrelshifter_32.vhd|
+Z35 !s107 /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/barrelshifter_32.vhd|
+!i113 0
+R14
+R15
+Amixed
+R29
+R30
+R31
+R3
+R4
+DEx4 work 16 barrelshifter_32 0 22 cgbK5UV0Dd=B?MCi6VA==3
+!i122 236
+l86
+L21 301
+Vd9znTRRVHM6T[Vm;I;G<f1
+!s100 mZPFG^_>DKM5ELM93f4Tz2
+R9
+32
+R19
+!i10b 1
+R25
+R34
+R35
+!i113 0
+R14
+R15
+Econtrol
+Z36 w1729975538
+R3
+R4
+!i122 237
+R5
+Z37 8/home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/control.vhd
+Z38 F/home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/control.vhd
+l0
+L4 1
+V1fdACC2XQkb[_1AnNccb82
+!s100 ok[e17E5g0NSR:Y2Nm;CH3
+R9
+32
+R19
+!i10b 1
+R25
+Z39 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/control.vhd|
+Z40 !s107 /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/control.vhd|
+!i113 0
+R14
+R15
+Abehavior
+R3
+R4
+DEx4 work 7 control 0 22 1fdACC2XQkb[_1AnNccb82
+!i122 237
+l25
+L22 337
+VI8YUUQf`^hezL65lC`T]g0
+!s100 j5mhS@cOaa@G<lD>ib1fc3
+R9
+32
+R19
+!i10b 1
+R25
+R39
+R40
+!i113 0
+R14
+R15
+Edecoder5t32
+R2
+R29
+R3
+R4
+!i122 238
+R5
+Z41 8/home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/decoder5t32.vhd
+Z42 F/home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/decoder5t32.vhd
+l0
+R24
+VQYeVXOShW[z4hMd=WB65V0
+!s100 ]7U`9><;bkS7OPeAdLzRD0
+R9
+32
+R19
+!i10b 1
+R25
+Z43 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/decoder5t32.vhd|
+Z44 !s107 /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/decoder5t32.vhd|
+!i113 0
+R14
+R15
+Adataflow
+R29
+R3
+R4
+DEx4 work 11 decoder5t32 0 22 QYeVXOShW[z4hMd=WB65V0
+!i122 238
+l32
+L30 10
+V1koD6mCZ;GLlK2KdC@oiS1
+!s100 S0k?9`2PaSCXinLAeOnzR2
+R9
+32
+R19
+!i10b 1
+R25
+R43
+R44
+!i113 0
+R14
+R15
+Edecoder5to32
+R2
+R29
+R3
+R4
+!i122 239
+R5
+Z45 8/home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/decoder5to32.vhd
+Z46 F/home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/decoder5to32.vhd
+l0
+L5 1
+V`ZgP^592X^JQB;FaG<hVH3
+!s100 zS^8ZOA^YJCXYYCjYFk>F0
+R9
+32
+R19
+!i10b 1
+R25
+Z47 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/decoder5to32.vhd|
+Z48 !s107 /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/decoder5to32.vhd|
+!i113 0
+R14
+R15
+Abehavioral
+R29
+R3
+R4
+DEx4 work 12 decoder5to32 0 22 `ZgP^592X^JQB;FaG<hVH3
+!i122 239
+l13
+L12 42
+VMHB`C_O>n5:Whj7^HSgPK1
+!s100 I7>R8P7d;]LW^zA9O49zC0
+R9
+32
+R19
+!i10b 1
+R25
+R47
+R48
+!i113 0
+R14
+R15
+Edffg
+R2
+R3
+R4
+!i122 240
+R5
+Z49 8/home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/dffg.vhd
+Z50 F/home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/dffg.vhd
+l0
+R24
+VjgD_<UZ1zVBDW^mk^5TO10
+!s100 T4gcXQGMCgKJbn8XhBM;b0
+R9
+32
+R19
+!i10b 1
+R25
+Z51 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/dffg.vhd|
+Z52 !s107 /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/dffg.vhd|
+!i113 0
+R14
+R15
+Amixed
+R3
+R4
+DEx4 work 4 dffg 0 22 jgD_<UZ1zVBDW^mk^5TO10
+!i122 240
+l37
+L33 29
+Vf;Mb[CToCHDb6>olH_6Sd3
+!s100 iOdlTUid@@]UimFK_53^C1
+R9
+32
+R19
+!i10b 1
+R25
+R51
+R52
+!i113 0
+R14
+R15
+Eequalitymodule
+R2
+R3
+R4
+!i122 241
+R5
+Z53 8/home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/equalitymodule.vhd
+Z54 F/home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/equalitymodule.vhd
+l0
+L5 1
+V_THI80HS<c[iUI=dN=LjH1
+!s100 `EIgK5iZl;V7I`MFL`cVX1
+R9
+32
+R19
+!i10b 1
+R25
+Z55 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/equalitymodule.vhd|
+Z56 !s107 /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/equalitymodule.vhd|
+!i113 0
+R14
+R15
+Adataflow
+R3
+R4
+DEx4 work 14 equalitymodule 0 22 _THI80HS<c[iUI=dN=LjH1
+!i122 241
+l15
+L13 8
+V2cAoEYfcX_?4^iFGhT^^>1
+!s100 ZHDoYTIj7oha;NL1iimdo3
+R9
+32
+R19
+!i10b 1
+R25
+R55
+R56
+!i113 0
+R14
+R15
+Efetchlogic
+Z57 w1729973024
+R29
+R30
+R31
+R3
+R4
+!i122 242
+R5
+Z58 8/home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/fetchLogic.vhd
+Z59 F/home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/fetchLogic.vhd
+l0
+L9 1
+V`hE1lZZdbV3><XfT9`9b?2
+!s100 Ij?Wf9@?7`0X@lfb254:X0
+R9
+32
+R19
+!i10b 1
+R25
+Z60 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/fetchLogic.vhd|
+Z61 !s107 /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/fetchLogic.vhd|
+!i113 0
+R14
+R15
+Amixed
+R29
+R30
+R31
+R3
+R4
+DEx4 work 10 fetchlogic 0 22 `hE1lZZdbV3><XfT9`9b?2
+!i122 242
+l85
+L33 124
+VaH`NhTA^VoTk;O[EI93Ob1
+!s100 ]b[QSE6ab<3WfJl:z4`aU0
+R9
+32
+R19
+!i10b 1
+R25
+R60
+R61
+!i113 0
+R14
+R15
+Efulladder
+R2
+R3
+R4
+!i122 243
+R5
+Z62 8/home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/FullAdder.vhd
+Z63 F/home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/FullAdder.vhd
+l0
+L7 1
+Vb2X8kl]=zWkcoDQTNl>e_2
+!s100 k[WojVUzFSRA?1]83PjOE3
+R9
+32
+R19
+!i10b 1
+R25
+Z64 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/FullAdder.vhd|
+Z65 !s107 /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/FullAdder.vhd|
+!i113 0
+R14
+R15
+Amixed
+R3
+R4
+DEx4 work 9 fulladder 0 22 b2X8kl]=zWkcoDQTNl>e_2
+!i122 243
+l47
+L17 69
+V>CB=j60m@=DdZYoCoDM553
+!s100 N;VV5SnYYH[B`g;[2eY?b3
+R9
+32
+R19
+!i10b 1
+R25
+R64
+R65
+!i113 0
+R14
+R15
+Efulladder_n
+R2
+R3
+R4
+!i122 244
+R5
+Z66 8/home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/FullAdder_N.vhd
+Z67 F/home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/FullAdder_N.vhd
+l0
+L6 1
+VmgE[lZIHlHGImk>j:6_3I2
+!s100 _97ejEh5IbWC19=GIdcNK2
+R9
+32
+R19
+!i10b 1
+R25
+Z68 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/FullAdder_N.vhd|
+Z69 !s107 /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/FullAdder_N.vhd|
+!i113 0
+R14
+R15
+Astructural
+R3
+R4
+DEx4 work 11 fulladder_n 0 22 mgE[lZIHlHGImk>j:6_3I2
+!i122 244
+l31
+L17 30
+VIjJ2CR5cAz`DMJ2lX=dTQ1
+!s100 d]5XiT^lU7mT]aOm[B>E^2
+R9
+32
+R19
+!i10b 1
+R25
+R68
+R69
+!i113 0
+R14
+R15
+Einvg
+R2
+R3
+R4
+!i122 245
+R5
+Z70 8/home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/invg.vhd
+Z71 F/home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/invg.vhd
+l0
+R24
+Vi?8K<J8fz^65hSl<BCJfc2
+!s100 _XK?_^5z0Rm1<k12?;5R?2
+R9
+32
+R19
+!i10b 1
+R25
+Z72 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/invg.vhd|
+Z73 !s107 /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/invg.vhd|
+!i113 0
+R14
+R15
+Adataflow
+R3
+R4
+DEx4 work 4 invg 0 22 i?8K<J8fz^65hSl<BCJfc2
+!i122 245
+l31
+L30 6
+V59WL2G3_iU9D3YcIf[eGI1
+!s100 bk7I76o8e1LURdoZEQb8H0
+R9
+32
+R19
+!i10b 1
+R25
+R72
+R73
+!i113 0
+R14
+R15
+Einvg_n
+Z74 w1729976812
+R3
+R4
+!i122 246
+R5
+Z75 8/home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/invg_N.vhd
+Z76 F/home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/invg_N.vhd
+l0
+R8
+Vl@WX620m?8R6Vb<cjE]S]0
+!s100 :=6?deYa:J7EMReF^GJWg1
+R9
+32
+R19
+!i10b 1
+R25
+Z77 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/invg_N.vhd|
+Z78 !s107 /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/invg_N.vhd|
+!i113 0
+R14
+R15
+Astructural
+R3
+R4
+DEx4 work 6 invg_n 0 22 l@WX620m?8R6Vb<cjE]S]0
+!i122 246
+l34
+L27 17
+VX;K^9^FmL2aPJB;?>1bPU0
+!s100 jA>5U:Dmfl8_AUz0VUQnQ1
+R9
+32
+R19
+!i10b 1
+R25
+R77
+R78
+!i113 0
+R14
+R15
+Eluishift
+R2
+R29
+R3
+R4
+!i122 247
+R5
+Z79 8/home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/luishift.vhd
+Z80 F/home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/luishift.vhd
+l0
+L5 1
+VnTJ8OkmimBR@_o;?Q3DdU1
+!s100 5fJ^QePIh3:A`]LGfA`oS0
+R9
+32
+R19
+!i10b 1
+R25
+Z81 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/luishift.vhd|
+Z82 !s107 /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/luishift.vhd|
+!i113 0
+R14
+R15
+Adataflow
+R29
+R3
+R4
+DEx4 work 8 luishift 0 22 nTJ8OkmimBR@_o;?Q3DdU1
+!i122 247
+l15
+L14 5
+VDE<T]aKc8z]hRDH<o7hJZ2
+!s100 <5PEl8RlS83cl4UXV@D5a2
+R9
+32
+R19
+!i10b 1
+R25
+R81
+R82
+!i113 0
+R14
+R15
+Emem
+R2
+R29
+R3
+R4
+!i122 248
+R5
+Z83 8/home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/mem.vhd
+Z84 F/home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/mem.vhd
+l0
+L8 1
+VCIA?Dj3Mm_l0m@`CClQMl0
+!s100 fRlcaiTJZJ1H;nZh;8=LI3
+R9
+32
+R19
+!i10b 1
+R25
+Z85 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/mem.vhd|
+Z86 !s107 /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/mem.vhd|
+!i113 0
+R14
+R15
+Artl
+R29
+R3
+R4
+DEx4 work 3 mem 0 22 CIA?Dj3Mm_l0m@`CClQMl0
+!i122 248
+l37
+L27 24
+VH8m[_WC46V;E>EkG3<H:a0
+!s100 OI8_3><BhDkT3l3n8`OXd3
+R9
+32
+R19
+!i10b 1
+R25
+R85
+R86
+!i113 0
+R14
+R15
+Emips_processor
+Z87 w1729976602
+Z88 DPx4 work 10 mips_types 0 22 4LXCVcYKH^im4RY;ob3:G1
+R3
+R4
+!i122 249
+R5
+Z89 8/home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/MIPS_processor.vhd
+Z90 F/home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/MIPS_processor.vhd
+l0
+L10 1
+VEUaLml=FS[]b8;aAlk=fh2
+!s100 W?<oF@?_]??h?Cb]LGj_71
+R9
+32
+R19
+!i10b 1
+R25
+Z91 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/MIPS_processor.vhd|
+Z92 !s107 /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/MIPS_processor.vhd|
+!i113 0
+R14
+R15
+Astructure
+R88
+R3
+R4
+DEx4 work 14 mips_processor 0 22 EUaLml=FS[]b8;aAlk=fh2
+!i122 249
+l196
+L23 338
+VjPLJX<;j@<2WeChDP>>Pf2
+!s100 CPYBJ9Xf0A;^8z25_SLfD3
+R9
+32
+R19
+!i10b 1
+R25
+R91
+R92
+!i113 0
+R14
+R15
+Pmips_types
+R3
+R4
+!i122 250
+Z93 w1729970922
+R5
+Z94 8/home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/MIPS_types.vhd
+Z95 F/home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/MIPS_types.vhd
+l0
+L15 16
+V4LXCVcYKH^im4RY;ob3:G1
+!s100 dV@Kf3@kCZQ7`:>mW6[bI0
+R9
+32
+R19
+!i10b 1
+R25
+Z96 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/MIPS_types.vhd|
+Z97 !s107 /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/MIPS_types.vhd|
+!i113 0
+R14
+R15
+Bbody
+R88
+R3
+R4
+!i122 250
+l0
+L32 3
+VXiEiUjbXQn9g7OO^CmZo53
+!s100 AE1LgfEig5MET0``5CNRC2
+R9
+32
+R19
+!i10b 1
+R25
+R96
+R97
+!i113 0
+R14
+R15
+Emux16t1_32
+R2
+R3
+R4
+!i122 254
+R5
+Z98 8/home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/mux16t1_32.vhd
+Z99 F/home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/mux16t1_32.vhd
+l0
+L4 1
+V0??IX90iX2PUL:DfF8n]W2
+!s100 ?B@j7=?VFd;Dci:^9@RB03
+R9
+32
+R19
+!i10b 1
+R25
+Z100 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/mux16t1_32.vhd|
+Z101 !s107 /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/mux16t1_32.vhd|
+!i113 0
+R14
+R15
+Astructural
+R3
+R4
+DEx4 work 10 mux16t1_32 0 22 0??IX90iX2PUL:DfF8n]W2
+!i122 254
+l56
+L26 68
+VD12V_eTiSXAdPHHJSfVG01
+!s100 hMF5E_jl0QGA34>^aSPQb2
+R9
+32
+R19
+!i10b 1
+R25
+R100
+R101
+!i113 0
+R14
+R15
+Emux2t1
+R2
+R3
+R4
+!i122 252
+R5
+Z102 8/home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/mux2t_1.vhd
+Z103 F/home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/mux2t_1.vhd
+l0
+L3 1
+VeFjYNUoaSh1V3TP9gc0eR2
+!s100 gUL2KGb7OUN0Oo`j6A7I`3
+R9
+32
+R19
+!i10b 1
+R25
+Z104 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/mux2t_1.vhd|
+Z105 !s107 /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/mux2t_1.vhd|
+!i113 0
+R14
+R15
+Adataflow
+R3
+R4
+DEx4 work 6 mux2t1 0 22 eFjYNUoaSh1V3TP9gc0eR2
+!i122 252
+l16
+L14 10
+VDgG1L8[e=;`>5k4G]BI5h3
+!s100 ljSMkn15o1__L0f?EK;AZ1
+R9
+32
+R19
+!i10b 1
+R25
+R104
+R105
+!i113 0
+R14
+R15
+Emux2t1_n
+R2
+R3
+R4
+!i122 251
+R5
+Z106 8/home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/mux2t1_N.vhd
+Z107 F/home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/mux2t1_N.vhd
+l0
+R8
+Vj4KY:hV0kO?@RQ]2:`P[U3
+!s100 BKZeKCAB2i6lge3>7TA3d3
+R9
+32
+R19
+!i10b 1
+R25
+Z108 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/mux2t1_N.vhd|
+Z109 !s107 /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/mux2t1_N.vhd|
+!i113 0
+R14
+R15
+Astructural
+R3
+R4
+DEx4 work 8 mux2t1_n 0 22 j4KY:hV0kO?@RQ]2:`P[U3
+!i122 251
+l39
+L30 21
+Vm1NdN>M>eeiaAFIM^6c8A1
+!s100 W>5MMWO2LBg`K8[P>h>Ye1
+R9
+32
+R19
+!i10b 1
+R25
+R108
+R109
+!i113 0
+R14
+R15
+Emux32t1
+R2
+R29
+R3
+R4
+!i122 255
+R5
+Z110 8/home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/mux32t1.vhd
+Z111 F/home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/mux32t1.vhd
+l0
+L22 1
+VXh7`1Deh6fnI5RCJY>f6c3
+!s100 =95FomcI6PNe0Zi4bjC]60
+R9
+32
+R19
+!i10b 1
+R25
+Z112 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/mux32t1.vhd|
+Z113 !s107 /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/mux32t1.vhd|
+!i113 0
+R14
+R15
+Astructural
+R29
+R3
+R4
+DEx4 work 7 mux32t1 0 22 Xh7`1Deh6fnI5RCJY>f6c3
+!i122 255
+l64
+L60 41
+V7o0?O`T2Kai7agB6CKNZ60
+!s100 HgD;U3<64f_j81k1QN_dc1
+R9
+32
+R19
+!i10b 1
+R25
+R112
+R113
+!i113 0
+R14
+R15
+Emux8t1_32
+R2
+R3
+R4
+!i122 253
+R5
+Z114 8/home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/mux8t1_32.vhd
+Z115 F/home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/mux8t1_32.vhd
+l0
+L4 1
+VCR7MFBLaO0IFf0OAWWzMH3
+!s100 PEEBiQEVJDaY9UlGC=_kg2
+R9
+32
+R19
+!i10b 1
+R25
+Z116 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/mux8t1_32.vhd|
+Z117 !s107 /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/mux8t1_32.vhd|
+!i113 0
+R14
+R15
+Astructural
+R3
+R4
+DEx4 work 9 mux8t1_32 0 22 CR7MFBLaO0IFf0OAWWzMH3
+!i122 253
+l32
+L19 71
+V]UdO?FDaD9MgDl<dNGN;c3
+!s100 dUYR^E5^2X>d8LUaIHgBD2
+R9
+32
+R19
+!i10b 1
+R25
+R116
+R117
+!i113 0
+R14
+R15
+Eonescomp
+R2
+R3
+R4
+!i122 256
+R5
+Z118 8/home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/onesComp.vhd
+Z119 F/home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/onesComp.vhd
+l0
+L4 1
+VXl39oc3GGE;NGd6WSc7m01
+!s100 <<i5iBSb6B@61:CTLDf=l0
+R9
+32
+Z120 !s110 1729976820
+!i10b 1
+R25
+Z121 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/onesComp.vhd|
+Z122 !s107 /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/onesComp.vhd|
+!i113 0
+R14
+R15
+Astructure
+R3
+R4
+DEx4 work 8 onescomp 0 22 Xl39oc3GGE;NGd6WSc7m01
+!i122 256
+l21
+L13 16
+Vi6W`km4kXC:1J@?bUFAJj1
+!s100 G4HTEJ]EoNalYl>2Y^^Cj2
+R9
+32
+R120
+!i10b 1
+R25
+R121
+R122
+!i113 0
+R14
+R15
+Eonescomp_n
+Z123 w1729976783
+R3
+R4
+!i122 257
+R5
+Z124 8/home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/onesComp_N.vhd
+Z125 F/home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/onesComp_N.vhd
+l0
+L4 1
+V57^^UbI5Wb1VfDRQ073zS3
+!s100 oUTld:DllJH6gn44DK[^Y0
+R9
+32
+R120
+!i10b 1
+Z126 !s108 1729976820.000000
+Z127 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/onesComp_N.vhd|
+Z128 !s107 /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/onesComp_N.vhd|
+!i113 0
+R14
+R15
+Astructural
+R3
+R4
+DEx4 work 10 onescomp_n 0 22 57^^UbI5Wb1VfDRQ073zS3
+!i122 257
+l22
+L12 20
+V3@]PPUF8OA1i7R@NJOzRB0
+!s100 Kk=zOEnnEfBKN9OD;JAAV3
+R9
+32
+R120
+!i10b 1
+R126
+R127
+R128
+!i113 0
+R14
+R15
+Eorg2
+R2
+R3
+R4
+!i122 258
+R5
+Z129 8/home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/org2.vhd
+Z130 F/home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/org2.vhd
+l0
+R24
+VB2]3[a<V5f9`9eUg6`KhC1
+!s100 bGQ1F9eW^Q17OoL9h4g7z2
+R9
+32
+R120
+!i10b 1
+R126
+Z131 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/org2.vhd|
+Z132 !s107 /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/org2.vhd|
+!i113 0
+R14
+R15
+Adataflow
+R3
+R4
+DEx4 work 4 org2 0 22 B2]3[a<V5f9`9eUg6`KhC1
+!i122 258
+l32
+R28
+VkAR2[YaYRaj6fWNP]W0nE3
+!s100 h5_AzR3TdRA0a_K=dQ>mI2
+R9
+32
+R120
+!i10b 1
+R126
+R131
+R132
+!i113 0
+R14
+R15
+Ereg32
+R2
+R3
+R4
+!i122 259
+R5
+Z133 8/home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/Reg32.vhd
+Z134 F/home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/Reg32.vhd
+l0
+R8
+VZZ<fA[aQzAHnQGo=LGD?C0
+!s100 oGIM0n0HIU`Eb^TnXhF`W1
+R9
+32
+R120
+!i10b 1
+R126
+Z135 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/Reg32.vhd|
+Z136 !s107 /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/Reg32.vhd|
+!i113 0
+R14
+R15
+Astructural
+R3
+R4
+DEx4 work 5 reg32 0 22 ZZ<fA[aQzAHnQGo=LGD?C0
+!i122 259
+l41
+L31 23
+VPPnVLhzhlgc]0B<kc^0FP3
+!s100 >[Vk;H:CA3I?DXG9l]UOK2
+R9
+32
+R120
+!i10b 1
+R126
+R135
+R136
+!i113 0
+R14
+R15
+Eregfile
+R2
+R3
+R4
+!i122 260
+R5
+Z137 8/home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/regfile.vhd
+Z138 F/home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/regfile.vhd
+l0
+R8
+VJ_PmCUo2cfhmej4T_NYH`3
+!s100 fBD5n=iSMXTLWY3V?C3zY0
+R9
+32
+R120
+!i10b 1
+R126
+Z139 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/regfile.vhd|
+Z140 !s107 /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/regfile.vhd|
+!i113 0
+R14
+R15
+Astructural
+R3
+R4
+DEx4 work 7 regfile 0 22 J_PmCUo2cfhmej4T_NYH`3
+!i122 260
+l122
+L34 397
+VnCiKzJR4@aYnE7BhUQ0B`0
+!s100 4UA=j5PbPf=i>4JBFn2OM3
+R9
+32
+R120
+!i10b 1
+R126
+R139
+R140
+!i113 0
+R14
+R15
+Esign_ext
+Z141 w1729976558
+R29
+Z142 DPx4 ieee 20 numeric_std_unsigned 0 22 L9z`>=>LNY9h8oAIomUKm3
+R3
+R4
+!i122 262
+R5
+Z143 8/home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/sign_Ext.vhd
+Z144 F/home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/sign_Ext.vhd
+l0
+L8 1
+VEHKmijf6RYQdL3_lJfQg50
+!s100 ZJ4U?RVME0?bK^6eeF>LA3
+R9
+32
+R120
+!i10b 1
+R126
+Z145 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/sign_Ext.vhd|
+Z146 !s107 /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/sign_Ext.vhd|
+!i113 0
+R14
+R15
+Adataflow
+R29
+R142
+R3
+R4
+DEx4 work 8 sign_ext 0 22 EHKmijf6RYQdL3_lJfQg50
+!i122 262
+l24
+L22 22
+V;Z@HefXoQdX:cERFCaPS02
+!s100 gl`W8aR=ZkoIAYXI[?Ukh1
+R9
+32
+R120
+!i10b 1
+R126
+R145
+R146
+!i113 0
+R14
+R15
+Exorg2
+R2
+R3
+R4
+!i122 261
+R5
+Z147 8/home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/xorg2.vhd
+Z148 F/home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/xorg2.vhd
+l0
+R24
+V]nRm43OKZ32f958@JoPK80
+!s100 [hI[mXFH4_j16U;>U1Lfn2
+R9
+32
+R120
+!i10b 1
+R126
+Z149 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/xorg2.vhd|
+Z150 !s107 /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/xorg2.vhd|
+!i113 0
+R14
+R15
+Adataflow
+R3
+R4
+DEx4 work 5 xorg2 0 22 ]nRm43OKZ32f958@JoPK80
+!i122 261
+l32
+R28
+Vgh7bYI5aJE]odJ7>7;=<U3
+!s100 Z6[FAPS4fBLB`F?OO<AY72
+R9
+32
+R120
+!i10b 1
+R126
+R149
+R150
+!i113 0
+R14
+R15
