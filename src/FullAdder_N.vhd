@@ -9,7 +9,8 @@ Entity FullAdder_N Is
 		i_A : In std_logic_vector(N - 1 Downto 0);
 		i_B : In std_logic_vector(N - 1 Downto 0);
 		i_Ci : In std_logic;
-		o_O : Out std_logic_vector(N - 1 Downto 0)
+		o_O : Out std_logic_vector(N - 1 Downto 0);
+		o_Overflow : Out std_logic
 	);
 
 End FullAdder_N;
@@ -25,6 +26,14 @@ Architecture structural Of FullAdder_N Is
 			o_O : Out std_logic
 		);
 	End Component;
+
+Component xorg2 is
+
+  port(i_A          : in std_logic;
+       i_B          : in std_logic;
+       o_F          : out std_logic);
+
+End Component;
 
 	Signal carry : std_logic_vector(n Downto 0);
 
@@ -42,5 +51,12 @@ Begin
 			o_O => o_O(i)
 		);
 	End Generate G_NBit_MUX;
+
+g_xorOverflow : xorg2
+port map(
+i_A          => carry(32),
+       i_B         => carry(31),
+       o_F          => o_Overflow
+);
 
 End structural;
