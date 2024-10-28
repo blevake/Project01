@@ -42,6 +42,7 @@ ARCHITECTURE structural OF alu IS
 	SIGNAL s_invAluOp : std_logic_vector(3 DOWNTO 0);
 	SIGNAL s_luiOut : std_logic_vector(31 DOWNTO 0);
 	SIGNAL s_luiShift : std_logic_vector(31 DOWNTO 0);
+	SIGNAL s_isOverflow, s_addoSub : std_logic;
 
 	COMPONENT Add_Sub_N IS
 		PORT (
@@ -189,6 +190,14 @@ ARCHITECTURE structural OF alu IS
 			o_F : OUT std_logic_vector(31 DOWNTO 0)
 		);
 	END COMPONENT;
+
+COMPONENT Mux16t1 is
+    PORT (
+        sel : in STD_LOGIC_VECTOR(3 downto 0);  
+        d   : in STD_LOGIC_VECTOR(15 downto 0); 
+        y   : out STD_LOGIC                     
+    );
+END COMPONENT;
 	
 BEGIN
 	lui : luishift
@@ -217,6 +226,14 @@ BEGIN
 		o_O => o_zero
 	);
 
+	addorSub : mux2t1
+	PORT MAP(
+		i_S => s_addoSub, 
+		i_D0 => '0', 
+		i_D1 => o_overflow, 
+		o_O => s_isOverflow
+	);
+
 	invforshift : onesComp_N
 	PORT MAP(
 		i_I => i_AluOp, 
@@ -236,7 +253,7 @@ BEGIN
 		i_B => i_B, 
 		i_Add_Sub => i_aluOp(3), -- Add/Subtract control bit
 		o_O => adderOutput, 
-		o_flow => o_overFlow
+		o_flow => s_isOverflow
 	);
 
 	-- Bitwise AND operation
@@ -335,5 +352,13 @@ BEGIN
 		i_D17 => sltOutput, 
 		o_O => o_F
 	);
+
+	addSubSel : Mux16t1
+	PORT MAP(--d signals are in octal
+		sel => i_aluOp, 
+		d => "0100000001000000",
+		y => s_addoSub
+	);
+
 
 END structural;
