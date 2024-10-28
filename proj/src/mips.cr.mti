@@ -1,0 +1,581 @@
+/home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/barrelshifter_32.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/barrelshifter_32.vhd
+QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Loading package NUMERIC_STD
+-- Compiling entity barrelshifter_32
+-- Compiling architecture mixed of barrelshifter_32
+
+} {} {}} /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/mux16t1_32.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/mux16t1_32.vhd
+QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity mux16t1_32
+-- Compiling architecture structural of mux16t1_32
+
+} {} {}} /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/TopLevel/alu.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/TopLevel/alu.vhd
+QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity alu
+-- Compiling architecture structural of alu
+
+} {} {}} /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/TopLevel/invg.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/TopLevel/invg.vhd
+QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity invg
+-- Compiling architecture dataflow of invg
+
+} {} {}} /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/mux2t_1.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/mux2t_1.vhd
+QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity mux2t1
+-- Compiling architecture dataflow of mux2t1
+
+} {} {}} /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/TopLevel/Multiplier.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/TopLevel/Multiplier.vhd
+QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity Multiplier
+-- Compiling architecture behavior of Multiplier
+
+} {} {}} /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/TopLevel/luishift.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/TopLevel/luishift.vhd
+QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity luishift
+-- Compiling architecture dataflow of luishift
+
+} {} {}} /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/TopLevel/lessThanCheck.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/TopLevel/lessThanCheck.vhd
+QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_SIGNED
+-- Compiling entity lessThanCheck
+-- Compiling architecture dataflow of lessThanCheck
+
+} {} {}} /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/TopLevel/Adder.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/TopLevel/Adder.vhd
+QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity Adder
+-- Compiling architecture behavior of Adder
+
+} {} {}} /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/TopLevel/mux16t1_32.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/TopLevel/mux16t1_32.vhd
+QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity mux16t1_32
+-- Compiling architecture structural of mux16t1_32
+
+} {} {}} /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/TopLevel/and2_N.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/TopLevel/and2_N.vhd
+QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity and2_N
+-- Compiling architecture structural of and2_N
+
+} {} {}} /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/mem.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/mem.vhd
+QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity mem
+-- Compiling architecture rtl of mem
+
+} {} {}} /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/TopLevel/dffg.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/TopLevel/dffg.vhd
+QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity dffg
+-- Compiling architecture mixed of dffg
+
+} {} {}} /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/TopLevel/beq.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/TopLevel/beq.vhd
+QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity beq
+-- Compiling architecture dataflow of beq
+
+} {} {}} /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/onesComp.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/onesComp.vhd
+QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity onesComp
+-- Compiling architecture structure of onesComp
+
+} {} {}} /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/TopLevel/alu_addersubtractor.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/TopLevel/alu_addersubtractor.vhd
+QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity alu_addersubtractor
+-- Compiling architecture structural of alu_addersubtractor
+
+} {} {}} /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/TopLevel/FullAdder.vhd {2 {vcom -work work -2002 -explicit -vopt -stats=none /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/TopLevel/FullAdder.vhd
+QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+** Warning: /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/TopLevel/FullAdder.vhd(9): (vcom-1615) Existing entity 'FullAdder' at /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/TopLevel/fullAdder.vhd(4) will be overwritten.
+-- Compiling entity FullAdder
+-- Compiling architecture mixed of FullAdder
+
+} {} {}} /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/TopLevel/mux32t1.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/TopLevel/mux32t1.vhd
+QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity mux32t1
+-- Compiling architecture structural of mux32t1
+
+} {} {}} /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/TopLevel/mux2t1_N.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/TopLevel/mux2t1_N.vhd
+QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity mux2t1_N
+-- Compiling architecture structural of mux2t1_N
+
+} {} {}} /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/TopLevel/regfile.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/TopLevel/regfile.vhd
+QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity regfile
+-- Compiling architecture structural of regfile
+
+} {} {}} /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/TopLevel/RegLd.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/TopLevel/RegLd.vhd
+QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity RegLd
+-- Compiling architecture behavior of RegLd
+
+} {} {}} /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/TopLevel/extender.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/TopLevel/extender.vhd
+QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity extender
+-- Compiling architecture behavior of extender
+
+} {} {}} /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/FullAdder.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/FullAdder.vhd
+QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity FullAdder
+-- Compiling architecture mixed of FullAdder
+
+} {} {}} /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/invg.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/invg.vhd
+QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity invg
+-- Compiling architecture dataflow of invg
+
+} {} {}} /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/equalitymodule.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/equalitymodule.vhd
+QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity equalityModule
+-- Compiling architecture dataflow of equalityModule
+
+} {} {}} /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/TopLevel/mux2t1_5.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/TopLevel/mux2t1_5.vhd
+QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity mux2t1_5
+-- Compiling architecture structural of mux2t1_5
+
+} {} {}} /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/TopLevel/slt_equality_check.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/TopLevel/slt_equality_check.vhd
+QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity equality_check
+-- Compiling architecture dataflow of equality_check
+
+} {} {}} /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/MIPS_processor.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/MIPS_processor.vhd
+QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package MIPS_types
+-- Compiling entity MIPS_Processor
+-- Compiling architecture structure of MIPS_Processor
+
+} {} {}} /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/luishift.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/luishift.vhd
+QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity luishift
+-- Compiling architecture dataflow of luishift
+
+} {} {}} /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/TopLevel/mux2t_1.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/TopLevel/mux2t_1.vhd
+QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity mux2t1
+-- Compiling architecture dataflow of mux2t1
+
+} {} {}} /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/decoder5to32.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/decoder5to32.vhd
+QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity decoder5to32
+-- Compiling architecture Behavioral of decoder5to32
+
+} {} {}} /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/decoder5t32.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/decoder5t32.vhd
+QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity decoder5t32
+-- Compiling architecture Dataflow of decoder5t32
+
+} {} {}} /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/TopLevel/org2.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/TopLevel/org2.vhd
+QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity org2
+-- Compiling architecture dataflow of org2
+
+} {} {}} /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/TopLevel/Reg32.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/TopLevel/Reg32.vhd
+QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity Reg32
+-- Compiling architecture structural of Reg32
+
+} {} {}} /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/TopLevel/equalitymodule.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/TopLevel/equalitymodule.vhd
+QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity equalityModule
+-- Compiling architecture dataflow of equalityModule
+
+} {} {}} /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/dffg.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/dffg.vhd
+QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity dffg
+-- Compiling architecture mixed of dffg
+
+} {} {}} /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/onesComp_N.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/onesComp_N.vhd
+QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity onesComp_N
+-- Compiling architecture structural of onesComp_N
+
+} {} {}} /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/sign_Ext.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/sign_Ext.vhd
+QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD_UNSIGNED
+-- Loading package NUMERIC_STD
+-- Compiling entity sign_Ext
+-- Compiling architecture dataflow of sign_Ext
+
+} {} {}} /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/TopLevel/Add_Sub_N.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/TopLevel/Add_Sub_N.vhd
+QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity Add_Sub_N
+-- Compiling architecture structural of Add_Sub_N
+
+} {} {}} /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/Reg32.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/Reg32.vhd
+QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity Reg32
+-- Compiling architecture structural of Reg32
+
+} {} {}} /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/TopLevel/barrelshifter_32.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/TopLevel/barrelshifter_32.vhd
+QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Loading package NUMERIC_STD
+-- Compiling entity barrelshifter_32
+-- Compiling architecture mixed of barrelshifter_32
+
+} {} {}} /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/TopLevel/N_bitRegister.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/TopLevel/N_bitRegister.vhd
+QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity N_bitRegister
+-- Compiling architecture mixed of N_bitRegister
+
+} {} {}} /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/MIPS_types.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/MIPS_types.vhd
+QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling package MIPS_types
+-- Compiling package body MIPS_types
+-- Loading package MIPS_types
+
+} {} {}} /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/mux2t1_N.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/mux2t1_N.vhd
+QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity mux2t1_N
+-- Compiling architecture structural of mux2t1_N
+
+} {} {}} /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/TopLevel/dfmux.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/TopLevel/dfmux.vhd
+QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity dfmux
+-- Compiling architecture dataflow of dfmux
+
+} {} {}} /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/TopLevel/equalityMuxModule.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/TopLevel/equalityMuxModule.vhd
+QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity slt_equality_check
+-- Compiling architecture dataflow of slt_equality_check
+
+} {} {}} /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/invg_N.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/invg_N.vhd
+QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity invg_N
+-- Compiling architecture structural of invg_N
+
+} {} {}} /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/TopLevel/fetchLogic.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/TopLevel/fetchLogic.vhd
+QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Loading package NUMERIC_STD
+-- Compiling entity fetchLogic
+-- Compiling architecture mixed of fetchLogic
+
+} {} {}} /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/TopLevel/mux2to1.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/TopLevel/mux2to1.vhd
+QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity mux2to1
+-- Compiling architecture mixed of mux2to1
+
+} {} {}} /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/TopLevel/control.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/TopLevel/control.vhd
+QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity control
+-- Compiling architecture behavior of control
+
+} {} {}} /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/TopLevel/onesComp_N.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/TopLevel/onesComp_N.vhd
+QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity onesComp_N
+-- Compiling architecture structural of onesComp_N
+
+} {} {}} /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/TopLevel/xorg2.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/TopLevel/xorg2.vhd
+QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity xorg2
+-- Compiling architecture dataflow of xorg2
+
+} {} {}} /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/TopLevel/fullAdder.vhd {2 {vcom -work work -2002 -explicit -vopt -stats=none /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/TopLevel/fullAdder.vhd
+QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+** Warning: /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/TopLevel/fullAdder.vhd(4): (vcom-1615) Existing entity 'fullAdder' at /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/TopLevel/FullAdder.vhd(9) will be overwritten.
+-- Compiling entity fullAdder
+-- Compiling architecture structural of fullAdder
+
+} {} {}} /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/TopLevel/mux8t1_32.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/TopLevel/mux8t1_32.vhd
+QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity mux8t1_32
+-- Compiling architecture structural of mux8t1_32
+
+} {} {}} /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/TopLevel/andg2.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/TopLevel/andg2.vhd
+QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity andg2
+-- Compiling architecture dataflow of andg2
+
+} {} {}} /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/TopLevel/MIPS_types.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/TopLevel/MIPS_types.vhd
+QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling package MIPS_types
+-- Compiling package body MIPS_types
+-- Loading package MIPS_types
+
+} {} {}} /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/TopLevel/Reg.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/TopLevel/Reg.vhd
+QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity Reg
+-- Compiling architecture behavior of Reg
+
+} {} {}} /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/xorg2.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/xorg2.vhd
+QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity xorg2
+-- Compiling architecture dataflow of xorg2
+
+} {} {}} /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/org2.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/org2.vhd
+QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity org2
+-- Compiling architecture dataflow of org2
+
+} {} {}} /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/TopLevel/fullAdder_n.vhd {2 {vcom -work work -2002 -explicit -vopt -stats=none /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/TopLevel/fullAdder_n.vhd
+QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+** Warning: /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/TopLevel/fullAdder_n.vhd(4): (vcom-1615) Existing entity 'fullAdder_n' at /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/TopLevel/FullAdder_N.vhd(21) will be overwritten.
+-- Compiling entity fullAdder_n
+** Warning: /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/TopLevel/fullAdder_n.vhd(15): (vcom-1615) Existing architecture 'fullAdder_n(structural)' at /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/TopLevel/FullAdder_N.vhd(30) will be overwritten.
+-- Compiling architecture structural of fullAdder_n
+
+} {} {}} /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/mux8t1_32.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/mux8t1_32.vhd
+QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity mux8t1_32
+-- Compiling architecture structural of mux8t1_32
+
+} {} {}} /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/TopLevel/addersubtractor.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/TopLevel/addersubtractor.vhd
+QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity addersubtractor
+-- Compiling architecture structural of addersubtractor
+
+} {} {}} /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/TopLevel/invg_N.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/TopLevel/invg_N.vhd
+QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity invg_N
+-- Compiling architecture structural of invg_N
+
+} {} {}} /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/mux32t1.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/mux32t1.vhd
+QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity mux32t1
+-- Compiling architecture structural of mux32t1
+
+} {} {}} /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/andg2.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/andg2.vhd
+QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity andg2
+-- Compiling architecture dataflow of andg2
+
+} {} {}} /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/regfile.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/regfile.vhd
+QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity regfile
+-- Compiling architecture structural of regfile
+
+} {} {}} /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/TopLevel/beq_bne.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/TopLevel/beq_bne.vhd
+QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity beq_bne
+-- Compiling architecture structural of beq_bne
+
+} {} {}} /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/TopLevel/decoder5t32.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/TopLevel/decoder5t32.vhd
+QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity decoder5t32
+-- Compiling architecture Dataflow of decoder5t32
+
+} {} {}} /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/TopLevel/onesComp.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /home/chwoodv/Documents/Project01/cpre381-toolflow/proj/src/TopLevel/onesComp.vhd
+QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity onesComp
+-- Compiling architecture structure of onesComp
+
+} {} {}}
