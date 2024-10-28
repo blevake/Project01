@@ -59,6 +59,7 @@ BEGIN
 	-- | 1 | 1 | 1 | 0 | sub, subu, beq
 	-- | 1 | 1 | 1 | 1 | slti, slt
 
+
 	testbench : PROCESS
 	BEGIN
 		i_A <= X"FFFF000F";

@@ -32,6 +32,7 @@ constant cCLK_PER  : time := gCLK_HPER * 2;
 -- component interface.
 -- TODO: change component declaration as needed.
 component fetchLogic is
+generic(N : integer := 32);
   port(
 	i_PC		:	in std_logic_vector(31 downto 0);	--input program counter
 	i_JumpReg	:	in std_logic;			
@@ -41,6 +42,7 @@ component fetchLogic is
 	i_JumpInstrImm	:	in std_logic_vector(25 downto 0);	--will be shifted left, then take top 4 bits from PC
 	i_BranchInstrImm:	in std_logic_vector(31 downto 0);	--will be shifted left then added to PC, already sign extended
 	i_RSInput	:	in std_logic_vector(31 downto 0);
+	o_PC4		:	out std_logic_vector(N-1 downto 0);
 	o_PC		:	out std_logic_vector(31 downto 0)	--output program counter
 	);
 end component;
@@ -58,6 +60,7 @@ signal CLK, reset : std_logic := '0';
  signal s_JumpInstrImm    : std_logic_vector(25 downto 0);
  signal s_BranchInstrImm  : std_logic_vector(31 downto 0);
  signal s_RSInput         : std_logic_vector(31 downto 0);
+signal s_OPC4              : std_logic_vector(31 downto 0);
 signal s_OPC              : std_logic_vector(31 downto 0);
 
 
@@ -77,6 +80,7 @@ begin
  	i_JumpInstrImm   => s_JumpInstrImm,        
  	i_BranchInstrImm => s_BranchInstrImm,         
  	i_RSInput        => s_RSInput,
+o_PC4 => s_OPC4,
 	o_PC             => s_OPC);
   --You can also do the above port map in one line using the below format: http://www.ics.uci.edu/~jmoorkan/vhdlref/compinst.html
 
