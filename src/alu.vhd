@@ -48,7 +48,8 @@ ARCHITECTURE structural OF alu IS
 			i_A : IN std_logic_vector(N - 1 DOWNTO 0);
 			i_B : IN std_logic_vector(N - 1 DOWNTO 0);
 			i_Add_Sub : IN std_logic; --set to 1 for subtraction and 0 for addition
-			o_O : OUT std_logic_vector(N - 1 DOWNTO 0)
+			o_O : OUT std_logic_vector(N - 1 DOWNTO 0);
+			o_flow : out std_logic
 		);
 
 	END COMPONENT;
@@ -234,7 +235,8 @@ BEGIN
 		i_A => i_A, 
 		i_B => i_B, 
 		i_Add_Sub => i_aluOp(3), -- Add/Subtract control bit
-		o_O => adderOutput
+		o_O => adderOutput, 
+		o_flow => o_overFlow
 	);
 
 	-- Bitwise AND operation
@@ -307,7 +309,7 @@ BEGIN
 	-- | 1 | 0 | 1 | 0 | 
 	-- | 1 | 0 | 1 | 1 | LUI
 	-- | 1 | 1 | 0 | 0 | bne
-	-- | 1 | 1 | 0 | 1 | 
+	-- | 1 | 1 | 0 | 1 |  
 	-- | 1 | 1 | 1 | 0 | sub, subu, beq
 	-- | 1 | 1 | 1 | 1 | slti, slt
 
